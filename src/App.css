@@ -1,0 +1,59 @@
+/* Copyright (c) 2017 Nicholas Maltbie
+ * MIT license
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+backgroundImage: 'url(media/bg.jpg)';
+
+body {
+  background-color: #777;
+}
+
+.App {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.Cover {
+  background-image: url("./media/bg.jpg");
+  background-repeat: 'no-repeat';
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  width: 100%;
+}
+
+.Profile-image {
+  margin-bottom: -5vh;
+  height: 30vh;
+  border: 10px;
+  border-color: #FFF;
+  border-style: solid;
+  background: #FFF;
+  padding-top: 10vh;
+}
+
+.App>h1 {
+  text-align: center;
+}
+
+.intro {
+  margin-top: 20;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
