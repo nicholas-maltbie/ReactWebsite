@@ -26,6 +26,20 @@ body {
 
 }
 
+.Horiz-link>h1 {
+  background-color: #FFF;
+  vertical-align: middle;
+  text-align: left;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 8vw;
+}
+
+.Horiz-link {
+  height: 14vh;
+  padding-top: 2vh;
+}
+
 .Cover {
   background-image: url("./media/bg.jpg");
   background-repeat: 'no-repeat';
@@ -42,9 +56,9 @@ body {
   border: 2vh;
   border-top: 0vh;
   padding-bottom: 1vh;
-  border-color: #888;
+  border-color: #AAA;
   border-style: solid;
-  background: #888;
+  background: #AAA;
   padding-top: 6vh;
 }
 

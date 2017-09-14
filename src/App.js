@@ -4,6 +4,45 @@ import bg from './media/bg.jpg';
 import me from './media/me.jpg';
 import './App.css';
 
+const HorizLinks = React.createClass({
+  render(props) {
+    var w = '100vw'
+    if(window.innerWidth > 1000) {
+      w = '40vw'
+    }
+    else if(window.innerWidth > 450) {
+      w = '60vw'
+    }
+    this.state.style = {
+      width: w
+    }
+    return (
+      <div className="Horiz-link" style={this.state.style}>
+          <h1>{this.props.name}</h1>
+      </div>
+    );
+  },
+  componentWillMount: function() {
+      this.updateDimensions();
+  },
+  componentDidMount: function() {
+      window.addEventListener("resize", this.updateDimensions);
+  },
+  componentWillUnmount: function() {
+      window.removeEventListener("resize", this.updateDimensions);
+  },
+  updateDimensions() {
+    var w = '100vw'
+    if(window.innerWidth > 1000) {
+      w = '40vw'
+    }
+    else if(window.innerWidth > 450) {
+      w = '60vw'
+    }
+    this.setState({style: {width: w}});
+  }
+});
+
 class App extends Component {
   render() {
     return (
@@ -30,6 +69,9 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="Cover2">
+            <HorizLinks name="About Me" />
+            <HorizLinks name="Resume" />
+            <HorizLinks name="Projects" />
           </div>
         </div>
       </div>
