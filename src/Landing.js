@@ -32,7 +32,9 @@ const Landing = () => (
       <NavLink to="/AboutMe">
         <HorizLinks name="About Me" />
         </NavLink>
-      <HorizLinks name="Resume" />
+      <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>
+        <HorizLinks name="Resume" />
+      </a>
       <HorizLinks name="Projects" />
     </Cover>
   </div>

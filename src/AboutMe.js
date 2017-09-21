@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HorizLinks, Cover } from './Components';
-import me from './media/me.jpg';
+import me from './media/me2.jpg';
 import bg from './media/aboutme.jpg';
 import './App.css';
 
@@ -20,7 +20,14 @@ class AboutMe extends Component {
               Nick Maltbie
             </h1>
             <p>
-              About Me YASSS!
+              I am a determined student and have taken on many individual
+              projects. One example is this website, hosted by github pages and
+              I coded the website from scratch. I am currently studying
+              Computer Science at UC and expect to graduate in 2021.
+            </p>
+            <p>
+              To view my resume, click <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>here</a>.
+
             </p>
           </div>
         </div>

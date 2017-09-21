@@ -10,6 +10,7 @@ body { }
 
 .App {
   text-align: center;
+  min-height: 100vh;
   background-color: #FFF;
   margin-left: 2vw;
   margin-right: 2vw;
@@ -34,8 +35,8 @@ body { }
 
 .Profile-image {
   box-shadow: 6px 6px rgba(200, 200, 200, 0.5);
-  min-height: 100px;
-  height: 48vh;
+  min-height: 90px;
+  height: 45vh;
   border: 2vh;
   border-top: 0vh;
   padding-bottom: 1vh;
