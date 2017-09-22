@@ -1,4 +1,74 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+
+const Footer = function ({ page }) {
+  var divstyle = {
+    height: '10vh',
+    backgroundColor: '#CCC',
+  }
+  return (
+    <div style={divstyle}>
+
+    </div>
+  )
+}
+
+const NavBar = function ({ page }) {
+  var divstyle={
+    height:'10vh',
+    paddingTop: '0.5vh',
+    backgroundColor: '#CCC',
+    boxShadow: '6px 6px #000, -6px 6px 6px #000',
+  }
+  var hstyle = {
+    paddingLeft: '3vw',
+    textDecoration: 'none',
+    textDecorationStyle: 'none',
+    float: 'left',
+    color: '#444',
+  }
+  var linkstyle = {
+    paddingLeft: '3vw',
+    textDecoration: 'none',
+    textDecorationStyle: 'none',
+    float: 'right',
+    color: '#444',
+  };
+  var navstyle = {
+    textDecoration: 'none',
+  }
+  var liststyle = {
+    float: 'right',
+    paddingRight: '5vw',
+  }
+  return (
+    <div style={divstyle}>
+      <NavLink to="/" style={navstyle}>
+        <h1 classname='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle}> Nick Maltbie</h1>
+      </NavLink>
+      <ul style={liststyle}>
+        <RightLink name="About Me" link="/AboutMe" />
+        <RightLink name="Projects" link="/Projects" />
+        <RightLink name="Home" link="/" />
+      </ul>
+    </div>
+  )
+}
+
+const RightLink = function ({ name, link }) {
+  var linkstyle = {
+    paddingLeft: '3vw',
+    textDecoration: 'none',
+    textDecorationStyle: 'none',
+    float: 'right',
+    color: '#444',
+  };
+  return (
+    <NavLink to={link}>
+      <h3 style={linkstyle} classname='col-xs-12 col-sm-6 col-md-4 col-lg-3'>{name}</h3>
+    </NavLink>
+  )
+}
 
 const HorizLinks = ({ name }) => (
   <div className="row">
@@ -26,4 +96,4 @@ const Cover = function ({ children, image, height }) {
   )
 }
 
-export { Cover, HorizLinks }
+export { Footer, NavBar, Cover, HorizLinks }

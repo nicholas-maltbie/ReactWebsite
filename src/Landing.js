@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { HorizLinks, Cover } from './Components';
+import { NavBar, HorizLinks, Cover } from './Components';
 import me from './media/me.jpg';
 import bg from './media/bg.jpg';
 import bg2 from './media/bg2.jpg';
@@ -31,7 +31,7 @@ const Landing = () => (
     <Cover image={bg2} height="60vh">
       <NavLink to="/AboutMe">
         <HorizLinks name="About Me" />
-        </NavLink>
+      </NavLink>
       <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>
         <HorizLinks name="Resume" />
       </a>

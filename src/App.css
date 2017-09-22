@@ -6,15 +6,20 @@
 
 backgroundImage: 'url(media/bg.jpg)';
 
-body { }
+body {
+}
 
-.App {
-  text-align: center;
-  min-height: 100vh;
+.content {
+  margin-top: 4vh;
   background-color: #FFF;
+  min-height: 100vh;
   margin-left: 2vw;
   margin-right: 2vw;
   box-shadow: 6px 6px #DDD, -6px 6px 6px #DDD;
+}
+
+.App {
+  text-align: center;
   font-family: "Source Sans Pro", sans-serif;
 }
 
