@@ -6,9 +6,13 @@ const Footer = function ({ page }) {
     height: '10vh',
     backgroundColor: '#CCC',
   }
+  var headerstyle = {
+    float: 'left',
+    paddingLeft: '3vw',
+  }
   return (
     <div style={divstyle}>
-
+      <h3 style={headerstyle}>Want to see the <a href='https://github.com/nicholas-maltbie/ReactWebsite'>source code</a> of this website?</h3>
     </div>
   )
 }
@@ -18,7 +22,6 @@ const NavBar = function ({ page }) {
     height:'10vh',
     paddingTop: '0.5vh',
     backgroundColor: '#CCC',
-    boxShadow: '6px 6px #000, -6px 6px 6px #000',
   }
   var hstyle = {
     paddingLeft: '3vw',
@@ -39,16 +42,17 @@ const NavBar = function ({ page }) {
   }
   var liststyle = {
     float: 'right',
-    paddingRight: '5vw',
+    paddingRight: '3vw',
   }
   return (
     <div style={divstyle}>
       <NavLink to="/" style={navstyle}>
-        <h1 classname='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle}> Nick Maltbie</h1>
+        <h1 className='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle}> Nick Maltbie</h1>
       </NavLink>
       <ul style={liststyle}>
         <RightLink name="About Me" link="/AboutMe" />
         <RightLink name="Projects" link="/Projects" />
+        <RightLink name="UHP" link="/UHP" />
         <RightLink name="Home" link="/" />
       </ul>
     </div>
@@ -65,7 +69,7 @@ const RightLink = function ({ name, link }) {
   };
   return (
     <NavLink to={link}>
-      <h3 style={linkstyle} classname='col-xs-12 col-sm-6 col-md-4 col-lg-3'>{name}</h3>
+      <h3 style={linkstyle} className='col-xs-12 col-sm-6 col-md-4 col-lg-3'>{name}</h3>
     </NavLink>
   )
 }
@@ -88,6 +92,7 @@ const Cover = function ({ children, image, height }) {
     width: '100%',
     minHeight: '100px',
     backgroundColor: '#FFF',
+    marginTop: '3vh',
   };
   return (
     <div style={divstyle}>

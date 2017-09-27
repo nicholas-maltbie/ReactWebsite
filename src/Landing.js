@@ -35,7 +35,9 @@ const Landing = () => (
       <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>
         <HorizLinks name="Resume" />
       </a>
-      <HorizLinks name="Projects" />
+      <NavLink to="/Projects">
+        <HorizLinks name="Projects" />
+      </NavLink>
     </Cover>
   </div>
 );
