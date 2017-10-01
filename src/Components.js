@@ -101,4 +101,58 @@ const Cover = function ({ children, image, height }) {
   )
 }
 
-export { Footer, NavBar, Cover, HorizLinks }
+const Project = function ({ title, date, link, icon, iconalt, children }) {
+  const titleStyle = {
+    margin: 0,
+    fontSize: '2em',
+    fontWeight: 'bold',
+    textAlign: 'left',
+    float: 'left',
+    diaplsy: 'block',
+  }
+  const dateStyle = {
+    fontSize: 'large',
+    textAlign: 'left',
+    diaplsy: 'block',
+  }
+  const descriptionStyle = {
+    marginLeft:'45px',
+    marginBottom:'50px',
+    paddingRight:'10px',
+    display: 'block',
+    textAlign: 'left',
+    fontSize: '1.5em',
+    float: 'left',
+  }
+  const imageStyle = {
+    display: 'inline-block',
+    width: '75px',
+    float:'right',
+    marginBottom: '10px',
+    borderRadius: '10px',
+    marginRight: '30px',
+    verticalAlign: 'top',
+  }
+  const contentElem = {
+    display: 'inline-block',
+    float: 'left',
+  }
+  const divstyle = {
+    paddingLeft: '5vw',
+    paddingRight: '5vw',
+    marginTop: '5vh',
+    marginBottom: '2vh',
+  }
+  return (
+    <div style={divstyle} className="col-sm-12 col-md-6">
+      <div style={contentElem}>
+        <NavLink style={titleStyle} to={link}> {title} </NavLink>
+        <div style={dateStyle}>{date}</div>
+      </div>
+      <img style={imageStyle} src={icon} alt={iconalt}/>
+      <div style={descriptionStyle}> {children}</div>
+    </div>
+  )
+}
+
+export { Footer, NavBar, Cover, HorizLinks, Project }
