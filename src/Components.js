@@ -140,8 +140,7 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
   const divstyle = {
     paddingLeft: '5vw',
     paddingRight: '5vw',
-    marginTop: '5vh',
-    marginBottom: '2vh',
+    marginTop: '2vh',
   }
   return (
     <div style={divstyle} className="col-sm-12 col-md-6">
