@@ -9,8 +9,12 @@ import bg4 from './media/fountain.jpg';
 import './App.css';
 
 class AboutMe extends Component {
-
   render() {
+    const boxstyle = {
+      minHeight: '35vh',
+      paddingTop: '3vh',
+      paddingBottom: '3vh',
+    }
     return (
       <div>
         <Cover image={bg} height="40vh">
@@ -39,7 +43,7 @@ class AboutMe extends Component {
         <Cover image={bg2} height="30vh"/>
 
         <div className="row">
-          <div className="col-lg-12">
+          <div style={boxstyle} className="col-lg-12">
             <h1 className="text-center col-lg-12">
               Introduction
             </h1>
@@ -78,7 +82,7 @@ class AboutMe extends Component {
         <Cover image={bg3} height="30vh"/>
 
         <div className="row">
-          <div className="col-lg-12">
+          <div style={boxstyle} className="col-lg-12">
             <h1 className="text-center col-lg-12">
               Interests
             </h1>
@@ -95,13 +99,13 @@ class AboutMe extends Component {
         <Cover image={bg4} height="30vh"/>
 
         <div className="row">
-          <div className="col-lg-12">
+          <div style={boxstyle} className="col-lg-12">
             <h1 className="text-center col-lg-12">
               Personality
             </h1>
             <div className="text-center col-xs-12 col-lg-3 col-lg-offset-2">
               <span title="My Myers Briggs Personality type"><a href="https://www.16personalities.com/intp-personality">
-              <img src="https://s-media-cache-ak0.pinimg.com/originals/71/26/53/712653dc0993813a427914a4e84c188e.jpg" height='180px'/>
+              <img src="https://s-media-cache-ak0.pinimg.com/originals/71/26/53/712653dc0993813a427914a4e84c188e.jpg" width='200px'/>
               </a></span>
             </div>
             <p className="text-left col-xs-12 col-lg-5 col-lg-offset-1">
