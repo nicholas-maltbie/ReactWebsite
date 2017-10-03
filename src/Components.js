@@ -84,6 +84,7 @@ const HorizLinks = ({ name }) => (
 
 const Cover = function ({ children, image, height }) {
   var divstyle = {
+    backgroundAttachment: 'fixed',
     backgroundImage: `url(${image})`,
     height: `${height}`,
     backgroundRepeat: 'no-repeat',
@@ -141,6 +142,9 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
     paddingLeft: '5vw',
     paddingRight: '5vw',
     marginTop: '2vh',
+    display: 'block',
+    float: 'left',
+    minHeight: '30vh',
   }
   return (
     <div style={divstyle} className="col-sm-12 col-md-6">
