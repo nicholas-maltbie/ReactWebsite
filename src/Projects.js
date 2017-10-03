@@ -17,7 +17,7 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <Cover image={bg} height="25vh" />
+        <Cover image={bg} height="35vh" />
 
         <h1 className="text-center center-block col-lg-12">
           Projects
