@@ -30,7 +30,7 @@ class Projects extends Component {
             his research projects.
           </Project>
           <Project title="Bubble Shooter JS" date="(April 2017)"
-            link="/Projects/bubble" icon={bubble} iconalt="Game picture">
+            link="/bubble" icon={bubble} iconalt="Game picture">
             For an independent project to learn how to use javascript (JS), I
             decided to make a bubble shooter game. It is a simple game where a
             player shoots bubbles in a browser JS game.

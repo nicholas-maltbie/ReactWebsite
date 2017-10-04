@@ -12,7 +12,7 @@ const Footer = function ({ page }) {
   }
   return (
     <div style={divstyle}>
-      <h3 style={headerstyle}>Want to see the <a href='https://github.com/nicholas-maltbie/ReactWebsite'>source code</a> of this website?</h3>
+      <h5 style={headerstyle}>Want to see the <a href='https://github.com/nicholas-maltbie/ReactWebsite'>source code</a> of this website?</h5>
     </div>
   )
 }
