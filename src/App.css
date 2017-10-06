@@ -19,9 +19,22 @@ body {
   box-shadow: 6px 6px #DDD, -6px 6px 6px #DDD;
 }
 
+.White-box {
+  background-color: #FFF;
+  padding-bottom: 2vh;
+  width: 80%;
+  padding-top: 1vh;
+}
+
 .App {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+.Image-content {
+  text-align: center;
+  max-height: 45vh;
+  max-width: 100%;
 }
 
 .Horiz-link>h1 {
@@ -66,7 +79,18 @@ body {
 
 p {
   font-size: large;
+  text-align: left;
   padding-left: 20px;
   padding-top: 10px;
   padding-right: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .White-box {
+    width: 100%;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
 }

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Footer = function ({ page }) {
-  var divstyle = {
+  const divstyle = {
     height: '10vh',
     backgroundColor: '#CCC',
   }
-  var headerstyle = {
+  const headerstyle = {
     float: 'left',
     paddingLeft: '3vw',
   }
@@ -18,29 +18,29 @@ const Footer = function ({ page }) {
 }
 
 const NavBar = function ({ page }) {
-  var divstyle={
+  const divstyle={
     height:'10vh',
     paddingTop: '0.5vh',
     backgroundColor: '#CCC',
   }
-  var hstyle = {
+  const hstyle = {
     paddingLeft: '3vw',
     textDecoration: 'none',
     textDecorationStyle: 'none',
     float: 'left',
     color: '#444',
   }
-  var linkstyle = {
+  const linkstyle = {
     paddingLeft: '3vw',
     textDecoration: 'none',
     textDecorationStyle: 'none',
     float: 'right',
     color: '#444',
   };
-  var navstyle = {
+  const navstyle = {
     textDecoration: 'none',
   }
-  var liststyle = {
+  const liststyle = {
     float: 'right',
     paddingRight: '3vw',
   }
@@ -60,7 +60,7 @@ const NavBar = function ({ page }) {
 }
 
 const RightLink = function ({ name, link }) {
-  var linkstyle = {
+  const linkstyle = {
     paddingLeft: '3vw',
     textDecoration: 'none',
     textDecorationStyle: 'none',
@@ -82,8 +82,17 @@ const HorizLinks = ({ name }) => (
   </div>
 );
 
+const EmptyPadding = function ({ height }) {
+  const paddingStyle = {
+    height: `${height}`,
+  }
+  return (
+    <div style={paddingStyle}/>
+  )
+}
+
 const Cover = function ({ children, image, height }) {
-  var divstyle = {
+  const divstyle = {
     backgroundAttachment: 'fixed',
     backgroundImage: `url(${image})`,
     height: `${height}`,
@@ -158,4 +167,4 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
   )
 }
 
-export { Footer, NavBar, Cover, HorizLinks, Project }
+export { Footer, NavBar, Cover, HorizLinks, Project, EmptyPadding }
