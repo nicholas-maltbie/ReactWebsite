@@ -22,7 +22,7 @@ const Java = function () {
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <p>
               Chess, Duke, Qwirkle and Acquire Games implemented in Java. Below are
-              screenshots of the GUIs of these games being played. <a href="https://github.com/nicholas-maltbie/Acquire">Acqurie</a>
+              screenshots of the GUIs of these games being played. <a href="https://github.com/nicholas-maltbie/Acquire">Acqurie </a>
               is uploaded to my Github account. I completed these random projects to
               make board games as more of a hobby but it introduced me to programming
               and allowed me to solve some quite complicated graphical problems.

@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import List from './projects/List'
 import Java from './projects/Java'
+import Playscape from './projects/Playscape'
+import PlayerCount from './projects/BukkitPlugin'
 import './App.css';
 
 class Projects extends Component {
@@ -15,8 +17,8 @@ class Projects extends Component {
         <Route exact path="/Projects/medina" />
         <Route exact path="/Projects/midi" />
         <Route exact path="/Projects/ret" />
-        <Route exact path="/Projects/pcm" />
-        <Route exact path="/Projects/playscape" />
+        <Route exact path="/Projects/pcm" component = { PlayerCount }/>
+        <Route exact path="/Projects/playscape" component = { Playscape } />
         <Route exact path="/Projects/java" component = { Java }/>
         <Route exact path="/Projects" component = { List } />
 
