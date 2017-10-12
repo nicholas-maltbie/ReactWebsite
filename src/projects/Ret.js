@@ -40,6 +40,11 @@ const ret = function () {
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Modular Inverse Calculator</h1>
             <img src={modinverse} className="Image-content"/>
+            <p>
+              Applet designed to demonstrate how to find a modular inverse of a
+              number. This was used by the teachers to help instruct students
+              in modular arithmetic.
+            </p>
           </div>
         </div>
 
@@ -49,6 +54,15 @@ const ret = function () {
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Cipher Applet</h1>
             <img src={cipher} className="Image-content"/>
+            <p>
+              The <a href="https://en.wikipedia.org/wiki/Hill_cipher">Hill Cipher</a> is
+              a cipher that was used to encrypt information using matrix math. This
+              applet was used by instructors to help students learn matrix multiplication
+              and introduce the idea of ciphers and encryption. Additionally, the applet
+              is meant to provide a challenge and can generate problems for students
+              to practice on. The math is rather difficult though so it was not
+              expected for students to be able to complete it during the course.
+            </p>
           </div>
         </div>
 
@@ -58,6 +72,15 @@ const ret = function () {
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Game of Codes Applet</h1>
             <img src={game} className="Image-content"/>
+            <p>
+              This applet will generate a peer to peer network that allows
+              students to play a game and send encoded messages to each other.
+              These messages can be stolen and encrypted. The game is moderated
+              by a server and the server watches score and helps to moderate
+              the game. It turns out that the game was a bit too advanced for
+              the students with only a year of coding experience but it still
+              provided a good way to introduce python and encryption to new students. 
+            </p>
           </div>
         </div>
 
