@@ -12,16 +12,15 @@ class Projects extends Component {
   render() {
     return (
       <div>
-        <Route exact path="/Projects/cchmc" />
-        <Route exact path="/Projects/bubble" />
-        <Route exact path="/Projects/medina" />
-        <Route exact path="/Projects/midi" />
-        <Route exact path="/Projects/ret" />
-        <Route exact path="/Projects/pcm" component = { PlayerCount }/>
-        <Route exact path="/Projects/playscape" component = { Playscape } />
-        <Route exact path="/Projects/java" component = { Java }/>
         <Route exact path="/Projects" component = { List } />
-
+        <Route path="/Projects/cchmc" />
+        <Route path="/Projects/bubble" />
+        <Route path="/Projects/medina" />
+        <Route path="/Projects/midi" />
+        <Route path="/Projects/ret" />
+        <Route path="/Projects/pcm" component = { PlayerCount }/>
+        <Route path="/Projects/playscape" component = { Playscape } />
+        <Route path="/Projects/java" component = { Java }/>
       </div>
     );
   }

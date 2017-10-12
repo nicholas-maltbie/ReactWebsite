@@ -93,19 +93,11 @@ const EmptyPadding = function ({ height }) {
 
 const Cover = function ({ children, image, height }) {
   const divstyle = {
-    backgroundAttachment: 'fixed',
     backgroundImage: `url(${image})`,
     height: `${height}`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    width: '100%',
-    minHeight: '100px',
-    backgroundColor: '#FFF',
-    marginTop: '3vh',
   };
   return (
-    <div style={divstyle}>
+    <div className='CoverStyle' style={divstyle}>
       { children }
     </div>
   )

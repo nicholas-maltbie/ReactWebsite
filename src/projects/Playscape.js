@@ -15,7 +15,7 @@ const Playscape = function () {
         <div className='row center-block White-box'>
           <h1 align='center'>Minecraft Playscape Project</h1>
           <h2 align='center'>(Summer 2014)</h2>
-          
+
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <p>
               Minecraft Playscape at UC Artlitt. I designed software to track

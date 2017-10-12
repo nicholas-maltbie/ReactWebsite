@@ -23,7 +23,7 @@ const PlayerCount = function () {
           </span>
         </div>
 
-        <EmptyPadding height='5vh'/>
+        <EmptyPadding height='15vh'/>
 
         <div className='row center-block White-box'>
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
@@ -61,7 +61,7 @@ const PlayerCount = function () {
         </div>
 
 
-        <EmptyPadding height='5vh'/>
+        <EmptyPadding height='15vh'/>
 
         <div className='row center-block White-box'>
           <div className='col-lg-offset-2 col-lg-8 col-xs-12'>
