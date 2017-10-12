@@ -30,7 +30,7 @@ const Java = function () {
           </div>
         </div>
 
-        <EmptyPadding height='5vh'/>
+        <EmptyPadding height='15vh'/>
 
         <div className='row center-block White-box'>
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
@@ -43,7 +43,7 @@ const Java = function () {
           </div>
         </div>
 
-        <EmptyPadding height='5vh'/>
+        <EmptyPadding height='15vh'/>
 
         <div className='row center-block White-box'>
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
@@ -55,7 +55,7 @@ const Java = function () {
           </div>
         </div>
 
-        <EmptyPadding height='5vh'/>
+        <EmptyPadding height='15vh'/>
 
         <div className='row center-block White-box'>
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
@@ -68,7 +68,7 @@ const Java = function () {
           </div>
         </div>
 
-        <EmptyPadding height='5vh'/>
+        <EmptyPadding height='15vh'/>
 
         <div className='row center-block White-box'>
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
@@ -83,7 +83,7 @@ const Java = function () {
           </div>
         </div>
 
-        <EmptyPadding height='5vh'/>
+        <EmptyPadding height='15vh'/>
       </Cover>
     </div>
   )

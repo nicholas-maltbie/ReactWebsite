@@ -21,9 +21,9 @@ body {
 .White-box {
   background-color: #FFF;
   padding-bottom: 2vh;
-  width: 80%;
+  width: 100%;
   padding-top: 3vh;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
 }
 
 .App {
@@ -120,7 +120,7 @@ p {
     box-shadow: 0 0 #FFF;
   }
   .CoverStyle {
-    width: 100vw;
+    width: calc(100vw - 15px);
     margin-left: -15px;
   }
 }

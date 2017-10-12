@@ -28,15 +28,17 @@ class AboutMe extends Component {
             <h1 className="text-center">
               Nick Maltbie
             </h1>
-            <p>
-              I am a determined student and have taken on many individual
-              projects. One example is this website, hosted by github pages and
-              I coded the website from scratch. I am currently studying
-              Computer Science at UC and expect to graduate in 2021.
-            </p>
-            <p>
-              To view my resume, click <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>here</a>.
-            </p>
+            <div className="col-xs-12">
+              <p>
+                I am a determined student and have taken on many individual
+                projects. One example is this website, hosted by github pages and
+                I coded the website from scratch. I am currently studying
+                Computer Science at UC and expect to graduate in 2021.
+              </p>
+              <p>
+                To view my resume, click <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>here</a>.
+              </p>
+            </div>
           </div>
         </div>
 
