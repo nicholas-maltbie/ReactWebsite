@@ -120,6 +120,7 @@ p {
   }
   .content {
     margin: 0;
+    padding-bottom: 4vh;
     padding-left: 5vw;
     padding-right: 5vw;
   }
@@ -137,7 +138,6 @@ p {
   }
   .CoverStyle {
     margin-left: -5vw;
-    margin-right: 10vw;
     width: 100vw;
   }
 }

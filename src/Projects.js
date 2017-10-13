@@ -8,6 +8,7 @@ import Playscape from './projects/Playscape'
 import PlayerCount from './projects/BukkitPlugin'
 import ret from "./projects/Ret"
 import Midi from "./projects/Midi"
+import Medina from "./projects/Medina"
 import './App.css';
 
 class Projects extends Component {
@@ -17,7 +18,7 @@ class Projects extends Component {
         <Route exact path="/Projects" component = { List } />
         <Route path="/Projects/cchmc" />
         <Route path="/Projects/bubble" />
-        <Route path="/Projects/medina" />
+        <Route path="/Projects/medina" component = { Medina }/>
         <Route path="/Projects/midi" component = { Midi }/>
         <Route path="/Projects/ret" component = { ret }/>
         <Route path="/Projects/pcm" component = { PlayerCount }/>
