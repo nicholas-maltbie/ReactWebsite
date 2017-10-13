@@ -14,7 +14,7 @@ class App extends Component {
       <Router onUpdate={() => window.scrollTo(0, 0)}>
         <div className="App">
           <NavBar className="container-fluid"/>
-          <div className="container-fluid Main" style={{}}>
+          <div className="container-fluid Main" style={{padding: 0}}>
             <div className="content">
               <Route exact path="/" component={ Landing } />
               <Route path="/AboutMe" component={ AboutMe } />

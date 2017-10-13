@@ -74,13 +74,19 @@ const RightLink = function ({ name, link }) {
   )
 }
 
-const HorizLinks = ({ name }) => (
-  <div className="row">
-    <div className="Horiz-link col-xs-12 col-sm-8 col-md-6 col-lg-5">
-        <h1>{name}</h1>
+const HorizLinks = function ({ name }) {
+  const divstyle = {
+    padding: 0,
+    margin: 0,
+  }
+  return (
+    <div className="row" style={divstyle}>
+      <div className="Horiz-link col-xs-12 col-sm-8 col-md-6 col-lg-5">
+          <h1>{name}</h1>
+      </div>
     </div>
-  </div>
-);
+  )
+};
 
 const EmptyPadding = function ({ height }) {
   const paddingStyle = {
@@ -91,10 +97,22 @@ const EmptyPadding = function ({ height }) {
   )
 }
 
+const CoverVideo = function ({ children, url}) {
+  const divstyle = {
+
+  }
+  return (
+    <video className='CoverStyle' poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" playsinline autoplay muted loop>
+      <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm"/>
+      <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4"/>
+      { children }
+    </video>
+  )
+}
+
 const Cover = function ({ children, image, height }) {
   const divstyle = {
     backgroundImage: `url(${image})`,
-    height: `${height}`,
   };
   return (
     <div className='CoverStyle' style={divstyle}>
@@ -159,4 +177,4 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
   )
 }
 
-export { Footer, NavBar, Cover, HorizLinks, Project, EmptyPadding }
+export { CoverVideo, Footer, NavBar, Cover, HorizLinks, Project, EmptyPadding }

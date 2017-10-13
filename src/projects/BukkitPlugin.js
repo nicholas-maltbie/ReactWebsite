@@ -18,7 +18,7 @@ const PlayerCount = function () {
 
           <span title = "click for project page">
            <a href='https://dev.bukkit.org/bukkit-plugins/player-count-message/'>
-             <p><img src={pcm} className='center-block Image-content'/></p>
+             <p><img src={pcm} className='center-block Video-content'/></p>
            </a>
           </span>
         </div>
@@ -53,10 +53,12 @@ const PlayerCount = function () {
             </p>
 
 
-             <p>
-               <a href='https://github.com/nicholas-maltbie/PlayerCountMessage'>pcm bukkit github</a> |
-               <a href='https://github.com/nicholas-maltbie/Player-Count-Message-Bungee'> pcm bungee github</a>
-             </p>
+             <div align="center">
+               <p>
+                 <a href='https://github.com/nicholas-maltbie/PlayerCountMessage'>pcm bukkit github</a> |
+                 <a href='https://github.com/nicholas-maltbie/Player-Count-Message-Bungee'> pcm bungee github</a>
+               </p>
+             </div>
            </div>
         </div>
 
@@ -72,31 +74,31 @@ const PlayerCount = function () {
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutorial video by lockeMinecraft (que1124) </h3>
                 <iframe src="https://www.youtube.com/embed/TVMCCvRO4D0"
-                  className="Image-content"/>
+                  className="Video-content"/>
               </div>
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutorial video by VariationVault </h3>
                 <iframe src="https://www.youtube.com/embed/n5gYRKOV2aw"
-                  className="Image-content"/>
+                  className="Video-content"/>
               </div>
             </div>
             <div className='row'>
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutoriel vid&#x00E9;o par GAmerHD Quatre </h3>
                 <iframe src="https://www.youtube.com/embed/go2Xkj4qsOU"
-                  className="Image-content"/>
+                  className="Video-content"/>
               </div>
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutorial de v&#x00ED;deo por Yan Francisco P&#x00E9;rez </h3>
                 <iframe src="https://www.youtube.com/embed/PZbJAv_Iz94"
-                  className="Image-content"/>
+                  className="Video-content"/>
               </div>
             </div>
             <div className='row'>
               <div className='col-lg-6 col-xs-12'>
                 <h3> &#x0412;&#x0438;&#x0434;&#x0435;&#x043E; &#x0443;&#x0440;&#x043E;&#x043A; &#x043E;&#x0442; BOBARA333BG </h3>
                 <iframe src="https://www.youtube.com/embed/RiBajAOos8Q"
-                  className="Image-content"/>
+                  className="Video-content"/>
               </div>
             </div>
 
