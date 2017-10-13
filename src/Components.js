@@ -9,6 +9,7 @@ const Footer = function ({ page }) {
   const headerstyle = {
     float: 'left',
     paddingLeft: '3vw',
+    paddingTop: '2vh',
   }
   return (
     <div style={divstyle}>
@@ -113,6 +114,7 @@ const CoverVideo = function ({ children, url}) {
 const Cover = function ({ children, image, height }) {
   const divstyle = {
     backgroundImage: `url(${image})`,
+      height: `${height}`,
   };
   return (
     <div className='CoverStyle' style={divstyle}>

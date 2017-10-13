@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Project, Cover, EmptyPadding } from '../Components';
 import { NavLink } from 'react-router-dom';
 import '../App.css';
-import img from "../media/UC.jpg";
+import img from "../media/IMG_1759.JPG";
 import modinverse from "../media/projects/modinverse.png"
 import game from "../media/projects/GameOfCodes.png"
 import cipher from "../media/projects/cipherapplet.png"
