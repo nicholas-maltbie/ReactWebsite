@@ -6,7 +6,19 @@
 
 backgroundImage: 'url(media/bg.jpg)';
 
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+}
+
 body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .content {
@@ -86,6 +98,11 @@ body {
   padding-left: 2vw;
 }
 
+.text-dump {
+  font-size: large;
+  text-align: left;
+}
+
 p {
   font-size: large;
   text-align: left;
@@ -121,8 +138,6 @@ p {
   .content {
     margin: 0;
     padding-bottom: 4vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
   }
   .Profile-image {
     min-height: 0;
@@ -135,9 +150,11 @@ p {
   }
   .content {
     box-shadow: 0 0 #FFF;
+    margin-left: 0;
+    padding: 0;
+    border: 0;
   }
   .CoverStyle {
-    margin-left: -5vw;
-    width: 100vw;
+    width: 100%;
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Project, Cover, EmptyPadding } from '../Components';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import '../App.css';
 import img from "../media/IMG_1759.JPG";
 import modinverse from "../media/projects/modinverse.png"
@@ -18,7 +18,7 @@ const ret = function () {
           <h1 align='center'>Medina</h1>
           <h2 align='center'>(Sept - Dec 2016)</h2>
 
-          <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="Introduction" align="center">Introduction</h2>
             <p>
               Medina is a board game. For my project in my Programming python course
@@ -43,24 +43,24 @@ const ret = function () {
               translated the report to HTML and adjusted the style to fit my website
               design.
             </p>
-
+          <h2 id="Introduction" align="center">Introduction</h2>
             <h2 id="TableOfContents">Table of Contents</h2>
             <ul>
-              <li><a href="#Medina">Medina</a></li>
+              <li><HashLink to="#Medina">Medina</HashLink></li>
               <ul>
-                <li><a href="#Introduction">Introduction</a></li>
-                <li><a href="#TableOfContents">Table of Contents</a></li>
-                <li><a href="#Usage">Usage</a></li>
+                <li><HashLink to="#Introduction">Introduction</HashLink></li>
+                <li><HashLink to="#Usage">Usage</HashLink></li>
+                <li><HashLink to="#TableOfContents">Table of Contents</HashLink></li>
               </ul>
-              <li><a href="#TheGame">The Game</a></li>
+              <li><HashLink to="#/projects/Meinda/#TheGame">The Game</HashLink></li>
               <ul>
-                <li><a href="#Design">Design</a></li>
-                <li><a href="#Objective">Objective</a></li>
-                <li><a href="#Results">Results</a></li>
-                <li><a href="#FutureImprovements">Future Improvements</a></li>
-                <li><a href="#References">References</a></li>
-                <li><a href="#Librariesused">Libraries Used</a></li>
-                <li><a href="#Development">Development</a></li>
+                <li><HashLink to="#/projects/Meinda/#Design">Design</HashLink></li>
+                <li><HashLink to="#/projects/Meinda/#Objective">Objective</HashLink></li>
+                <li><HashLink to="#/projects/Meinda/#Results">Results</HashLink></li>
+                <li><HashLink to="#/projects/Meinda/#FutureImprovements">Future Improvements</HashLink></li>
+                <li><HashLink to="#/projects/Meinda/#References">References</HashLink></li>
+                <li><HashLink to="#/projects/Meinda/#Librariesused">Libraries Used</HashLink></li>
+                <li><HashLink to="#/projects/Meinda/#Development">Development</HashLink></li>
               </ul>
             </ul>
 
@@ -158,7 +158,7 @@ const ret = function () {
               full rules and scoring of the game, view go <a href="http://www.boardspace.net/medina/english/WGG_Medina_Rules_GB_Web.pdf">
                 here</a>
             </p>
-            <p>(this link is listed on the github repo as <a href="https://github.com/nicholas-maltbie/Medina">this pdf</a>
+            <p>(this HashLink is listed on the github repo as <a href="https://github.com/nicholas-maltbie/Medina">this pdf</a>
               at the end of The Game section)
             </p>
 
@@ -308,40 +308,41 @@ const ret = function () {
               Ghory, Imran. "Reinforcement learning in board games". May 4, 2004.
               Autonomous Learning Laboratory. College of Information and Computer
               Sciences University of Massachusetts Amherst
-              (<a href="https://pdfs.semanticscholar.org/0517/501ddea186aeb6c6de30b0c5c27e1e4f9d96.pdf">https://pdfs.semanticscholar.org/0517/501ddea186aeb6c6de30b0c5c27e1e4f9d96.pdf</a>)
+              (<a href="https://pdfs.semanticscholar.org/0517/501ddea186aeb6c6de30b0c5c27e1e4f9d96.pdf">source</a>)
+            </p>
             <p>
               Lundh Fredrik. "An Introduction To Tkinter". Effbot.org. 2005.
-              (<a href="http://effbot.org/tkinterbook/tkinter-index.htm">http://effbot.org/tkinterbook/tkinter-index.htm</a>)
+              (<a href="http://effbot.org/tkinterbook/tkinter-index.htm">source</a>)
             </p>
             <p>
               "Python Tkinter Canvas". Tutorials Point Simply Easy Learning.
-              (<a href="https://www.tutorialspoint.com/python/tk_canvas.htm">https://www.tutorialspoint.com/python/tk_canvas.htm</a>)
+              (<a href="https://www.tutorialspoint.com/python/tk_canvas.htm">source</a>)
             </p>
             <p>
               "Graphical User Interfaces with Tk" The Python Software Foundation.
-              2016. (<a href="https://docs.python.org/3/library/tk.html">https://docs.python.org/3/library/tk.html</a>)
+              2016. (<a href="https://docs.python.org/3/library/tk.html">source</a>)
             </p>
             <p>
               Slater Daniel. "Alpha Toe". Github. <a href="http://www.danielslater.net/">http://www.danielslater.net/</a>.
-              Nov 6. 2016 (<a href="https://github.com/DanielSlater/AlphaToe">https://github.com/DanielSlater/AlphaToe</a>
-              , <a href="http://www.danielslater.net/2016/10/alphatoe.html">http://www.danielslater.net/2016/10/alphatoe.html</a>)
+              Nov 6. 2016 (<a href="https://github.com/DanielSlater/AlphaToe">github repo</a>
+              , <a href="http://www.danielslater.net/2016/10/alphatoe.html">source</a>)
             </p>
             <p>
               Singh, Aarti. "Neural Networks". Carnegie Mellon University School of
               Computer Science. 2010.
-              (<a href="http://www.cs.cmu.edu/~aarti/Class/10701/slides/Lecture22.pdf">http://www.cs.cmu.edu/~aarti/Class/10701/slides/Lecture22.pdf</a>)
+              (<a href="http://www.cs.cmu.edu/~aarti/Class/10701/slides/Lecture22.pdf">source</a>)
             </p>
             <p>
               Stergiou, Christos and Siganos, Dimitrios. "Neural Networks". Imperial
-              College London. 1998. (<a href="https://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol4/cs11/report.html#References">https://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol4/cs11/report.html#References</a>)
+              College London. 1998. (<a href="https://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol4/cs11/report.html#References">source</a>)
             </p>
             <p>
-              Tensor Flow. Google Brain Team. 2016. (<a href="https://www.tensorflow.org/about.html">https://www.tensorflow.org/about.html</a>)
+              Tensor Flow. Google Brain Team. 2016. (<a href="https://www.tensorflow.org/about.html">source</a>)
             </p>
             <p>
               Shipman, John W.. "Tkinter 8.5 reference: a GUI for Python". New Mexico
-              Tech Computer Center. <a href="www.nmt.ecu/tcc">www.nmt.ecu/tcc</a>
-              (<a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html</a>)
+              Tech Computer Center. <a href="www.nmt.ecu/tcc">www.nmt.ecu/tcc </a>
+              (<a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html"> source </a>)
             </p>
 
             <h2 id="LibrariesUsed">Libraries Used</h2>
@@ -394,7 +395,6 @@ const ret = function () {
               changed to an Abstract Data Type design for each element of the project.
               This was a large setback and caused other parts of the project to be
               cut and adjusted the scope of the project.
-            </p>
             </p>
           </div>
         </div>

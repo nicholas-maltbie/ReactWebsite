@@ -18,7 +18,7 @@ const PlayerCount = function () {
 
           <span title = "click for project page">
            <a href='https://dev.bukkit.org/bukkit-plugins/player-count-message/'>
-             <p><img src={pcm} className='center-block Video-content'/></p>
+             <p><img src={pcm} className='center-block Image-content'/></p>
            </a>
           </span>
         </div>
