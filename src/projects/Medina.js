@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import { Project, Cover, EmptyPadding } from '../Components';
 import { HashLink } from 'react-router-hash-link';
 import '../App.css';
-import img from "../media/IMG_1759.JPG";
-import modinverse from "../media/projects/modinverse.png"
-import game from "../media/projects/GameOfCodes.png"
-import cipher from "../media/projects/cipherapplet.png"
+import img from "../media/4a14cec076cc9bc0.jpg";
 
 const ret = function () {
   return (
@@ -15,7 +12,7 @@ const ret = function () {
         <EmptyPadding height='20vh'/>
 
         <div className='row center-block White-box'>
-          <h1 align='center'>Medina</h1>
+          <h1 align='center' id="Medina">Medina</h1>
           <h2 align='center'>(Sept - Dec 2016)</h2>
 
           <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
@@ -43,27 +40,39 @@ const ret = function () {
               translated the report to HTML and adjusted the style to fit my website
               design.
             </p>
-          <h2 id="Introduction" align="center">Introduction</h2>
+          </div>
+        </div>
+
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="TableOfContents">Table of Contents</h2>
             <ul>
               <li><HashLink to="#Medina">Medina</HashLink></li>
               <ul>
                 <li><HashLink to="#Introduction">Introduction</HashLink></li>
-                <li><HashLink to="#Usage">Usage</HashLink></li>
                 <li><HashLink to="#TableOfContents">Table of Contents</HashLink></li>
+                <li><HashLink to="#Usage">Usage</HashLink></li>
               </ul>
               <li><HashLink to="#/projects/Meinda/#TheGame">The Game</HashLink></li>
               <ul>
-                <li><HashLink to="#/projects/Meinda/#Design">Design</HashLink></li>
-                <li><HashLink to="#/projects/Meinda/#Objective">Objective</HashLink></li>
-                <li><HashLink to="#/projects/Meinda/#Results">Results</HashLink></li>
-                <li><HashLink to="#/projects/Meinda/#FutureImprovements">Future Improvements</HashLink></li>
+                <li><HashLink to="#Design">Design</HashLink></li>
+                <li><HashLink to="#Objective">Objective</HashLink></li>
+                <li><HashLink to="#Results">Results</HashLink></li>
+                <li><HashLink to="#FutureImprovements">Future Improvements</HashLink></li>
                 <li><HashLink to="#/projects/Meinda/#References">References</HashLink></li>
                 <li><HashLink to="#/projects/Meinda/#Librariesused">Libraries Used</HashLink></li>
                 <li><HashLink to="#/projects/Meinda/#Development">Development</HashLink></li>
               </ul>
             </ul>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="Usage">Usage</h2>
             <p>
               In order to use the project, python3 must be installed along with
@@ -88,12 +97,18 @@ const ret = function () {
             </p>
 
             <p align="center"> Start Panel </p>
-            <img alt="Start Panel Picture" src="/img/projects/MedinaStart.png" class="centered-image"/>
+            <img alt="Start Panel Picture" src={require("../media/projects/MedinaStart.png")} className="Image-content"/>
             <p align="center"> Options panel </p>
-            <img alt="Options Panel Picture" src="/img/projects/MedinaOpt.png" class="centered-image"/>
+            <img alt="Options Panel Picture" src={require("../media/projects/MedinaOpt.png")} className="Image-content"/>
             <p align="center"> Game Screen </p>
-            <img alt="Virtual Game Picture" src="/img/projects/MedinaGame.png" class="centered-image"/>
+            <img alt="Virtual Game Picture" src={require("../media/projects/MedinaGame.png")} className="Image-content"/>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="TheGame">The Game</h2>
             <p>
               Media is a board game published by Stronghold Games ( <a href="https://boardgamegeek.com/boardgame/167270/medina-second-edition">
@@ -109,7 +124,7 @@ const ret = function () {
               points than buildings not close to anything important in the city.
             </p>
             <p align="center"> Picture of the game in Real Life </p>
-            <img alt="Board Game Picture" src="/img/projects/MedinaIRL.jpg" class="centered-image"/>
+            <img alt="Board Game Picture" src={require("../media/projects/MedinaIRL.jpg")} className="Image-content"/>
             <p align="center"> Image from Board Game Geek by Julian Pombo uploaded on 2015-08-03 <a href="https://boardgamegeek.com/image/2613390/medina-second-edition?size=medium">
               image source</a></p>
             <p>
@@ -161,7 +176,13 @@ const ret = function () {
             <p>(this HashLink is listed on the github repo as <a href="https://github.com/nicholas-maltbie/Medina">this pdf</a>
               at the end of The Game section)
             </p>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="Design">Design</h2>
             <p>
               While working on the project, I made many design decision about
@@ -188,7 +209,7 @@ const ret = function () {
               their respective files on the <a href="https://github.com/nicholas-maltbie">Github Repo</a>.
             </p>
             <p>Diagram of the Definition of a Board State</p>
-            <img src="/img/projects/MedinaBoard.png" class="centered-image"/>
+            <img src={require("../media/projects/MedinaBoard.png")} className="Image-content"/>
             <p>
               Board State is an abstract definition so there is no ADT or module for
               Board State. In different parts of the project, modules will use a
@@ -197,7 +218,7 @@ const ret = function () {
               players; the board state is passed as three parameters.
             </p>
             <p>Diagram of how the Game is controlled from the Game.py file</p>
-            <img src="/img/projects/MedinaDesign.png" class="centered-image"/>
+            <img src={require("../media/projects/MedinaDesign.png")} className="Image-content"/>
 
             <p>
               In Addition to making the game, there needed to be a display mechanism.
@@ -212,7 +233,7 @@ const ret = function () {
                and make moves.
             </p>
             <p>Example of the board canvas with a human agent.</p>
-            <img src="/img/projects/MedinaVirtual.png" class="centered-image"/>
+            <img src={require("../media/projects/MedinaVirtual.png")} className="Image-content"/>
 
             <p>
               The game uses a setup of agents. As defined in the documentation, "an
@@ -231,8 +252,14 @@ const ret = function () {
               step between the board state and the player"s actions.
             </p>
             <p>Diagram of Human Agent design.</p>
-            <img src="/img/projects/MedinaAgency.png" class="centered-image"/>
+            <img src={require("../media/projects/MedinaAgency.png")} className="Image-content"/>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="Objective">Objective</h2>
             <p>My objectives at the start of the project:</p>
             <ul>
@@ -256,7 +283,13 @@ const ret = function () {
                 difficulty.
               </li>
             </ul>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="Results">Results</h2>
             <p>
               As can be clearly seen, these objectives were not met and only the
@@ -280,6 +313,13 @@ const ret = function () {
               more competent opponents and even the creation of a Neural Network as
               shown by Tic Tac Toe.
             </p>
+          </div>
+        </div>
+
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="FutureImprovements">Future Improvements</h2>
             <p>
               Some easy future improvements to this design would be implementing
@@ -302,7 +342,13 @@ const ret = function () {
               interesting problem which is why I chose it for my project; it has an
               unlimited space for improvement and analysis.
             </p>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="References">References</h2>
             <p>
               Ghory, Imran. "Reinforcement learning in board games". May 4, 2004.
@@ -344,7 +390,13 @@ const ret = function () {
               Tech Computer Center. <a href="www.nmt.ecu/tcc">www.nmt.ecu/tcc </a>
               (<a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html"> source </a>)
             </p>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="LibrariesUsed">Libraries Used</h2>
 
             <p><i><a href="https://wiki.python.org/moin/TkInter">Tkinter</a></i> - for GUI
@@ -380,7 +432,13 @@ const ret = function () {
               pip3 install tensorflow
             </pre>
             <p>Tensorflow is used to make and read neural networks.</p>
+          </div>
+        </div>
 
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 id="Development">Development</h2>
             <p>
               The entire development of this project was recorded by the commit log
