@@ -126,38 +126,32 @@ const Cover = function ({ children, image, height }) {
 const Project = function ({ title, date, link, icon, iconalt, children }) {
   const titleStyle = {
     margin: 0,
+    width: 'calc(100% - 2vw - 75px)',
     fontSize: '2em',
     fontWeight: 'bold',
     textAlign: 'left',
     float: 'left',
     diaplsy: 'block',
+    marginRight: '0',
   }
   const dateStyle = {
     fontSize: 'large',
     textAlign: 'left',
+    marginBottom: '20px',
+    width: 'calc(100% - 2vw - 75px)',
     diaplsy: 'block',
-  }
-  const descriptionStyle = {
-    marginLeft:'45px',
-    marginBottom:'50px',
-    paddingRight:'10px',
-    display: 'block',
-    textAlign: 'left',
-    fontSize: '1.5em',
-    float: 'left',
+    marginRight: '0',
   }
   const imageStyle = {
-    display: 'inline-block',
+    display: 'inline-flex',
     width: '75px',
     float:'right',
-    marginBottom: '10px',
     borderRadius: '10px',
-    marginRight: '30px',
+    marginLeft: '2vw',
+    marginTop: '0px',
+    marginRight: '0px',
+    marginBottom: '30px',
     verticalAlign: 'top',
-  }
-  const contentElem = {
-    display: 'inline-block',
-    float: 'left',
   }
   const divstyle = {
     paddingLeft: '5vw',
@@ -169,12 +163,12 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
   }
   return (
     <div style={divstyle} className="col-sm-12 col-md-6">
-      <div style={contentElem}>
-        <NavLink style={titleStyle} to={link}> {title} </NavLink>
-        <div style={dateStyle}>{date}</div>
-      </div>
       <img style={imageStyle} src={icon} alt={iconalt}/>
-      <div style={descriptionStyle}> {children}</div>
+      <NavLink className="col-lg-12" style={titleStyle} to={link}> {title} </NavLink>
+      <div className="col-lg-12" style={dateStyle}>{date}</div>
+      <div className="col-lg-12">
+        <div className='Description-style'> <p>{children}</p> </div>
+      </div>
     </div>
   )
 }

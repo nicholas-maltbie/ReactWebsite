@@ -9,6 +9,9 @@ import './App.css';
 
 class Honors extends Component {
   render() {
+    const rowstyle = {
+      padding: '0',
+    }
     return (
       <div>
         <Cover image={bg} height="35vh" />
@@ -20,7 +23,7 @@ class Honors extends Component {
         <h2 className="text-center center-block col-lg-12">
           First Year
         </h2>
-        <div className="row col-lg-12">
+        <div className="col-lg-12" style={rowstyle}>
           <Project title="Treachery" date="(Spring/Summer 2017)"
             link="/UHP/treachery" icon={lamp} iconalt="Treachery Lamp Icon">
             For my second honors experience, I worked with some of my fellow
@@ -35,7 +38,7 @@ class Honors extends Component {
           STEM High School.
           </Project>
         </div>
-        <div className="row col-lg-12">
+        <div className="col-lg-12" style={rowstyle}>
           <Project title="Gateway to University Honors" date="(Fall 2016)"
             link="/UHP/intro" icon={uhp} iconalt="UHP Icon">
             As part of the honors curriculum, I had to take the gateway to

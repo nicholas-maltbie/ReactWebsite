@@ -13,6 +13,9 @@ import mc from '../media/icons/minecraft.jpg';
 import java from '../media/icons/java.ico';
 
 const List = function () {
+  const rowstyle = {
+    padding: '0',
+  }
   return (
     <div>
       <Cover image={bg} height="35vh" />
@@ -21,7 +24,7 @@ const List = function () {
         Projects
       </h1>
 
-      <div className="row col-lg-12">
+      <div className="col-lg-12" style={rowstyle}>
         <Project title="CCHMC Research" date="(May-Aug 2017)"
           link="/Projects/cchmc" icon={cchmc} iconalt="CCHMC logo">
           I worked with Dr. Porollo over the summer in 2017 on multiple of
@@ -34,7 +37,7 @@ const List = function () {
           player shoots bubbles in a browser JS game.
         </Project>
       </div>
-      <div className="row col-lg-12">
+      <div className="col-lg-12" style={rowstyle}>
         <Project title="Medina" date="(Sep-Dec 2016)"
           link="/Projects/medina" icon={tea} iconalt="Tea tile">
           I attempeted to use neural networks to create an AI to play a board
@@ -48,7 +51,7 @@ const List = function () {
           and improvise. A MIDI file is a musical file that saves note sounds.
         </Project>
       </div>
-      <div className="row col-lg-12">
+      <div className="col-lg-12" style={rowstyle}>
         <Project title="RET Project" date="(Summer 2015, 2016)"
           link="/Projects/ret" icon={ret} iconalt="RET icon">
           Research Experience for Teacher (RET) projects done with Dr. Franco at
@@ -62,7 +65,7 @@ const List = function () {
           ability to modify the server's look in the load screen.
         </Project>
       </div>
-      <div className="row col-lg-12">
+      <div className="col-lg-12" style={rowstyle}>
         <Project title="Minecraft Playscape Project" date="(Summer 2014)"
           link="/Projects/playscape" icon={mc} iconalt="Minecraft icon">
           Minecraft Playscape at The University of Cincinnati
