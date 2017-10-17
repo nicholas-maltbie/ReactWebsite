@@ -176,6 +176,8 @@ p {
     padding-top: 0;
     width: 100%;
     border: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .CoverStyle {
     width: 100%;

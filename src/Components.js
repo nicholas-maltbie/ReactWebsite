@@ -34,7 +34,22 @@ class NavBar extends Component {
       paddingTop: '0.5vh',
       backgroundColor: '#CCC',
     }
+    const fullstyle={
+      width: '100%',
+      textAlign: 'center',
+      textDecoration: 'none',
+      position: 'fixed',
+      right: 0
+    }
     const hstyle = {
+      paddingLeft: '3vw',
+      width: '100%',
+      textDecoration: 'none',
+      textDecorationStyle: 'none',
+      float: 'left',
+      color: '#444',
+    }
+    const hstyle2 = {
       paddingLeft: '3vw',
       textDecoration: 'none',
       textDecorationStyle: 'none',
@@ -49,6 +64,7 @@ class NavBar extends Component {
       color: '#444',
     };
     const navstyle = {
+      height: '100%',
       textDecoration: 'none',
     }
     const liststyle = {
@@ -68,18 +84,10 @@ class NavBar extends Component {
           >
             <div style={{ padding: "2em", backgroundColor: 'white', height: '100vh', width: '100%'}}>
               <h3>Nick Maltbie</h3>
-              <div className="row col-lg-12">
-                <RightLink name="Home" link="/" fn={open => this.setState({ openLeft: !openLeft })}/>
-              </div>
-              <div className="row col-lg-12">
-                <RightLink name="About Me" link="/AboutMe" fn={open => this.setState({ openLeft: !openLeft })}/>
-              </div>
-              <div className="row col-lg-12">
-                <RightLink name="UHP" link="/UHP" fn={open => this.setState({ openLeft: !openLeft })}/>
-              </div>
-              <div className="row col-lg-12">
-                <RightLink name="Projects" link="/Projects" fn={open => this.setState({ openLeft: !openLeft })}/>
-              </div>
+              <CenterLink name="Home" link="/" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <CenterLink name="About Me" link="/AboutMe" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <CenterLink name="UHP" link="/UHP" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <CenterLink name="Projects" link="/Projects" fn={open => this.setState({ openLeft: !openLeft })}/>
             </div>
           </Drawer>}
         {!openLeft &&
@@ -106,10 +114,10 @@ class NavBar extends Component {
         <div className="navbar-fixed" style={{position: "fixed",
           backgroundColor: "#CCC", width:"100%", zIndex: 100, height:'10vh', verticalAlign: 'middle'}}>
           <nav>
-          <MediaQuery query="(min-device-width: 1224px)">
+          <MediaQuery query="(min-width: 1224px)">
             <div className="row">
               <NavLink to="/" style={navstyle}>
-                <h1 className='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle}> Nick Maltbie</h1>
+                <h1 className='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle2}> Nick Maltbie</h1>
               </NavLink>
               <RightLink className="col-lg-2" name="Projects" link="/Projects" />
               <RightLink className="col-lg-2" name="UHP" link="/UHP" />
@@ -117,19 +125,19 @@ class NavBar extends Component {
               <RightLink className="col-lg-2" name="Home" link="/" />
             </div>
           </MediaQuery>
-          <MediaQuery query="(max-device-width: 1224px)">
+          <MediaQuery query="(max-width: 1224px)">
             <div className="nav-wrapper cyan accent-4" style= {{margin: '1vh'}}>
+              <NavLink to="/" style={fullstyle}>
+                <h2 style={hstyle}> Nick Maltbie</h2>
+              </NavLink>
               <a
-                style={{ padding: 15, float: "left", height:'8vh', width: '8vh'}}
+                style={{ padding: 15, float: "left", height:'8vh', width: '8vh', zIndex: 250}}
                 className="glyphicons"
                 onClick={() =>
                   this.setState({ openLeft: !openLeft, openRight: false })}
               >
                 <span className="glyphicon glyphicon-menu-hamburger" style={{padding: 0, fontSize: '4vh', color: '#333', marginTop: 'auto'}}/>
               </a>
-              <NavLink to="/" style={navstyle}>
-                <h2 className='col-xs-8 col-sm-8 col-md-10' style={hstyle}> Nick Maltbie</h2>
-              </NavLink>
             </div>
           </MediaQuery>
           </nav>
@@ -139,11 +147,28 @@ class NavBar extends Component {
   }
 }
 
+const CenterLink = function ({name, link, fn}) {
+  const linkstyle = {
+    textDecoration: 'none',
+    textDecorationStyle: 'none',
+    display: 'block',
+    width: '100%',
+    color: '#444',
+  };
+  return (
+    <NavLink to={link} onClick={fn}>
+      <h3 style={linkstyle}>{name}</h3>
+    </NavLink>
+  )
+}
+
 const RightLink = function ({ name, link, fn }) {
   const linkstyle = {
     textDecoration: 'none',
     textDecorationStyle: 'none',
     display: 'inline-block',
+    height: '100%',
+    verticalAlign: 'middle',
     float: 'right',
     paddingRight: '5vw',
     color: '#444',
