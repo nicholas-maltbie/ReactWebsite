@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import Drawer from 'react-motion-drawer';
+import MediaQuery from 'react-responsive';
 
 const Footer = function ({ page }) {
   const divstyle = {
@@ -27,6 +28,34 @@ class NavBar extends Component {
     width: 300
   };
   render() {
+
+    const divstyle={
+      height:'10vh',
+      paddingTop: '0.5vh',
+      backgroundColor: '#CCC',
+    }
+    const hstyle = {
+      paddingLeft: '3vw',
+      textDecoration: 'none',
+      textDecorationStyle: 'none',
+      float: 'left',
+      color: '#444',
+    }
+    const linkstyle = {
+      paddingLeft: '3vw',
+      textDecoration: 'none',
+      textDecorationStyle: 'none',
+      float: 'right',
+      color: '#444',
+    };
+    const navstyle = {
+      textDecoration: 'none',
+    }
+    const liststyle = {
+      float: 'right',
+      paddingRight: '3vw',
+    }
+
     const { openRight, openLeft, drawerProps, image } = this.state;
     return (
       <div>
@@ -39,10 +68,18 @@ class NavBar extends Component {
           >
             <div style={{ padding: "2em", backgroundColor: 'white', height: '100vh', width: '100%'}}>
               <h3>Nick Maltbie</h3>
-              <RightLink name="Home" link="/" fn={open => this.setState({ openLeft: !openLeft })}/>
-              <RightLink name="UHP" link="/UHP" fn={open => this.setState({ openLeft: !openLeft })}/>
-              <RightLink name="About Me" link="/AboutMe" fn={open => this.setState({ openLeft: !openLeft })}/>
-              <RightLink name="Projects" link="/Projects" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <div className="row col-lg-12">
+                <RightLink name="Home" link="/" fn={open => this.setState({ openLeft: !openLeft })}/>
+              </div>
+              <div className="row col-lg-12">
+                <RightLink name="About Me" link="/AboutMe" fn={open => this.setState({ openLeft: !openLeft })}/>
+              </div>
+              <div className="row col-lg-12">
+                <RightLink name="UHP" link="/UHP" fn={open => this.setState({ openLeft: !openLeft })}/>
+              </div>
+              <div className="row col-lg-12">
+                <RightLink name="Projects" link="/Projects" fn={open => this.setState({ openLeft: !openLeft })}/>
+              </div>
             </div>
           </Drawer>}
         {!openLeft &&
@@ -67,8 +104,20 @@ class NavBar extends Component {
             }}
           </Drawer>}
         <div className="navbar-fixed" style={{position: "fixed",
-          backgroundColor: "#CCC", width:"100vw", zIndex: 100, height:'10vh', verticalAlign: 'middle'}}>
+          backgroundColor: "#CCC", width:"100%", zIndex: 100, height:'10vh', verticalAlign: 'middle'}}>
           <nav>
+          <MediaQuery query="(min-device-width: 1224px)">
+            <div className="row">
+              <NavLink to="/" style={navstyle}>
+                <h1 className='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle}> Nick Maltbie</h1>
+              </NavLink>
+              <RightLink className="col-lg-2" name="Projects" link="/Projects" />
+              <RightLink className="col-lg-2" name="UHP" link="/UHP" />
+              <RightLink className="col-lg-2" name="About Me" link="/AboutMe" />
+              <RightLink className="col-lg-2" name="Home" link="/" />
+            </div>
+          </MediaQuery>
+          <MediaQuery query="(max-device-width: 1224px)">
             <div className="nav-wrapper cyan accent-4" style= {{margin: '1vh'}}>
               <a
                 style={{ padding: 15, float: "left", height:'8vh', width: '8vh'}}
@@ -78,72 +127,31 @@ class NavBar extends Component {
               >
                 <span className="glyphicon glyphicon-menu-hamburger" style={{padding: 0, fontSize: '4vh', color: '#333', marginTop: 'auto'}}/>
               </a>
-              <h1 style={{float: 'left', width:'60vw', textAlign:'left', marginTop:'15px', paddingLeft: '15px'}}>
-                Nick Maltbie
-              </h1>
+              <NavLink to="/" style={navstyle}>
+                <h2 className='col-xs-8 col-sm-8 col-md-10' style={hstyle}> Nick Maltbie</h2>
+              </NavLink>
             </div>
+          </MediaQuery>
           </nav>
         </div>
       </div>
     );
   }
-  /*const divstyle={
-    height:'10vh',
-    paddingTop: '0.5vh',
-    backgroundColor: '#CCC',
-  }
-  const hstyle = {
-    paddingLeft: '3vw',
-    textDecoration: 'none',
-    textDecorationStyle: 'none',
-    float: 'left',
-    color: '#444',
-  }
-  const linkstyle = {
-    paddingLeft: '3vw',
-    textDecoration: 'none',
-    textDecorationStyle: 'none',
-    float: 'right',
-    color: '#444',
-  };
-  const navstyle = {
-    textDecoration: 'none',
-  }
-  const liststyle = {
-    float: 'right',
-    paddingRight: '3vw',
-  }
-  return (
-    <div style={divstyle}>
-
-      <NavLink to="/" style={navstyle}>
-        <h1 className='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle}> Nick Maltbie</h1>
-      </NavLink>
-      <ul style={liststyle}>
-        <RightLink name="About Me" link="/AboutMe" />
-        <RightLink name="Projects" link="/Projects" />
-        <RightLink name="UHP" link="/UHP" />
-        <RightLink name="Home" link="/" />
-      </ul>
-    </div>
-  )*/
 }
 
 const RightLink = function ({ name, link, fn }) {
   const linkstyle = {
     textDecoration: 'none',
     textDecorationStyle: 'none',
-    display: 'block',
+    display: 'inline-block',
     float: 'right',
+    paddingRight: '5vw',
     color: '#444',
-    width: '100%',
   };
   return (
-    <div className="row">
     <NavLink to={link} onClick={fn}>
-      <h3 style={linkstyle} className='col-xs-12 col-sm-6 col-md-4 col-lg-3'>{name}</h3>
+      <h3 style={linkstyle}>{name}</h3>
     </NavLink>
-    </div>
   )
 }
 

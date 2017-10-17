@@ -10,6 +10,7 @@
     "react-dom": "^15.6.1",
     "react-motion": "^0.5.2",
     "react-motion-drawer": "^2.1.5",
+    "react-responsive": "^2.0.0",
     "react-router": "^2.8.1",
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.1.1",

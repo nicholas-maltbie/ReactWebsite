@@ -9,13 +9,13 @@ import bg2 from './media/bg2.jpg';
 const Landing = () => (
   <div>
     <Cover image={bg} height="40vh">
-      <div className="col-lg-3 col-md-offset-1 col-md-4 col-sm-4 col-xs-12">
+      <div className="col-lg-3 col-xs-12">
         <img className="center-block Profile-image" src={me}/>
       </div>
     </Cover>
 
     <div className="row">
-      <div className="intro center-block col-lg-6 col-md-6 col-sm-7 col-xs-12">
+      <div className="intro center-block col-lg-6 col-xs-12">
         <h1 className="text-center">
           Nick Maltbie
         </h1>
