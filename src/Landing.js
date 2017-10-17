@@ -19,12 +19,14 @@ const Landing = () => (
         <h1 className="text-center">
           Nick Maltbie
         </h1>
-        <p>
-          I am a computer science student at the University of
-          Cincinnati with an expected graduation in Spring 2021.
-          Currently, I am enrolled in the ACCEND program and am planning to
-          get a Masters and Bachelors of Science in Computer Science.
-        </p>
+        <div className="col-lg-12">
+          <p>
+            I am a computer science student at the University of
+            Cincinnati with an expected graduation in Spring 2021.
+            Currently, I am enrolled in the ACCEND program and am planning to
+            get a Masters and Bachelors of Science in Computer Science.
+          </p>
+        </div>
       </div>
     </div>
 

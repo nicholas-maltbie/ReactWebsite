@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import Drawer from 'react-motion-drawer';
 
 const Footer = function ({ page }) {
   const divstyle = {
@@ -18,8 +19,75 @@ const Footer = function ({ page }) {
   )
 }
 
-const NavBar = function ({ page }) {
-  const divstyle={
+class NavBar extends Component {
+  state = {
+    openLeft: false,
+    openRight: false,
+    relativeWidth: false,
+    width: 300
+  };
+  render() {
+    const { openRight, openLeft, drawerProps, image } = this.state;
+    return (
+      <div>
+        {!openRight &&
+        <Drawer
+            {...drawerProps}
+            fadeOut={true}
+            open={openLeft}
+            onChange={open => this.setState({ openLeft: open })}
+          >
+            <div style={{ padding: "2em", backgroundColor: 'white', height: '100vh', width: '100%'}}>
+              <h3>Nick Maltbie</h3>
+              <RightLink name="Home" link="/" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <RightLink name="UHP" link="/UHP" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <RightLink name="About Me" link="/AboutMe" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <RightLink name="Projects" link="/Projects" fn={open => this.setState({ openLeft: !openLeft })}/>
+            </div>
+          </Drawer>}
+        {!openLeft &&
+          <Drawer
+            right={true}
+            width={this.state.width}
+            {...drawerProps}
+            open={openRight}
+            onChange={open => this.setState({ openRight: open })}
+          >
+            {val => {
+              var per = val / 300;
+              return (
+                <div
+                  style={{
+                    backgroundColor: `rgba(0, 184, 212, ${per})`,
+                    width: "100%",
+                    height: "100%"
+                  }}
+                />
+              );
+            }}
+          </Drawer>}
+        <div className="navbar-fixed" style={{position: "fixed",
+          backgroundColor: "#CCC", width:"100vw", zIndex: 100, height:'10vh', verticalAlign: 'middle'}}>
+          <nav>
+            <div className="nav-wrapper cyan accent-4" style= {{margin: '1vh'}}>
+              <a
+                style={{ padding: 15, float: "left", height:'8vh', width: '8vh'}}
+                className="glyphicons"
+                onClick={() =>
+                  this.setState({ openLeft: !openLeft, openRight: false })}
+              >
+                <span className="glyphicon glyphicon-menu-hamburger" style={{padding: 0, fontSize: '4vh', color: '#333', marginTop: 'auto'}}/>
+              </a>
+              <h1 style={{float: 'left', width:'60vw', textAlign:'left', marginTop:'15px', paddingLeft: '15px'}}>
+                Nick Maltbie
+              </h1>
+            </div>
+          </nav>
+        </div>
+      </div>
+    );
+  }
+  /*const divstyle={
     height:'10vh',
     paddingTop: '0.5vh',
     backgroundColor: '#CCC',
@@ -47,6 +115,7 @@ const NavBar = function ({ page }) {
   }
   return (
     <div style={divstyle}>
+
       <NavLink to="/" style={navstyle}>
         <h1 className='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle}> Nick Maltbie</h1>
       </NavLink>
@@ -57,21 +126,24 @@ const NavBar = function ({ page }) {
         <RightLink name="Home" link="/" />
       </ul>
     </div>
-  )
+  )*/
 }
 
-const RightLink = function ({ name, link }) {
+const RightLink = function ({ name, link, fn }) {
   const linkstyle = {
-    paddingLeft: '3vw',
     textDecoration: 'none',
     textDecorationStyle: 'none',
+    display: 'block',
     float: 'right',
     color: '#444',
+    width: '100%',
   };
   return (
-    <NavLink to={link}>
+    <div className="row">
+    <NavLink to={link} onClick={fn}>
       <h3 style={linkstyle} className='col-xs-12 col-sm-6 col-md-4 col-lg-3'>{name}</h3>
     </NavLink>
+    </div>
   )
 }
 
@@ -159,7 +231,6 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
     marginTop: '2vh',
     display: 'block',
     float: 'left',
-    minHeight: '30vh',
   }
   return (
     <div style={divstyle} className="col-sm-12 col-md-6">
