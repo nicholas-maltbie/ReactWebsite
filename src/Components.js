@@ -255,7 +255,7 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
     float: 'left',
     diaplsy: 'block',
     marginRight: '0',
-    zIndex: '100',
+    zIndex: '10',
   }
   const dateStyle = {
     fontSize: 'large',

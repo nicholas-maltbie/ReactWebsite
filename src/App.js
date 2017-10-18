@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Honors from './Honors';
 import { NavLink } from 'react-router-dom';
 import { NavBar, Footer } from './Components';
+import Bubble from './Bubble';
 import './App.css';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route path="/AboutMe" component={ AboutMe } />
               <Route path="/Projects" component={ Projects } />
               <Route path="/UHP" component={ Honors } />
+              <Route path="/bubble" component={ Bubble } />
             </div>
           </div>
           <Footer className="container-fluid"/>
