@@ -4,18 +4,36 @@ import Drawer from 'react-motion-drawer';
 import MediaQuery from 'react-responsive';
 
 const Footer = function ({ page }) {
-  const divstyle = {
-    height: '10vh',
-    backgroundColor: '#CCC',
-  }
-  const headerstyle = {
-    float: 'left',
-    paddingLeft: '3vw',
-    paddingTop: '2vh',
-  }
   return (
-    <div style={divstyle}>
-      <h5 style={headerstyle}>Want to see the <a href='https://github.com/nicholas-maltbie/ReactWebsite'>source code</a> of this website?</h5>
+    <div className="footerstyle">
+      <h5 className='foottext'>Want to see the <a href='https://github.com/nicholas-maltbie/ReactWebsite'>source code</a> of this website?</h5>
+      <ul className="footlinks">
+        <li>
+          <span title="nick.dmalt@gmail.com">
+            <a href="mailto:nick.dmalt@gmail.com"><img src={require("./media/icons/gmail-icon.png")} className="iconstyle"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="linked in profile">
+            <a href="https://www.linkedin.com/in/nicholas-maltbie-b543a8137/"><img src={require("./media/icons/in-logo.png")} className="iconstyle"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="My twitter profile">
+            <a href="https://twitter.com/flyguy23ndm"><img src={require("./media/icons/twitter-icon.png")} className="iconstyle"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="My facebook profile">
+            <a href="https://www.facebook.com/nicholas.maltbie"><img src={require("./media/icons/fb-icon.png")} className="iconstyle"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="My github profile">
+            <a href="https://github.com/nicholas-maltbie"><img src={require("./media/icons/github-icon.png")} className="iconstyle"/></a>
+          </span>
+        </li>
+      </ul>
     </div>
   )
 }
@@ -35,18 +53,16 @@ class NavBar extends Component {
       backgroundColor: '#CCC',
     }
     const fullstyle={
-      width: '100%',
       textAlign: 'center',
       textDecoration: 'none',
-      position: 'fixed',
-      right: 0
     }
     const hstyle = {
-      paddingLeft: '3vw',
       width: '100%',
+      left: 0,
+      position: 'fixed',
+      paddingLeft: '3vw',
       textDecoration: 'none',
       textDecorationStyle: 'none',
-      float: 'left',
       color: '#444',
     }
     const hstyle2 = {
@@ -65,6 +81,7 @@ class NavBar extends Component {
     };
     const navstyle = {
       height: '100%',
+      width: '100%',
       textDecoration: 'none',
     }
     const liststyle = {
@@ -127,9 +144,9 @@ class NavBar extends Component {
           </MediaQuery>
           <MediaQuery query="(max-width: 1224px)">
             <div className="nav-wrapper cyan accent-4" style= {{margin: '1vh'}}>
-              <NavLink to="/" style={fullstyle}>
-                <h2 style={hstyle}> Nick Maltbie</h2>
-              </NavLink>
+              <h2 style={hstyle}>
+                <NavLink to="/" style={fullstyle}> Nick Maltbie </NavLink>
+              </h2>
               <a
                 style={{ padding: 15, float: "left", height:'8vh', width: '8vh', zIndex: 250}}
                 className="glyphicons"
@@ -238,6 +255,7 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
     float: 'left',
     diaplsy: 'block',
     marginRight: '0',
+    zIndex: '100',
   }
   const dateStyle = {
     fontSize: 'large',
@@ -268,7 +286,7 @@ const Project = function ({ title, date, link, icon, iconalt, children }) {
   return (
     <div style={divstyle} className="col-sm-12 col-md-6">
       <img style={imageStyle} src={icon} alt={iconalt}/>
-      <NavLink className="col-lg-12" style={titleStyle} to={link}> {title} </NavLink>
+      <NavLink className="col-lg-12" style={titleStyle} to={link}> <h3> {title} </h3> </NavLink>
       <div className="col-lg-12" style={dateStyle}>{date}</div>
       <div className="col-lg-12">
         <div className='Description-style'> <p>{children}</p> </div>
