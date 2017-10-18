@@ -8,6 +8,7 @@
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1",
+    "react-load-script": "0.0.6",
     "react-motion": "^0.5.2",
     "react-motion-drawer": "^2.1.5",
     "react-responsive": "^2.0.0",

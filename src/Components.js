@@ -133,7 +133,7 @@ class NavBar extends Component {
             }}
           </Drawer>}
         <div className="navbar-fixed" style={{position: "fixed",
-          backgroundColor: "#CCC", width:"100%", zIndex: 100, height:'10vh', verticalAlign: 'middle'}}>
+          backgroundColor: "#CCC", width:"100%", zIndex: 100, height:'10vh', minHeight:'80px', verticalAlign: 'middle'}}>
           <nav>
           <MediaQuery query="(min-width: 1224px)">
             <div className="row">
@@ -152,12 +152,12 @@ class NavBar extends Component {
                 <NavLink to="/" style={fullstyle}> Nick Maltbie </NavLink>
               </h2>
               <a
-                style={{ padding: 15, float: "left", height:'8vh', width: '8vh', zIndex: 250}}
+                style={{ padding: 15, float: "left", height:'8vh', width: '8vh', minWidth:"80px", minHeight: "80px", zIndex: 250}}
                 className="glyphicons"
                 onClick={() =>
                   this.setState({ openLeft: !openLeft, openRight: false })}
               >
-                <span className="glyphicon glyphicon-menu-hamburger" style={{padding: 0, fontSize: '4vh', color: '#333', marginTop: 'auto'}}/>
+                <span className="glyphicon glyphicon-menu-hamburger" style={{padding: 0, fontSize: '250%', color: '#333', marginTop: 'auto'}}/>
               </a>
             </div>
           </MediaQuery>

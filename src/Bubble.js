@@ -2,40 +2,72 @@ import React, { Component } from 'react';
 import { HorizLinks, Cover } from './Components';
 import { NavLink } from 'react-router-dom';
 import './App.css';
+import Script from 'react-load-script'
 
 class Bubble extends Component {
   render() {
     return (
       <div>
-        <div className="intro center-block col-lg-12">
-          <h1 className="text-center">
-            Bubble Shooter
-          </h1>
+        <div className="row"/>
+        <h1 className="col-lg-12 text-center" style = {{marginTop:'50px', marginBottom:'25px'}}>
+          Bubble Shooter
+        </h1>
 
-          <div className='col-lg-12'>
-            <link rel="stylesheet" type="text/css"
-              href="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubblestyle.css"></link>
-            <canvas id="game-canvas" style={{maring:'0 auto', background: '#eee', width:480, height:320}}></canvas>
-            <script type='text/javascript'
-              src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/grid.js">
-            </script>
-            <script type='text/javascript'
-              src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/ball.js">
-            </script>
-            <script type='text/javascript'
-              src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/shooter.js">
-            </script>
-            <script type='text/javascript'
-              src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/manager.js">
-            </script>
-            <script type='text/javascript'
-              src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubbles.js">
-            </script>
-          </div>
+        <div>
+          <link rel="stylesheet" type="text/css"
+            href="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubblestyle.css"/>
+          <canvas id="game-canvas" style={{maring:'0 auto', background: '#eee', maxWidth:'100%', maxHeight:'100%'}}></canvas>
+          <Script url="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/grid.js"
+            onCreate={this.handleScriptCreate.bind(this)}
+            onError={this.handleScriptError.bind(this)}
+            onLoad={this.handleScriptLoad.bind(this)}
+            />
+          <Script url="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/ball.js"
+            onCreate={this.handleScriptCreate.bind(this)}
+            onError={this.handleScriptError.bind(this)}
+            onLoad={this.handleScriptLoad.bind(this)}
+            />
+          <Script url="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/shooter.js"
+            onCreate={this.handleScriptCreate.bind(this)}
+            onError={this.handleScriptError.bind(this)}
+            onLoad={this.handleScriptLoad.bind(this)}
+            />
+          <Script url="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/manager.js"
+            onCreate={this.handleScriptCreate.bind(this)}
+            onError={this.handleScriptError.bind(this)}
+            onLoad={this.handleScriptLoad.bind(this)}
+            />
+          <Script url="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubbles.js"
+            onCreate={this.handleScriptCreate.bind(this)}
+            onError={this.handleScriptError.bind(this)}
+            onLoad={this.handleScriptLoad.bind(this)}
+            />
         </div>
 
+        <div className="row">
+          <div className="col-xs-12 col-md-6 col-md-offset-3" style= {{marginTop: '25px', marginBottom: '25px'}}>
+            <p>
+              Refresh the page if the game doesn't load right away.
+            </p>
+            <p>
+              This project is hoted on github, click <a href='https://github.com/nicholas-maltbie/BubbleShooterJS/'>here </a>
+              to see the page. Click <NavLink to="projects/bubblereport">here</NavLink> to see the report on the project.
+            </p>
+          </div>
+        </div>
       </div>
     );
+  }
+  handleScriptCreate() {
+    this.setState({ scriptLoaded: false })
+  }
+
+  handleScriptError() {
+    this.setState({ scriptError: true })
+  }
+
+  handleScriptLoad() {
+    this.setState({ scriptLoaded: true })
   }
 }
 

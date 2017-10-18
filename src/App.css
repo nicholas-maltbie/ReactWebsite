@@ -214,6 +214,8 @@ p {
   }
   .footerstyle {
     height:15vh;
+    min-height: 100px;
+    width: 100vw;
   }
   .iconstyle {
     margin-top: 10;
