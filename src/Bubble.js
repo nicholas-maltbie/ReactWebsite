@@ -16,19 +16,19 @@ class Bubble extends Component {
             <link rel="stylesheet" type="text/css"
               href="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubblestyle.css"></link>
             <canvas id="game-canvas" style={{maring:'0 auto', background: '#eee', width:480, height:320}}></canvas>
-            <script type='application/javascript'
+            <script type='text/javascript'
               src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/grid.js">
             </script>
-            <script type='application/javascript'
+            <script type='text/javascript'
               src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/ball.js">
             </script>
-            <script type='application/javascript'
+            <script type='text/javascript'
               src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/shooter.js">
             </script>
-            <script type='application/javascript'
+            <script type='text/javascript'
               src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/manager.js">
             </script>
-            <script type='application/javascript'
+            <script type='text/javascript'
               src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubbles.js">
             </script>
           </div>

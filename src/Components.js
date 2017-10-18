@@ -55,6 +55,9 @@ class NavBar extends Component {
     const fullstyle={
       textAlign: 'center',
       textDecoration: 'none',
+      textDecorationStyle: 'none',
+      color: '#444',
+      fontStyle: 'bold',
     }
     const hstyle = {
       width: '100%',
@@ -71,6 +74,7 @@ class NavBar extends Component {
       textDecorationStyle: 'none',
       float: 'left',
       color: '#444',
+      fontStyle: 'bold',
     }
     const linkstyle = {
       paddingLeft: '3vw',
