@@ -10,6 +10,7 @@ import ret from "./projects/Ret"
 import Midi from "./projects/Midi"
 import Medina from "./projects/Medina"
 import BubbleRep from "./projects/Bubblereport"
+import Cchmc from "./projects/Cchmc"
 import './App.css';
 
 class Projects extends Component {
@@ -17,7 +18,7 @@ class Projects extends Component {
     return (
       <div>
         <Route exact path="/Projects" component = { List } />
-        <Route path="/Projects/cchmc" />
+        <Route path="/Projects/cchmc" component = { Cchmc }/>
         <Route path="/Projects/bubble" component = { BubbleRep }/>
         <Route path="/Projects/medina" component = { Medina }/>
         <Route path="/Projects/midi" component = { Midi }/>
