@@ -67,7 +67,7 @@ class Bubble extends Component {
   }
 
   handleScriptLoad() {
-    this.setState({ scriptLoaded: true })
+    this.setState({ scriptLoaded: false })
   }
 }
 
