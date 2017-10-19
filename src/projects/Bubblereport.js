@@ -17,7 +17,7 @@ const BubbleRep = function () {
           <h3 align="center">Report on Simple Javascript Game</h3>
           <h5 align="center"> Made by Nicholas Maltbie </h5>
 
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Introduction" align="center">Introduction</h2>
 
             <p>
@@ -32,7 +32,7 @@ const BubbleRep = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="TableOfContents">Table of Contents</h2>
             <ul>
               <li><HashLink to="#BubbleShooter">Bubble Shooter</HashLink></li>
@@ -63,7 +63,7 @@ const BubbleRep = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
           <h2 id="Description">Description</h2>
           <p>
             Bubble Shooter is a simple game where a player shoots bubbles at a
@@ -85,7 +85,7 @@ const BubbleRep = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Gameplay">Gameplay / Instructions</h2>
             <p>When starting a game, you will see a view like the image below.</p>
 
@@ -186,136 +186,189 @@ const BubbleRep = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
-            <h2 id="Design">Design</h2>
-            <p>
-              While working on the project, I made many design decision about
-              concerning the organization and management of data. In order to do
-              this, I followed a relatively consistent format. This format required
-              me to make modules for each kind of element in the board game that
-              could make an abstract data type (ADT) to represent the element. This
-              ADT could then later be used to find information about the element.
-              The game consisted of many different elements: a Market, a collection
-              of buildings, tiles, players, a board, and so on… each of these ADT’s
-              modules is found in the github repo. The documentation of each of
-              these modules describes the purpose of the ADT and contains functions
-              for interacting with the ADT.
-            </p>
-            <p>
-              At a higher level, the game revolves around a board state. This board
-              state is made up of three components, the players, a board, and the
-              tile supply. This board state is modified by Moves. Moves are generated
-              by Agents, and Agents are moderated by a Game. These interaction can
-              be shown to the user via the BoardCanvas which is a class in the
-              BoardCanvas.py module. Here are some diagrams that describe the
-              relationships between these different aspects of the game. Again,
-              each of these modules is described in detailed python documentation in
-              their respective files on the <a href="https://github.com/nicholas-maltbie">Github Repo</a>.
-            </p>
-            <p>Diagram of the Definition of a Board State</p>
-            <img src={require("../media/projects/MedinaBoard.png")} className="Image-content"/>
-            <p>
-              Board State is an abstract definition so there is no ADT or module for
-              Board State. In different parts of the project, modules will use a
-              Board, Tile Supply and Collection of Players to represent the board
-              State. This is shown in the Agent module and getting moves from
-              players; the board state is passed as three parameters.
-            </p>
-            <p>Diagram of how the Game is controlled from the Game.py file</p>
-            <img src={require("../media/projects/MedinaDesign.png")} className="Image-content"/>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
+            <h2 id="Implementation">Implementation</h2>
+            <h3 id="GameDesign">Game Design</h3>
 
             <p>
-              In Addition to making the game, there needed to be a display mechanism.
-               This display is almost exclusively in the BoardCanvas Module in the
-               BoardCanvas.py file. The Graphical components of this project were
-               all implemented using tkinter in Python3. The Board Canvas takes a
-               Board State and can render it on the screen. The HumanAgent module
-               is responsible for rendering and making interactive parts of the
-               board through use of the BoardCanvas Module. The board canvas uses
-               the tkinter canvas module to draw images on the screen and create
-               interactive elements that a player can use to modify the board state
-               and make moves.
+              This game is made using javascript from scratch. The source code for
+              this project can be found on github at <a href="https://github.com/nicholas-maltbie/BubbleShooterJS">
+              https://github.com/nicholas-maltbie/BubbleShooterJS</a>. This code
+              utilizes a html canvas to create a scene and draw elements. The game
+              uses a draw loop to redraw and update the game at a set interval. Each
+              one of these draw loops represents a frame. The different elements of
+              the game are added to a list and then drawn by the main draw loop; each
+              element is responsible for drawing itself. This functionality along
+              with some other core features are implemented in the bubble.js file.
             </p>
-            <p>Example of the board canvas with a human agent.</p>
-            <img src={require("../media/projects/MedinaVirtual.png")} className="Image-content"/>
+            <img alt="Draw Loop Diagram" src={require("../media/projects/bubbleFrames.jpg")}
+            className="Image-content"/>
 
             <p>
-              The game uses a setup of agents. As defined in the documentation, "an
-              agent is responsible for making a move decision based on a board.
-              Players will make two moves (unless it is the first turn, in which
-              case only one move is allowed) This module will have support for
-              getting all possible moves (or ranges for all types of moves as there
-              are many similar moves of the same type such as placing buildings or
-               stables). An agent only needs to be the following function:
-               make_decision(board, player_index, players, tile_supply, num_moves)"
+              This method had a few flaws because when I wanted to control when
+              elements were drawn. If I wanted the arrow to appear behind the balls,
+              I needed to add it before the bubbles. This was not practical so I
+              used a layer system to achieve this. When adding elements, I
+              specified a layer. Then I used this information to control the order
+              in which elements were drawn. I used a nested hash table, the first
+              level is the list of layers and the second level is the elements in
+              each layer. I used a hash map to achieve fast insertion and deletion.
+              All items, when added to the hash, are assigned an arbitrary id so
+              they can be indexed.
             </p>
+
+            <img alt="Game Draw Diagram" src={require("../media/projects/bubbleDraw.jpg")}
+              className="Image-content"/>
+
             <p>
-              As show in the diagram of the Game, an agent makes moves that modify
-              the board state. A human agent is slightly different: a human will
-              interact with the board canvas to make moves and has an intermediate
-              step between the board state and the player"s actions.
+              Drawing elements is achieved through js and an HTML5 canvas. This
+              allows for great flexibility and cross platform implementation that
+              is easier than making the application in another editor.
             </p>
-            <p>Diagram of Human Agent design.</p>
-            <img src={require("../media/projects/MedinaAgency.png")} className="Image-content"/>
           </div>
         </div>
 
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
-            <h2 id="Objective">Objective</h2>
-            <p>My objectives at the start of the project:</p>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
+            <h3 id="ClassLayout">Class Layout</h3>
+
+            <p>Three main objects are added to the object list and control the game.</p>
             <ul>
-              <li>Implement the game in Python with a GUI interface and allow players
-                to play the game.
-              </li>
-              <li>Make the game a network game so multiple players could play the same
-                game on different machines. Network game play is a lower objective.
-              </li>
-              <li>Add an AI to the game that utilizes machine learning and pattern
-                recognition to make moves and become better at playing the game as
-                time goes on.
-              </li>
-              <li>Give the AI the ability to watch and learn from records of games.
-              </li>
-              <li>Train the AI to the point in which it can consistently play the
-                game and get a decent score.
-              </li>
-              <li>Possibly develop different versions of the AI that can play the game
-                with different strategies (aggressive, risky, impatient) and
-                difficulty.
-              </li>
+              <li>Shooter - Bubble shooter that the user uses to fire bubbles</li>
+              <li>Grid = Hex grid for bubbles in the game</li>
+              <li>Manager - Game manager that controls interactions between different game elements</li>
             </ul>
+
+            <p>[From now on, I use the terms <i><b>bubbles</b></i> and <i><b>ball </b></i>
+              interchangeably, they mean the same thing in context of the game. I
+             used ball in the code because it was easier to type in the code]
+           </p>
+
+           <p>
+             These are all represented by different classes and have additional
+             classes to support them. One of the more prevalent objects in the
+             project is ball. This is the colored bubble that can move across
+             the screen and draw itself. Below is a diagram of the interactions
+             between classes.
+           </p>
+
+           <img alt="Game Draw Diagram" src={require("../media/projects/bubbleClass.jpg")}
+             className="Image-content"/>
           </div>
         </div>
 
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
-            <h2 id="Results">Results</h2>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
+            <h3 id="ShooterDesign">Shooter Design</h3>
+
+           <p>
+             The Shooter, Manager, Grid and Ball each have their own files that
+             describe all the classes responsibilities. Each one of these files
+             can be found on the github project page. These classes are used to
+             operate the game. The Manager controls the game progress. The shooter
+             has a state machine to control when the ball can fire. It continuously
+             updates the position of the arrow and, when allowed, fires a ball. The
+             Manager controls when the shooter can fire. This is driven by events
+             in the game.
+           </p>
+
+           <p>
+             The shooter is the main way that a user interacts with the game. This
+             interaction is controlled by either a mouse or by touching the screen.
+           </p>
+
+           <img alt="Game Draw Diagram" src={require("../media/projects/bubbleShooter.jpg")}
+             className="Image-content"/>
+
+           <p>
+             The wait time for the shooter reload is determined by the manager. In
+             the game, the reload happens half a second after the fired bubble
+             collides with the grid. I wanted this game to be playable on the
+             phone so I decided that it would be too costly to check for collisions
+             with every ball. A simple solution for collision detection is to check
+             for collisions between the moving ball and every other ball on the
+             grid. If this is done every frame with a grid (14x22 at maximum) that
+             totals to many (over 2,000) collision checks per frame.  If this is
+             supposed to run on a mobile device, this could be rather slow.
+           </p>
+          </div>
+        </div>
+
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
+            <h3 id="GridDesign">Grid Design</h3>
+
             <p>
-              As can be clearly seen, these objectives were not met and only the
-              game was implemented with no machine learning. Although there is no
-              machine learning for medina, the format for higher level game playing
-              can be implemented through use of the Agent Module. In the AIPractice
-              Directory, there are many files dedicated to creating and managing a
-              neural network. These use the same layout of an agent setup to
-              implement a Neural Network that can play Tic Tac Toe. This was modeled
-              from Daniel Slater"s <a href="https://github.com/DanielSlater/AlphaToe">Alpha Toe</a>
-              project in which he used the same machine learning used by Google’s
-              Alpha Go to play the game Tic Tac Toe. This was planned to be
-              implemented with Medina but I ran out of time. A person can play
-              against the Tic Tac Toe neural network by running the AIPractice/tttAI.py
-              script with python3. The Neural network will train against a random
-              opponent by use of a policy gradient in the tttTrain.py script.
+              If the grid was a square grid, a simple solution would be to check the
+              four locations that the ball is next to on the grid. The game uses a
+              hex grid so this solution will not work. In order to resolve this for
+              a hex grid, I found the location closest to the ball"s current
+              location; then I took this location and checked for collisions with
+              the adjacent locations. This is only 7 collision checks per frame in
+              the worst case.
+            </p>
+
+            <h4 id="CollisionDetection">Collision Detectoin</h4>
+
+            <p>
+              After checking for collisions, if there is a collision, find the
+              closest location out of the adjacent and nearest locations and
+              attach the ball to the grid at that location. Below is a diagram to
+              show this interaction. This is implemented in the intersect_grid
+              function in grid.
+            </p>
+
+            <img alt="Collision Detection Diagram" src={require("../media/projects/bubbleCollision.jpg")}
+            className="Image-content"/>
+
+            <h4 id="SavingGrid">Saving the Grid in Memory</h4>
+
+            <p>
+              After a ball attaches to the grid, the manager will tell the shooter to
+              reload and add a ball to its queue. When the shooter is finished
+              reloading, the manager will set the shooter in the ready state. I did
+              not use a 2d array to represent the grid can be expanded in any
+              direction when balls are attached, rows are added, or when bubbles are
+              popped and removed. In order to achieve these requirements, I decided
+              to use a hash map to save each bubble by its location.
+            </p>
+
+            <img alt="Grid Diagram" src={require("../media/projects/bubbleGrid.jpg")} className="Image-content"/>
+
+            <h4 id="Color">Contiguous Color Identification Algorithm</h4>
+
+            <p>
+              When attaching bubbles to the grid, the game needs to detect for
+              contiguous groups of bubbles. If there is a contiguous group of a
+              specific color that at the location is larger than three, the bubbles
+              need to be removed. In order to achieve this I used a flood algorithm
+              that uses adjacency rules of a hex grid. I had a bit of difficulty
+              implementing a flood algorithm with recursion so I used a stack and
+              dictionary to track new locations without repeats. This is implemented
+              in the color_food and flood methods in the grid class.
+            </p>
+
+            <img alt="Flood Diagram" src={require("../media/projects/bubbleFlood.jpg")} className="Image-content"/>
+            <p>
+              All of these rules, methods and algorithms are implemented in the
+              Grid.js file along with many more values. Majority of these extra
+              values are used to control the grid on screen.
             </p>
             <p>
-              Although only a random computer opponent was developed and tested by
-              this time, the use of the Agent module allows for the easy creation of
-              more competent opponents and even the creation of a Neural Network as
-              shown by Tic Tac Toe.
+              In addition to the contiguous color method, there is also a contiguous
+              ball method which does not use color as a factor. This method is used
+              to determine if a group of balls should fall. If a bubble popping
+              separates a group of bubbles so they are not connected to the top of
+              the row, these disconnected bubbles need to be removed. This is
+              handled in the verify grid method in the grid.js file. If the maximum
+              row in a group of contiguous bubbles is not the highest row, all the
+              bubbles in that group are removed.
             </p>
           </div>
         </div>
@@ -323,28 +376,102 @@ const BubbleRep = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
+            <h3 id="BubbleDesign">Bubble Design</h3>
+            <p>
+              One of the most important elements in the game is the bubble (Also
+              called a ball). This is a core element and is used directly or
+              indirectly by all other elements in the game. The bubble is just a
+              circle on the screen that has the ability to move. There is nothing
+              very special about the bubble but this collection of functionally into
+              one class is necessary to the development of the game. The bubble is
+              shared across multiple files and used to communicate between classes.
+            </p>
+            <p>
+              One example of this communication is between the Manager and shooter.
+              The manager loads the shooter queue with bubbles. Then the shooter
+              loads itself with bubbles from the queue.
+            </p>
+          </div>
+        </div>
+
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
+            <h3 id="ManagerDesign">Manager Design</h3>
+            <p>
+              The manager moderates all other interactions between elements within the
+              game. As mentioned before, the manager controls the shooter directly.
+              Additionally, the manager controls when new rows are added to the grid,
+              decides when the player loses, and gives the player a score. This score
+              is determined by user actions and when a fired shot collides with the grid.
+            </p>
+            <p>
+              One difficulty I had to overcome was making the game fullscreen. By
+              default the game canvas is rather small so I thought I could just scale
+              the canvas size to overcome this. This worked well but I thought I could
+              improve it even more by adding a full screen feature. I decided to just
+              add a full button that the user could press to activate the fullscreen.
+              I implemented this button in the canvas so the screen would look clean
+              without any extra html. The difficult I had was that I could not set the
+              screen to full screen without user input. The button was a scene object
+              and indirectly received input from the user. To fix this, I added a new
+              category of item, buttons. These buttons would receive direct input from
+              the user when the user clicks on the canvas. This allowed me to overcome
+              the problem of indirect interaction with the user. This will also work on
+              mobile platforms but is a bit off as screen resolutions vary from device
+              to device.
+            </p>
+            <p>
+              The last major element the manager needed to moderate was the "You Lose"
+              panel. This panel allowed the user to restart the game and showed the
+              player"s score. This involved making a reset function. This function
+              removes all elements from the game and then repeats the setup code.
+            </p>
+            <p>
+              To make the screen look nice, I needed to add a round rect function that
+              would draw a round rectangle on the screen. This is not a default
+              feature in JS. I looked up the algorithm online and implemented the
+              algorithm with the help of online sources.
+            </p>
+          </div>
+        </div>
+
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="FutureImprovements">Future Improvements</h2>
+
             <p>
-              Some easy future improvements to this design would be implementing
-              different kinds of opponents such as those implemented in Dainel
-              Slater"s Alpha Toe project in the <a href="https://github.com/DanielSlater/AlphaToe/tree/master/techniques">techniques directory</a>
-              . These techniques represent different kinds of machine learning and
-              could be compared against each other or used to train a neural network.
-              The kind of machine learning that the neural network would use is
-              classified as Reinforcement Learning. Reinforcement learning is when
-              the machine will adjust its decision making process based on the results
-              of previous experiences. For example, if a neural network performs well
-              in a game, the recorded moves will be weighted more favorably. The results
-              obtained by Imran Ghory in his paper "Reinforcement Learning in Board
-              Games" could be applied in more detail to Medina. Medina has an
-              extremely complicated search space and one player only represents a
-              fourth of the actions in the game so the challenge is mainly how can
-              the player optimize their score given a limited amount of influence.
-              The game has no random chance so it is difficult even for humans to
-              play well. Medina is not as complicated as GO but still represents an
-              interesting problem which is why I chose it for my project; it has an
-              unlimited space for improvement and analysis.
+              If I were to do this project again, I would have made a few changes.
+              It"s not perfect and I hope to use these lessons in the future. One of
+              my major problems was to put more effort into design. I implemented
+              the grid and ball from internet tutorials as this was my first major
+              project in javascript. I did not know what to expect and just hit the
+              ground running. Even if these classes passed my initial requirements,
+              the requirements changed over time because I did not do enough planning
+              before I started working.
+            </p>
+
+            <p>
+              Additionally, I would have made the mouse controls better defined. The
+              mouse is just a variable that is controlled by the bubble.js file. This
+              lead to future problems with getting direct user input to activate or
+              deactivate fullscreen. If I had implemented this better I could have
+              saved many hours of troubleshooting.
+            </p>
+
+            <p>
+              In the future, I would like to add more game modes as this current version
+              just supports one mode, lose after about 50 turns. I did not put much
+              thought into balancing the game but it is still fun. My main objective
+              was to create a game with js, not to make a perfect game.
+            </p>
+
+            <p>
+              Hopefully I will be able to use this experience to improve my future projects.
             </p>
           </div>
         </div>
@@ -352,112 +479,61 @@ const BubbleRep = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
-            <h2 id="References">References</h2>
-            <p>
-              Ghory, Imran. "Reinforcement learning in board games". May 4, 2004.
-              Autonomous Learning Laboratory. College of Information and Computer
-              Sciences University of Massachusetts Amherst
-              (<a href="https://pdfs.semanticscholar.org/0517/501ddea186aeb6c6de30b0c5c27e1e4f9d96.pdf">source</a>)
-            </p>
-            <p>
-              Lundh Fredrik. "An Introduction To Tkinter". Effbot.org. 2005.
-              (<a href="http://effbot.org/tkinterbook/tkinter-index.htm">source</a>)
-            </p>
-            <p>
-              "Python Tkinter Canvas". Tutorials Point Simply Easy Learning.
-              (<a href="https://www.tutorialspoint.com/python/tk_canvas.htm">source</a>)
-            </p>
-            <p>
-              "Graphical User Interfaces with Tk" The Python Software Foundation.
-              2016. (<a href="https://docs.python.org/3/library/tk.html">source</a>)
-            </p>
-            <p>
-              Slater Daniel. "Alpha Toe". Github. <a href="http://www.danielslater.net/">http://www.danielslater.net/</a>.
-              Nov 6. 2016 (<a href="https://github.com/DanielSlater/AlphaToe">github repo</a>
-              , <a href="http://www.danielslater.net/2016/10/alphatoe.html">source</a>)
-            </p>
-            <p>
-              Singh, Aarti. "Neural Networks". Carnegie Mellon University School of
-              Computer Science. 2010.
-              (<a href="http://www.cs.cmu.edu/~aarti/Class/10701/slides/Lecture22.pdf">source</a>)
-            </p>
-            <p>
-              Stergiou, Christos and Siganos, Dimitrios. "Neural Networks". Imperial
-              College London. 1998. (<a href="https://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol4/cs11/report.html#References">source</a>)
-            </p>
-            <p>
-              Tensor Flow. Google Brain Team. 2016. (<a href="https://www.tensorflow.org/about.html">source</a>)
-            </p>
-            <p>
-              Shipman, John W.. "Tkinter 8.5 reference: a GUI for Python". New Mexico
-              Tech Computer Center. <a href="www.nmt.ecu/tcc">www.nmt.ecu/tcc </a>
-              (<a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html"> source </a>)
-            </p>
-          </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
-            <h2 id="LibrariesUsed">Libraries Used</h2>
-
-            <p><i><a href="https://wiki.python.org/moin/TkInter">Tkinter</a></i> - for GUI
-              elements Tkinter is usually installed with most distribution of
-              python, to check if it is installed, open up the python3 interpreter
-              and try the following commands.
-            </p>
-            <pre>
-              import tkinter
-              tkinter._test()
-            </pre>
-            <p>This should give a basic window that can be interacted with.</p>
-            <p>If it does not give a window, the command to install tkinter on
-              Ubuntu is "sudo apt-get install python3-tk", more specific
-              information for each os to install tkinter can be found <a href="http://www.tkdocs.com/tutorial/install.html">here</a>
-            </p>
-            <p>Tkinter will be used to make the GUI for the game.</p>
-
-            <p><i><a href="http://www.numpy.org/">NumPy</a></i> - Mathematics Library </p>
-            <p>to install NumPy, use pip:</p>
-            <pre>
-              pip3 install numpy
-            </pre>
-            <p>NumPy will be useful to compute and do operations on the large
-              amounts of numbers and math involved in analyzing a board game.
-            </p>
-
-            <p><i><a href="https://github.com/nicholas-maltbie/Medina/blob/master/www.tensorflow.org">Tensor Flow</a></i> -
-              Neural Network Library
-            </p>
-            <p>to install tensorflow, use pip:</p>
-            <pre>
-              pip3 install tensorflow
-            </pre>
-            <p>Tensorflow is used to make and read neural networks.</p>
-          </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Development">Development</h2>
             <p>
-              The entire development of this project was recorded by the commit log
-              on the <a href="https://github.com/nicholas-maltbie/Medina/commits/master">github repository</a>.
-              This was almost exclusively developed by me besides the code from
-              other projects. The commit log documents what code was modified when
-              and by whom.
+              The entire development of the project can be found on the <a href="https://github.com/nicholas-maltbie/BubbleShooterJS/">github page</a>.
+              This development has a commit log and notes for each addition to the
+              project. I maintained development on a dev branch and merged to master
+              whenever I made a noteworthy addition.
             </p>
+
             <p>
-              During development, the first two weeks were attempting to develop the
-              project with an object oriented interface. After this, the project was
-              changed to an Abstract Data Type design for each element of the project.
-              This was a large setback and caused other parts of the project to be
-              cut and adjusted the scope of the project.
+              Anyone can add the game to their own website with the following html commands.
             </p>
+            <pre style={{fontSize:"15px"}}>{`<div align="center">
+  <link rel="stylesheet" type="text/css"
+    href="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubblestyle.css">
+  </link>
+  <canvas id="game-canvas" style="margin:0 auto; background: #eee" width="480" height="320"></canvas>
+  <script <type="application/javascript"
+    src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/grid.js">
+  </script>
+  <script type="application/javascript"
+    src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/ball.js">
+  </script>
+  <script type="application/javascript"
+    src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/shooter.js">
+  </script>
+  <script type="application/javascript"
+    src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/manager.js">
+  </script>
+  <script type="application/javascript"
+    src="https://rawgit.com/nicholas-maltbie/BubbleShooterJS/master/bubbles.js">
+  </script>
+</div>`}</pre>
+            <p>An example of this can be found on my own website: https://nickmaltbie.com/#/bubble</p>
+          </div>
+        </div>
+
+        <EmptyPadding height='10vh'/>
+
+        <div className='row center-block White-box'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
+          <h2 id="References">References</h2>
+
+          <p>
+            chrisdavidmills, allisonlu, fscholz, gbharatwaj, end3r, Sheppy.
+            "Bounce off the walls". Mozilla Development Network. Game Development.
+            Mar 14, 2016. (<a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript/Bounce_off_the_walls">source</a>)
+          </p>
+
+          <p>"What Is An HTML5 Canvas". W3Schools. 2017. (<a href=
+            "https://www.w3schools.com/graphics/canvas_intro.asp">source</a>)</p>
+
+          <p>"Implementation of Hex Grids". Red Blob Games. May 6th, 2016. (<a href="http://www.redblobgames.com/grids/hexagons/implementation.html">
+            source</a>)
+          </p>
           </div>
         </div>
 

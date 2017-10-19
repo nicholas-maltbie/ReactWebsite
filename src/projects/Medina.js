@@ -15,7 +15,7 @@ const ret = function () {
           <h1 align='center' id="Medina">Medina</h1>
           <h2 align='center'>(Sept - Dec 2016)</h2>
 
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Introduction" align="center">Introduction</h2>
             <p>
               Medina is a board game. For my project in my Programming python course
@@ -46,7 +46,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="TableOfContents">Table of Contents</h2>
             <ul>
               <li><HashLink to="#Medina">Medina</HashLink></li>
@@ -72,7 +72,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Usage">Usage</h2>
             <p>
               In order to use the project, python3 must be installed along with
@@ -108,7 +108,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="TheGame">The Game</h2>
             <p>
               Media is a board game published by Stronghold Games ( <a href="https://boardgamegeek.com/boardgame/167270/medina-second-edition">
@@ -182,7 +182,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Design">Design</h2>
             <p>
               While working on the project, I made many design decision about
@@ -259,7 +259,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Objective">Objective</h2>
             <p>My objectives at the start of the project:</p>
             <ul>
@@ -289,7 +289,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Results">Results</h2>
             <p>
               As can be clearly seen, these objectives were not met and only the
@@ -319,7 +319,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="FutureImprovements">Future Improvements</h2>
             <p>
               Some easy future improvements to this design would be implementing
@@ -348,7 +348,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="References">References</h2>
             <p>
               Ghory, Imran. "Reinforcement learning in board games". May 4, 2004.
@@ -396,7 +396,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="LibrariesUsed">Libraries Used</h2>
 
             <p><i><a href="https://wiki.python.org/moin/TkInter">Tkinter</a></i> - for GUI
@@ -438,7 +438,7 @@ const ret = function () {
         <EmptyPadding height='10vh'/>
 
         <div className='row center-block White-box'>
-          <div className='text-dump col-lg-offset-3 col-lg-6 col-xs-12'>
+          <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Development">Development</h2>
             <p>
               The entire development of this project was recorded by the commit log
