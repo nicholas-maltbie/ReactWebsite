@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Project, Cover, EmptyPadding } from '../Components';
 import { HashLink } from 'react-router-hash-link';
 import '../App.css';
-import img from "../media/4a14cec076cc9bc0.jpg";
+import img from "../media/IMG_4004-EFFECTS.jpg";
 
 const BubbleRep = function () {
   return (
