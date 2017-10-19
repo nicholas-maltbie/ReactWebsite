@@ -9,6 +9,7 @@ import PlayerCount from './projects/BukkitPlugin'
 import ret from "./projects/Ret"
 import Midi from "./projects/Midi"
 import Medina from "./projects/Medina"
+import BubbleRep from "./projects/Bubblereport"
 import './App.css';
 
 class Projects extends Component {
@@ -17,7 +18,7 @@ class Projects extends Component {
       <div>
         <Route exact path="/Projects" component = { List } />
         <Route path="/Projects/cchmc" />
-        <Route path="/Projects/bubble" />
+        <Route path="/Projects/bubble" component = { BubbleRep }/>
         <Route path="/Projects/medina" component = { Medina }/>
         <Route path="/Projects/midi" component = { Midi }/>
         <Route path="/Projects/ret" component = { ret }/>

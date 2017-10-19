@@ -51,7 +51,7 @@ class Bubble extends Component {
             </p>
             <p>
               This project is hoted on github, click <a href='https://github.com/nicholas-maltbie/BubbleShooterJS/'>here </a>
-              to see the page. Click <NavLink to="projects/bubblereport">here</NavLink> to see the report on the project.
+              to see the page. Click <NavLink to="projects/bubble">here</NavLink> to see the report on the project.
             </p>
           </div>
         </div>

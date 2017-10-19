@@ -20,7 +20,7 @@ const Footer = function ({ page }) {
         </li>
         <li>
           <span title="My twitter profile">
-            <a href="https://twitter.com/flyguy23ndm"><img src={require("./media/icons/twitter-icon.png")} className="iconstyle"/></a>
+            <a href="https://twitter.com/NicholasMaltbie"><img src={require("./media/icons/twitter-icon.png")} className="iconstyle"/></a>
           </span>
         </li>
         <li>
@@ -109,6 +109,7 @@ class NavBar extends Component {
               <CenterLink name="About Me" link="/AboutMe" fn={open => this.setState({ openLeft: !openLeft })}/>
               <CenterLink name="UHP" link="/UHP" fn={open => this.setState({ openLeft: !openLeft })}/>
               <CenterLink name="Projects" link="/Projects" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <CenterLink name="Bubble" link="/bubble" fn={open => this.setState({ openLeft: !openLeft })}/>
             </div>
           </Drawer>}
         {!openLeft &&
