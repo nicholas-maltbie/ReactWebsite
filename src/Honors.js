@@ -9,6 +9,7 @@ import uhp from './media/icons/UHP.png';
 import './App.css';
 import Treacery from './firstyear/Treachery'
 import BCat from './firstyear/BearcatCoders'
+import Gateway from './firstyear/Gateway'
 
 class Honors extends Component {
   render() {
@@ -17,7 +18,7 @@ class Honors extends Component {
         <Route exact path="/UHP" component = { List } />
         <Route path="/UHP/treachery" component = { Treacery }/>
         <Route path="/UHP/BearcatCoders" component = { BCat }/>
-        <Route path="/UHP/intro"/>
+        <Route path="/UHP/intro" component = { Gateway }/>
         <Route path="/UHP/firstyear_review"/>
       </div>
     );
