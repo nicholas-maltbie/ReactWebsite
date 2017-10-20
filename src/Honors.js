@@ -10,6 +10,7 @@ import './App.css';
 import Treacery from './firstyear/Treachery'
 import BCat from './firstyear/BearcatCoders'
 import Gateway from './firstyear/Gateway'
+import YearOneReview from './firstyear/yearinreview'
 
 class Honors extends Component {
   render() {
@@ -19,7 +20,7 @@ class Honors extends Component {
         <Route path="/UHP/treachery" component = { Treacery }/>
         <Route path="/UHP/BearcatCoders" component = { BCat }/>
         <Route path="/UHP/intro" component = { Gateway }/>
-        <Route path="/UHP/firstyear_review"/>
+        <Route path="/UHP/FirstReview" component = { YearOneReview }/>
       </div>
     );
   }
