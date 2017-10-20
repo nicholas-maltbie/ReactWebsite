@@ -8,6 +8,7 @@ import bearcat from './media/icons/bearcatCoders.png';
 import uhp from './media/icons/UHP.png';
 import './App.css';
 import Treacery from './firstyear/Treachery'
+import BCat from './firstyear/BearcatCoders'
 
 class Honors extends Component {
   render() {
@@ -15,7 +16,7 @@ class Honors extends Component {
       <div>
         <Route exact path="/UHP" component = { List } />
         <Route path="/UHP/treachery" component = { Treacery }/>
-        <Route path="/UHP/BearcatCoders"/>
+        <Route path="/UHP/BearcatCoders" component = { BCat }/>
         <Route path="/UHP/intro"/>
         <Route path="/UHP/firstyear_review"/>
       </div>
@@ -39,7 +40,7 @@ const List = function ({}) {
       First Year
     </h2>
 
-    <NavLink to="/UHP/FirstReview"><h2 className="text-center col-lg-offset-1 col-lg-11">
+    <NavLink to="/UHP/FirstReview"><h2 className="text-left col-lg-offset-1 col-lg-11">
       First Year In Review
     </h2></NavLink>
 
