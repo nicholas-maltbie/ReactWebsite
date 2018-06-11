@@ -25,7 +25,7 @@ render() {
             <h1>Japan Trip</h1>
             <h3>(April to May 2018)</h3>
 
-            <img src="https://lh3.googleusercontent.com/1cBRZv-ALqDFnzEIwKTp7HJURrD58VJSMkgj5EwIC6ZE9K-Hqvwimi7OiQZjw1FqnhN7gzD_SjJinDi3W4GrVTwP2_eivCf0gb13CzRy7h_rKXB4EIsQlPPzNIpnUDwbaOL64_O0dDY=w640-h480" width="640" height="480" />
+            <img src="https://lh3.googleusercontent.com/1cBRZv-ALqDFnzEIwKTp7HJURrD58VJSMkgj5EwIC6ZE9K-Hqvwimi7OiQZjw1FqnhN7gzD_SjJinDi3W4GrVTwP2_eivCf0gb13CzRy7h_rKXB4EIsQlPPzNIpnUDwbaOL64_O0dDY=w640-h480" className="Image-content"/>
             
             <h2>Reflection</h2>
             <p>
