@@ -231,3 +231,12 @@ p {
     padding-right:0;
   }
 }
+
+td {
+    padding: 20px
+}
+
+tr:nth-child(even) {
+    background-color: #e2e2e2
+}
+

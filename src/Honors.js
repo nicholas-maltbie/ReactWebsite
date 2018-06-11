@@ -6,6 +6,7 @@ import bg from './media/IMG_4169-EFFECTS.jpg';
 import lamp from './media/icons/treachery.png';
 import stair from './media/icons/stairIcon.png';
 import bearcat from './media/icons/bearcatCoders.png';
+import jpn from './media/icons/japanIcon.svg';
 import uhp from './media/icons/UHP.png';
 import './App.css';
 import Treacery from './firstyear/Treachery'
@@ -13,12 +14,14 @@ import BCat from './firstyear/BearcatCoders'
 import Gateway from './firstyear/Gateway'
 import YearOneReview from './firstyear/yearinreview'
 import Knee from './secondyear/Knee'
+import Japan from './secondyear/Japan'
 
 class Honors extends Component {
   render() {
     return (
       <div>
         <Route exact path="/UHP" component = { List } />
+        <Route path="/UHP/Japan" component = { Japan }/>
         <Route path="/UHP/treachery" component = { Treacery }/>
         <Route path="/UHP/knee" component = { Knee }/>
         <Route path="/UHP/BearcatCoders" component = { BCat }/>
@@ -46,8 +49,14 @@ const List = function ({}) {
     </h2>
     
     <div className="col-lg-12" style={rowstyle}>
+      <Project title="Japan Trip" date="(Spring 2018)"
+        link="/UHP/Japan" icon={jpn} iconalt="Japan Icon">
+        After my coop at Infinera, I traveled to Japan for a study tour with 
+        other UC students for two weeks. I had fully recovered from my injury 
+        and was ready for a new experience. 
+      </Project>
       <Project title="Accessibility Project" date="(Fall/Spring 2017,2018)"
-        link="/UHP/Knee" icon={stair} iconalt="Treachery Lamp Icon">
+        link="/UHP/Knee" icon={stair} iconalt="Stair Icon">
         In fall of last year, I tore my meniscus doing everyday activities
         and needed to get surgery to repair the injury. This experinece is me 
         reflecting upon the experience and the effect it has had on me. 
