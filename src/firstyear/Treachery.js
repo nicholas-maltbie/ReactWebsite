@@ -46,11 +46,7 @@ const Treachery = function () {
               <a href="https://github.com/nicholas-maltbie/Treachery/blob/master/LICENSE.txt">license page </a>
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 align='center'>Final Progress</h2>
             <p>
@@ -80,11 +76,7 @@ const Treachery = function () {
               Picture of main room.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2> Game Explanation </h2>
             <p>
@@ -104,11 +96,7 @@ const Treachery = function () {
               supported).
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 align="center">Reflection</h2>
             <p>

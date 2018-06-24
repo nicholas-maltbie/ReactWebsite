@@ -27,11 +27,7 @@ const Gateway = function () {
              the University of Cincinnati and beyond."
            </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
           <h2 align='center'>Mini Experience</h2>
            <p>
@@ -73,11 +69,7 @@ const Gateway = function () {
              different.
            </p>
            </div>
-         </div>
-
-         <EmptyPadding height='10vh'/>
-
-         <div className='row center-block White-box'>
+           
            <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 align="center">Works Cited</h2>
             <p>Andrews, Kristin and Lesson, Sarah Beth. "Belief and Representation
@@ -85,11 +77,7 @@ const Gateway = function () {
               Psychology. York University. 2016. <a href='http://kristin-andrews.weebly.com/uploads/3/7/6/4/37646969/lesson_and_andrews_belief_and_representation_in_nonhuman_animals.pdf'>source</a>.
             </p>
            </div>
-         </div>
-
-         <EmptyPadding height='10vh'/>
-
-         <div className='row center-block White-box'>
+           
            <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
               <h2 align="center">Final Reflection</h2>
               <p>

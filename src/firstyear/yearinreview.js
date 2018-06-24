@@ -34,11 +34,7 @@ const YearOneReview = function () {
               the engineering environment at UC.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <p>
               During my first year, I joined ACM (Association for Computing
@@ -67,11 +63,7 @@ const YearOneReview = function () {
               group to do more.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <p>
               Through my experience at UC I have grown to learn that difficulty is

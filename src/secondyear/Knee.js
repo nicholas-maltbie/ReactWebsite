@@ -16,6 +16,7 @@ const Knee = function () {
             <h1 align='center'>Accessibility on UC Campus</h1>
             <h3 align='center'>(Fall 2017 to Spring 2018)</h3>
 
+            <h2>Overview</h2>
             <p>
               In fall of last year, I tore my meniscus doing everyday activities
               and needed to get surgery to repair the injury. The major 
@@ -31,6 +32,7 @@ const Knee = function () {
               perspective and looked into possible methods to alleviate 
               problems associated with accessibility on UC’s campus.  
             </p>
+            <h2>Experience</h2>
             <p>
               The first major difficulty beyond getting treatment was having to 
               cancel other study trips. Originally I had planned to go on a 
@@ -51,6 +53,7 @@ const Knee = function () {
               people in similar situations was during my physical therapy 
               sessions.
             </p>
+            <h2>Finding a Need</h2>
             <p>
               While at physical therapy, I was able to talk to my therapist and 
               learn about previous people who he had treated before as well as 
@@ -84,6 +87,7 @@ const Knee = function () {
               myself or other people in the future. I also realized the need for
               a tool that could improve this for new students at UC. 
             </p>
+            <h2>Addressing a Need</h2>
             <p>
               I had spent two years exploring campus so I knew my way around and 
               could easily find routes around buildings, but for new students 
@@ -108,6 +112,7 @@ const Knee = function () {
               and new outlook will help me to improve the situation for those 
               around me. 
             </p>
+            <h2>Project</h2>
             <p>
               The repo with progress on the project for UC path can be found 
               <a href="https://github.com/nicholas-maltbie/UC-Path-Program">here</a>.

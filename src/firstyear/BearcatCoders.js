@@ -40,11 +40,7 @@ const BCat = function () {
               assertive in my style even if it differed from Ms. Grasso's.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <img alt="Picture from Revolution UC"
               src={require("../media/projects/revUC.jpg")}
