@@ -15,6 +15,7 @@ import Gateway from './firstyear/Gateway'
 import YearOneReview from './firstyear/yearinreview'
 import Knee from './secondyear/Knee'
 import Japan from './secondyear/Japan'
+import YearTwoReview from './secondyear/SecondYearReview'
 
 class Honors extends Component {
   render() {
@@ -27,6 +28,7 @@ class Honors extends Component {
         <Route path="/UHP/BearcatCoders" component = { BCat }/>
         <Route path="/UHP/intro" component = { Gateway }/>
         <Route path="/UHP/FirstReview" component = { YearOneReview }/>
+        <Route path="/UHP/SecondReview" component = { YearTwoReview }/>
       </div>
     );
   }
@@ -47,6 +49,10 @@ const List = function ({}) {
     <h2 className="text-center center-block col-lg-12">
       Second Year
     </h2>
+
+    <NavLink to="/UHP/SecondReview"><h2 className="text-left col-lg-offset-1 col-lg-11">
+      Second Year In Review
+    </h2></NavLink>
     
     <div className="col-lg-12" style={rowstyle}>
       <Project title="Japan Trip" date="(Spring 2018)"
