@@ -50,8 +50,8 @@ class Bubble extends Component {
               Refresh the page if the game doesn't load right away.
             </p>
             <p>
-              This project is hoted on github, click <a href='https://github.com/nicholas-maltbie/BubbleShooterJS/'>here </a>
-              to see the page. Click <NavLink to="projects/bubble">here</NavLink> to see the report on the project.
+              This project is hosted on <a href='https://github.com/nicholas-maltbie/BubbleShooterJS/'>github</a>. 
+              There is also a <NavLink to="projects/bubble">report </NavLink> that explains the project.
             </p>
           </div>
         </div>

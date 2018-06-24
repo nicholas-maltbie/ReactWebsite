@@ -30,7 +30,7 @@ class AboutMe extends Component {
             </h1>
             <div className="col-xs-12">
               <p>
-                I am a determined student and have taken on many individual
+                I am a Univeristy of Cincinnati student and have taken on many individual
                 projects. One example is this website, hosted by github pages and
                 I coded the website from scratch. I am currently studying
                 Computer Science at UC and expect to graduate in 2021.
