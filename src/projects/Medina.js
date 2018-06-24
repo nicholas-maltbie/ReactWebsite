@@ -41,11 +41,7 @@ const ret = function () {
               design.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="TableOfContents">Table of Contents</h2>
             <ul>
@@ -67,11 +63,7 @@ const ret = function () {
               </ul>
             </ul>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Usage">Usage</h2>
             <p>
@@ -103,11 +95,7 @@ const ret = function () {
             <p align="center"> Game Screen </p>
             <img alt="Virtual Game Picture" src={require("../media/projects/MedinaGame.png")} className="Image-content"/>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="TheGame">The Game</h2>
             <p>
@@ -177,11 +165,7 @@ const ret = function () {
               at the end of The Game section)
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Design">Design</h2>
             <p>
@@ -254,11 +238,7 @@ const ret = function () {
             <p>Diagram of Human Agent design.</p>
             <img src={require("../media/projects/MedinaAgency.png")} className="Image-content"/>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Objective">Objective</h2>
             <p>My objectives at the start of the project:</p>
@@ -284,11 +264,7 @@ const ret = function () {
               </li>
             </ul>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Results">Results</h2>
             <p>
@@ -314,11 +290,7 @@ const ret = function () {
               shown by Tic Tac Toe.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="FutureImprovements">Future Improvements</h2>
             <p>
@@ -343,11 +315,7 @@ const ret = function () {
               unlimited space for improvement and analysis.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="References">References</h2>
             <p>
@@ -391,11 +359,7 @@ const ret = function () {
               (<a href="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html"> source </a>)
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="LibrariesUsed">Libraries Used</h2>
 
@@ -433,11 +397,7 @@ const ret = function () {
             </pre>
             <p>Tensorflow is used to make and read neural networks.</p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Development">Development</h2>
             <p>

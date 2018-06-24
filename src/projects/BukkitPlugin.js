@@ -21,11 +21,7 @@ const PlayerCount = function () {
              <p><img src={pcm} className='center-block Image-content'/></p>
            </a>
           </span>
-        </div>
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Project Description</h1>
             <p>
@@ -60,12 +56,7 @@ const PlayerCount = function () {
                </p>
              </div>
            </div>
-        </div>
-
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+           
           <div className='col-lg-offset-2 col-lg-8 col-xs-12'>
             <div className='row'>
               <h1 align="center">Tutorial Videos Made by Users</h1>

@@ -40,11 +40,7 @@ const ret = function () {
               The full project is posed to <a href='https://devpost.com/software/fakemidi'>devpost</a>.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'> Samle of project </h1>
             <iframe src="https://www.youtube.com/embed/5eRjky8j_Eg" className="Video-content"/>

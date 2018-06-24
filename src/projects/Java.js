@@ -41,11 +41,7 @@ const Java = function () {
               project, go to its <a href="https://github.com/nicholas-maltbie/Acquire">github page</a>.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 align='center'>Chess</h2>
             <img src={ chess } className='Image-content' />
@@ -66,11 +62,7 @@ const Java = function () {
               chess but has varied pieces and turn options.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 align='center'>Qwirkle</h2>
             <img src={ quirkle } className='Image-content' />

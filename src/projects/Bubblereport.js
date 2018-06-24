@@ -27,11 +27,7 @@ const BubbleRep = function () {
               <a href="https://drive.google.com/file/d/0B0gCZqueOMVIWEZyQ0V4cmVTVDQ/view"> here</a>.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="TableOfContents">Table of Contents</h2>
             <ul>
@@ -58,11 +54,7 @@ const BubbleRep = function () {
               <li><HashLink to="#References">References</HashLink></li>
             </ul>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
           <h2 id="Description">Description</h2>
           <p>
@@ -80,11 +72,7 @@ const BubbleRep = function () {
             <a href="https://github.com/nicholas-maltbie/BubbleShooterJS/">github page</a>.
           </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Gameplay">Gameplay / Instructions</h2>
             <p>When starting a game, you will see a view like the image below.</p>
@@ -181,11 +169,7 @@ const BubbleRep = function () {
             <p>That"s the basic rules and controls of the game. Good Luck!</p>
 
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Implementation">Implementation</h2>
             <h3 id="GameDesign">Game Design</h3>
@@ -226,11 +210,7 @@ const BubbleRep = function () {
               is easier than making the application in another editor.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h3 id="ClassLayout">Class Layout</h3>
 
@@ -257,11 +237,7 @@ const BubbleRep = function () {
            <img alt="Game Draw Diagram" src={require("../media/projects/bubbleClass.jpg")}
              className="Image-content"/>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h3 id="ShooterDesign">Shooter Design</h3>
 
@@ -296,11 +272,7 @@ const BubbleRep = function () {
              supposed to run on a mobile device, this could be rather slow.
            </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h3 id="GridDesign">Grid Design</h3>
 
@@ -371,11 +343,7 @@ const BubbleRep = function () {
               bubbles in that group are removed.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h3 id="BubbleDesign">Bubble Design</h3>
             <p>
@@ -393,11 +361,7 @@ const BubbleRep = function () {
               loads itself with bubbles from the queue.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h3 id="ManagerDesign">Manager Design</h3>
             <p>
@@ -436,11 +400,7 @@ const BubbleRep = function () {
               algorithm with the help of online sources.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="FutureImprovements">Future Improvements</h2>
 
@@ -474,11 +434,7 @@ const BubbleRep = function () {
               Hopefully I will be able to use this experience to improve my future projects.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 id="Development">Development</h2>
             <p>
@@ -514,11 +470,7 @@ const BubbleRep = function () {
 </div>`}</pre>
             <p>An example of this can be found on my own website: https://nickmaltbie.com/#/bubble</p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
           <h2 id="References">References</h2>
 

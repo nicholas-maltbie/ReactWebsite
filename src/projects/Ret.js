@@ -32,11 +32,7 @@ const ret = function () {
               applications parts of the project.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Modular Inverse Calculator</h1>
             <img src={modinverse} className="Image-content"/>
@@ -46,11 +42,7 @@ const ret = function () {
               in modular arithmetic.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Cipher Applet</h1>
             <img src={cipher} className="Image-content"/>
@@ -64,11 +56,7 @@ const ret = function () {
               expected for students to be able to complete it during the course.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='15vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Game of Codes Applet</h1>
             <img src={game} className="Image-content"/>

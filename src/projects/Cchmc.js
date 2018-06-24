@@ -52,11 +52,7 @@ const Cchmc = function () {
               finish before I leave this summer.
             </p>
           </div>
-        </div>
-
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
+          
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <h2 align="center">Experimenting with Tensor Flow to predict BSI Results</h2>
 
@@ -121,11 +117,7 @@ const Cchmc = function () {
               graph's variation).
             </p>
           </div>
-        </div>
 
-        <EmptyPadding height='10vh'/>
-
-        <div className='row center-block White-box'>
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <img alt="DNN Layout"
             src={require("../media/projects/cchmc_DNNLayout.png")}
