@@ -13,7 +13,7 @@ render() {
   }
   return (
     <div>
-      <Cover image='https://drive.google.com/uc?id=17geb8HzLQzSz3umi90qKCVFSJV-AQped' height="100%">
+      <Cover image='https://drive.google.com/uc?export=view&id=17geb8HzLQzSz3umi90qKCVFSJV-AQped' height="100%">
 
         <EmptyPadding height='20vh'/>
 

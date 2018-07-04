@@ -5,7 +5,7 @@ import '../App.css';
 const Gateway = function () {
   return (
     <div>
-      <Cover image='https://drive.google.com/uc?id=15ILeHE_J7ktKtofIBRU3Kd6cpdHMzX6w' height="100%">
+      <Cover image='https://drive.google.com/uc?export=view&id=15ILeHE_J7ktKtofIBRU3Kd6cpdHMzX6w' height="100%">
 
         <EmptyPadding height='20vh'/>
 

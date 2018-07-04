@@ -5,7 +5,7 @@ import '../App.css';
 const Knee = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?id=1RP7jEk6b1xKPbIQM2ZGphnppmSS3D9rW" height="100%">
+      <Cover image="https://drive.google.com/uc?export=view&id=1RP7jEk6b1xKPbIQM2ZGphnppmSS3D9rW" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -116,7 +116,7 @@ const Knee = function () {
               <a href="https://github.com/nicholas-maltbie/UC-Path-Program">here</a>.
             </p>
             <img alt="Application"
-              src="https://drive.google.com/uc?id=1eLkreWZwkhWpMQAFCwPiXZ7qcR8238Cn"
+              src="https://drive.google.com/uc?export=view&id=1eLkreWZwkhWpMQAFCwPiXZ7qcR8238Cn"
               className="Image-content"/>
           </div>
         </div>

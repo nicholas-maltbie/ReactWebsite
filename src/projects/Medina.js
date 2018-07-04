@@ -6,7 +6,7 @@ import '../App.css';
 const ret = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?id=1uedj8DCYIa36Fv0-AAqW3wErq8Qrqlfg" height="100%">
+      <Cover image="https://drive.google.com/uc?export=view&id=1uedj8DCYIa36Fv0-AAqW3wErq8Qrqlfg" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -88,11 +88,11 @@ const ret = function () {
             </p>
 
             <p align="center"> Start Panel </p>
-            <img alt="Start Panel" src='https://drive.google.com/uc?id=1yWX3ZGO_YmlPBj4GYIZe_RczGqo2V7Py' className="Image-content"/>
+            <img alt="Start Panel" src='https://drive.google.com/uc?export=view&id=1yWX3ZGO_YmlPBj4GYIZe_RczGqo2V7Py' className="Image-content"/>
             <p align="center"> Options panel </p>
-            <img alt="Options Panel" src='https://drive.google.com/uc?id=1dXaM0f84pTHRF1Vtj9n3Db0NRSdf3t_T' className="Image-content"/>
+            <img alt="Options Panel" src='https://drive.google.com/uc?export=view&id=1dXaM0f84pTHRF1Vtj9n3Db0NRSdf3t_T' className="Image-content"/>
             <p align="center"> Game Screen </p>
-            <img alt="Virtual Game" src='https://drive.google.com/uc?id=1DD54p2k5_tEsOF4WNNGGPJW6ELPzByVJ' className="Image-content"/>
+            <img alt="Virtual Game" src='https://drive.google.com/uc?export=view&id=1DD54p2k5_tEsOF4WNNGGPJW6ELPzByVJ' className="Image-content"/>
           </div>
           
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
@@ -111,7 +111,7 @@ const ret = function () {
               points than buildings not close to anything important in the city.
             </p>
             <p align="center"> Picture of the game in Real Life </p>
-            <img alt="Board Game" src='https://drive.google.com/uc?id=1Bv7wztfcG3Dmxli88i7kG4A9DtuStxXw' className="Image-content"/>
+            <img alt="Board Game" src='https://drive.google.com/uc?export=view&id=1Bv7wztfcG3Dmxli88i7kG4A9DtuStxXw' className="Image-content"/>
             <p align="center"> Image from Board Game Geek by Julian Pombo uploaded on 2015-08-03 <a href="https://boardgamegeek.com/image/2613390/medina-second-edition?size=medium">
               image source</a></p>
             <p>
@@ -192,7 +192,7 @@ const ret = function () {
               their respective files on the <a href="https://github.com/nicholas-maltbie">Github Repo</a>.
             </p>
             <p>Diagram of the Definition of a Board State</p>
-            <img src='https://drive.google.com/uc?id=1d1zE5JI8wPAZ9vW-zYDqyisJLEOtTle3' className="Image-content" alt="Board State Diagram"/>
+            <img src='https://drive.google.com/uc?export=view&id=1d1zE5JI8wPAZ9vW-zYDqyisJLEOtTle3' className="Image-content" alt="Board State Diagram"/>
             <p>
               Board State is an abstract definition so there is no ADT or module for
               Board State. In different parts of the project, modules will use a
@@ -201,7 +201,7 @@ const ret = function () {
               players; the board state is passed as three parameters.
             </p>
             <p>Diagram of how the Game is controlled from the Game.py file</p>
-            <img src='https://drive.google.com/uc?id=16I-IM1knNqmX86YHfEjhQShoxfMg-Xw2' className="Image-content" alt="Game Controller Diagram"/>
+            <img src='https://drive.google.com/uc?export=view&id=16I-IM1knNqmX86YHfEjhQShoxfMg-Xw2' className="Image-content" alt="Game Controller Diagram"/>
 
             <p>
               In Addition to making the game, there needed to be a display mechanism.
@@ -216,7 +216,7 @@ const ret = function () {
                and make moves.
             </p>
             <p>Example of the board canvas with a human agent.</p>
-            <img src='https://drive.google.com/uc?id=1oGVb8in2EsbcLleiUzr3rnLXrFqaDhld' className="Image-content" alt="MVC Diagram"/>
+            <img src='https://drive.google.com/uc?export=view&id=1oGVb8in2EsbcLleiUzr3rnLXrFqaDhld' className="Image-content" alt="MVC Diagram"/>
 
             <p>
               The game uses a setup of agents. As defined in the documentation, "an
@@ -235,7 +235,7 @@ const ret = function () {
               step between the board state and the player"s actions.
             </p>
             <p>Diagram of Human Agent design.</p>
-            <img src='https://drive.google.com/uc?id=18LZkLu5MtH-ieSODfXfxbRs-TMe-Om4s' className="Image-content" alt="Human Agent Diagram"/>
+            <img src='https://drive.google.com/uc?export=view&id=18LZkLu5MtH-ieSODfXfxbRs-TMe-Om4s' className="Image-content" alt="Human Agent Diagram"/>
           </div>
           
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>

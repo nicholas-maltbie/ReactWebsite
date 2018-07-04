@@ -5,7 +5,7 @@ import '../App.css';
 const BCat = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?id=1oxPuATYUWus5dUWgvELF05RPUXb1dCxU" height="100%">
+      <Cover image="https://drive.google.com/uc?export=view&id=1oxPuATYUWus5dUWgvELF05RPUXb1dCxU" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -41,7 +41,7 @@ const BCat = function () {
 
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <img alt="Tutoring at Revolution UC"
-              src='https://drive.google.com/uc?id=1ATUMZPw8m9_cS9jE7DXHAex99ddmKMtH'
+              src='https://drive.google.com/uc?export=view&id=1ATUMZPw8m9_cS9jE7DXHAex99ddmKMtH'
               className="Image-content"/>
             <p>
               The picture of me helping a high school student with this project at

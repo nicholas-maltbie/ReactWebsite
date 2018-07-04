@@ -5,7 +5,7 @@ import '../App.css';
 const ret = function () {
   return (
     <div>
-      <Cover image='https://drive.google.com/uc?id=12i83VxJu4qOh1Ebe0YwEMDSnDYMD2Ax1' height="100%">
+      <Cover image='https://drive.google.com/uc?export=view&id=12i83VxJu4qOh1Ebe0YwEMDSnDYMD2Ax1' height="100%">
 
         <EmptyPadding height='20vh'/>
 

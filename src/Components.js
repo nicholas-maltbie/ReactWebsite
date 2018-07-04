@@ -10,27 +10,27 @@ const Footer = function ({ page }) {
       <ul className="footlinks">
         <li>
           <span title="nick.dmalt@gmail.com">
-            <a href="mailto:nick.dmalt@gmail.com"><img src='https://drive.google.com/uc?id=19AGhvFVDEJSZjV5-fCKZbWtK5e7bXQt1' className="iconstyle" alt="gmail icon"/></a>
+            <a href="mailto:nick.dmalt@gmail.com"><img src='https://drive.google.com/uc?export=view&id=19AGhvFVDEJSZjV5-fCKZbWtK5e7bXQt1' className="iconstyle" alt="gmail icon"/></a>
           </span>
         </li>
         <li>
           <span title="linked in profile">
-            <a href="https://www.linkedin.com/in/nicholas-maltbie-b543a8137/"><img src='https://drive.google.com/uc?id=1lnOmfofvJeUqLbxSQiUySZtRp0R9LZ-X' className="iconstyle" alt="linkedin icon"/></a>
+            <a href="https://www.linkedin.com/in/nicholas-maltbie-b543a8137/"><img src='https://drive.google.com/uc?export=view&id=1lnOmfofvJeUqLbxSQiUySZtRp0R9LZ-X' className="iconstyle" alt="linkedin icon"/></a>
           </span>
         </li>
         <li>
           <span title="My twitter profile">
-            <a href="https://twitter.com/NicholasMaltbie"><img src='https://drive.google.com/uc?id=1NpweMupy-oXGhV8S7swUB3aRDAulIiRu' className="iconstyle" alt="twitter icon"/></a>
+            <a href="https://twitter.com/NicholasMaltbie"><img src='https://drive.google.com/uc?export=view&id=1NpweMupy-oXGhV8S7swUB3aRDAulIiRu' className="iconstyle" alt="twitter icon"/></a>
           </span>
         </li>
         <li>
           <span title="My facebook profile">
-            <a href="https://www.facebook.com/nicholas.maltbie"><img src='https://drive.google.com/uc?id=1NPvHj5IX2J9ufnnChPWzE3OUJRV8IPFw' className="iconstyle" alt="facebook icon"/></a>
+            <a href="https://www.facebook.com/nicholas.maltbie"><img src='https://drive.google.com/uc?export=view&id=1NPvHj5IX2J9ufnnChPWzE3OUJRV8IPFw' className="iconstyle" alt="facebook icon"/></a>
           </span>
         </li>
         <li>
           <span title="My github profile">
-            <a href="https://github.com/nicholas-maltbie"><img src='https://drive.google.com/uc?id=1SDNJReOtHXkliKi2MaVOvVAEn3RGeW7z' className="iconstyle" alt="github icon"/></a>
+            <a href="https://github.com/nicholas-maltbie"><img src='https://drive.google.com/uc?export=view&id=1SDNJReOtHXkliKi2MaVOvVAEn3RGeW7z' className="iconstyle" alt="github icon"/></a>
           </span>
         </li>
       </ul>

@@ -12,9 +12,9 @@ class AboutMe extends Component {
     }
     return (
       <div>
-        <Cover image='https://drive.google.com/uc?id=1VG6MVc3iP9Yl0k4_SjuxxBd_2Th6z1Ft' height="40vh">
+        <Cover image='https://drive.google.com/uc?export=view&id=1VG6MVc3iP9Yl0k4_SjuxxBd_2Th6z1Ft' height="40vh">
           <div className="col-lg-3 col-md-offset-1 col-md-4 col-sm-4 col-xs-12">
-            <img className="center-block Profile-image" src='https://drive.google.com/uc?id=1gayt9YVkfIcxjXD4226215u0CuWyVtQn' alt="Me"/>
+            <img className="center-block Profile-image" src='https://drive.google.com/uc?export=view&id=1gayt9YVkfIcxjXD4226215u0CuWyVtQn' alt="Me"/>
           </div>
         </Cover>
 
@@ -37,7 +37,7 @@ class AboutMe extends Component {
           </div>
         </div>
 
-        <Cover image='https://drive.google.com/uc?id=1ZexxyJ6l-n8byC84vj5T_qbqsz0rGuFX' height="30vh"/>
+        <Cover image='https://drive.google.com/uc?export=view&id=1ZexxyJ6l-n8byC84vj5T_qbqsz0rGuFX' height="30vh"/>
 
         <div className="row">
           <div style={boxstyle} className="col-lg-12">
@@ -76,7 +76,7 @@ class AboutMe extends Component {
           </div>
         </div>
 
-        <Cover image='https://drive.google.com/uc?id=13PHvGdcoZHST4ywDGDcsFP28UhtVtFnU' height="30vh"/>
+        <Cover image='https://drive.google.com/uc?export=view&id=13PHvGdcoZHST4ywDGDcsFP28UhtVtFnU' height="30vh"/>
 
         <div className="row">
           <div style={boxstyle} className="col-lg-12">
@@ -93,7 +93,7 @@ class AboutMe extends Component {
           </div>
         </div>
 
-        <Cover image='https://drive.google.com/uc?id=1ZiqmKRzDm42S_BWKMYlQFYPge8TtPH9j' height="30vh"/>
+        <Cover image='https://drive.google.com/uc?export=view&id=1ZiqmKRzDm42S_BWKMYlQFYPge8TtPH9j' height="30vh"/>
 
         <div className="row">
           <div style={boxstyle} className="col-lg-12">

@@ -5,7 +5,7 @@ import '../App.css';
 const Treachery = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?id=1l9NH9YLjJYYVtBVVBzA6BURtpfrZpQjL" height="100%">
+      <Cover image="https://drive.google.com/uc?export=view&id=1l9NH9YLjJYYVtBVVBzA6BURtpfrZpQjL" height="100%">
 
         <EmptyPadding height='20vh'/>
 
