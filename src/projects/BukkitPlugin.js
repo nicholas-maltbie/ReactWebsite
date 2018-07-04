@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/2013-10-18_16.37.02.png";
-import pcm from "../media/projects/pcm.gif"
 
 const PlayerCount = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image="https://drive.google.com/uc?id=1NWPHzihy4GIm-dEpuVHd85zvUjRKLfaP" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -18,7 +15,7 @@ const PlayerCount = function () {
 
           <span title = "click for project page">
            <a href='https://dev.bukkit.org/bukkit-plugins/player-count-message/'>
-             <p><img src={pcm} className='center-block Image-content'/></p>
+             <p><img src="https://drive.google.com/uc?id=1kA_3Lgcm-tlEbRTXs4grcyrUXiom1qCt" className='center-block Image-content' alt="Player Count Message example"/></p>
            </a>
           </span>
           
@@ -64,31 +61,31 @@ const PlayerCount = function () {
             <div className='row'>
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutorial video by lockeMinecraft (que1124) </h3>
-                <iframe src="https://www.youtube.com/embed/TVMCCvRO4D0"
+                <iframe title="lockeMinecraft" src="https://www.youtube.com/embed/TVMCCvRO4D0"
                   className="Video-content"/>
               </div>
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutorial video by VariationVault </h3>
-                <iframe src="https://www.youtube.com/embed/n5gYRKOV2aw"
+                <iframe title="VariationVault" src="https://www.youtube.com/embed/n5gYRKOV2aw"
                   className="Video-content"/>
               </div>
             </div>
             <div className='row'>
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutoriel vid&#x00E9;o par GAmerHD Quatre </h3>
-                <iframe src="https://www.youtube.com/embed/go2Xkj4qsOU"
+                <iframe title='GAmerHD Quatre' src="https://www.youtube.com/embed/go2Xkj4qsOU"
                   className="Video-content"/>
               </div>
               <div className='col-lg-6 col-xs-12'>
                 <h3> Tutorial de v&#x00ED;deo por Yan Francisco P&#x00E9;rez </h3>
-                <iframe src="https://www.youtube.com/embed/PZbJAv_Iz94"
+                <iframe title='Yan Francisco' src="https://www.youtube.com/embed/PZbJAv_Iz94"
                   className="Video-content"/>
               </div>
             </div>
             <div className='row'>
               <div className='col-lg-6 col-xs-12'>
                 <h3> &#x0412;&#x0438;&#x0434;&#x0435;&#x043E; &#x0443;&#x0440;&#x043E;&#x043A; &#x043E;&#x0442; BOBARA333BG </h3>
-                <iframe src="https://www.youtube.com/embed/RiBajAOos8Q"
+                <iframe title='BOBARA333BG' src="https://www.youtube.com/embed/RiBajAOos8Q"
                   className="Video-content"/>
               </div>
             </div>

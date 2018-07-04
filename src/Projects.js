@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Project, Cover } from './Components';
-import { NavLink } from 'react-router-dom';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import List from './projects/List'
 import Java from './projects/Java'
 import Playscape from './projects/Playscape'

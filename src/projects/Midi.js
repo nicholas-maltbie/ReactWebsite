@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/IMG_1759.JPG";
-import modinverse from "../media/projects/modinverse.png"
-import game from "../media/projects/GameOfCodes.png"
-import cipher from "../media/projects/cipherapplet.png"
 
 const ret = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image='https://drive.google.com/uc?id=12i83VxJu4qOh1Ebe0YwEMDSnDYMD2Ax1' height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -43,7 +38,7 @@ const ret = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'> Samle of project </h1>
-            <iframe src="https://www.youtube.com/embed/5eRjky8j_Eg" className="Video-content"/>
+            <iframe title="Sample Music" src="https://www.youtube.com/embed/5eRjky8j_Eg" className="Video-content"/>
           </div>
         </div>
 

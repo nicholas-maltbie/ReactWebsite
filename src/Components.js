@@ -10,27 +10,27 @@ const Footer = function ({ page }) {
       <ul className="footlinks">
         <li>
           <span title="nick.dmalt@gmail.com">
-            <a href="mailto:nick.dmalt@gmail.com"><img src={require("./media/icons/gmail-icon.png")} className="iconstyle"/></a>
+            <a href="mailto:nick.dmalt@gmail.com"><img src='https://drive.google.com/uc?id=19AGhvFVDEJSZjV5-fCKZbWtK5e7bXQt1' className="iconstyle" alt="gmail icon"/></a>
           </span>
         </li>
         <li>
           <span title="linked in profile">
-            <a href="https://www.linkedin.com/in/nicholas-maltbie-b543a8137/"><img src={require("./media/icons/in-logo.png")} className="iconstyle"/></a>
+            <a href="https://www.linkedin.com/in/nicholas-maltbie-b543a8137/"><img src='https://drive.google.com/uc?id=1lnOmfofvJeUqLbxSQiUySZtRp0R9LZ-X' className="iconstyle" alt="linkedin icon"/></a>
           </span>
         </li>
         <li>
           <span title="My twitter profile">
-            <a href="https://twitter.com/NicholasMaltbie"><img src={require("./media/icons/twitter-icon.png")} className="iconstyle"/></a>
+            <a href="https://twitter.com/NicholasMaltbie"><img src='https://drive.google.com/uc?id=1NpweMupy-oXGhV8S7swUB3aRDAulIiRu' className="iconstyle" alt="twitter icon"/></a>
           </span>
         </li>
         <li>
           <span title="My facebook profile">
-            <a href="https://www.facebook.com/nicholas.maltbie"><img src={require("./media/icons/fb-icon.png")} className="iconstyle"/></a>
+            <a href="https://www.facebook.com/nicholas.maltbie"><img src='https://drive.google.com/uc?id=1NPvHj5IX2J9ufnnChPWzE3OUJRV8IPFw' className="iconstyle" alt="facebook icon"/></a>
           </span>
         </li>
         <li>
           <span title="My github profile">
-            <a href="https://github.com/nicholas-maltbie"><img src={require("./media/icons/github-icon.png")} className="iconstyle"/></a>
+            <a href="https://github.com/nicholas-maltbie"><img src='https://drive.google.com/uc?id=1SDNJReOtHXkliKi2MaVOvVAEn3RGeW7z' className="iconstyle" alt="github icon"/></a>
           </span>
         </li>
       </ul>
@@ -47,11 +47,6 @@ class NavBar extends Component {
   };
   render() {
 
-    const divstyle={
-      height:'10vh',
-      paddingTop: '0.5vh',
-      backgroundColor: '#CCC',
-    }
     const fullstyle={
       textAlign: 'center',
       textDecoration: 'none',
@@ -76,24 +71,13 @@ class NavBar extends Component {
       color: '#444',
       fontStyle: 'bold',
     }
-    const linkstyle = {
-      paddingLeft: '3vw',
-      textDecoration: 'none',
-      textDecorationStyle: 'none',
-      float: 'right',
-      color: '#444',
-    };
     const navstyle = {
       height: '100%',
       width: '100%',
       textDecoration: 'none',
     }
-    const liststyle = {
-      float: 'right',
-      paddingRight: '3vw',
-    }
 
-    const { openRight, openLeft, drawerProps, image } = this.state;
+    const { openRight, openLeft, drawerProps } = this.state;
     return (
       <div>
         {!openRight &&
@@ -226,9 +210,6 @@ const EmptyPadding = function ({ height }) {
 }
 
 const CoverVideo = function ({ children, url}) {
-  const divstyle = {
-
-  }
   return (
     <video className='CoverStyle' poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" playsinline autoplay muted loop>
       <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm"/>

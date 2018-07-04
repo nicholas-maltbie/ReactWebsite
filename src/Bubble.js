@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { HorizLinks, Cover } from './Components';
 import { NavLink } from 'react-router-dom';
 import './App.css';
 import Script from 'react-load-script'

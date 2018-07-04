@@ -1,17 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import acquire from "../media/projects/acquire.png";
-import chess from "../media/projects/chess.png";
-import duke from "../media/projects/duke.png";
-import quirkle from "../media/projects/qwirkle.png";
-import img from "../media/imagesky.jpg";
 
 const Java = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image='https://drive.google.com/uc?id=1U7_ADrgzgTcJ_8R0GFZfutTQw3PEQ-YC' height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -35,7 +29,7 @@ const Java = function () {
         <div className='row center-block White-box'>
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 align='center'>Acquire</h2>
-            <img src={ acquire } className='Image-content' />
+            <img src='https://drive.google.com/uc?id=1hDcSql5oCu6fNK3-l61BpQ9RMI6TtQQ3' className='Image-content' alt="Acquire Game"/>
             <p>
               Acquire is a game made by Avalon Hill, for a full description of the
               project, go to its <a href="https://github.com/nicholas-maltbie/Acquire">github page</a>.
@@ -44,7 +38,7 @@ const Java = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 align='center'>Chess</h2>
-            <img src={ chess } className='Image-content' />
+            <img src='https://drive.google.com/uc?id=1g1Mc1ZUSjW8eyQwtzARMAas_5o4u9pbn' className='Image-content' alt="Chess Game"/>
             <p>
               This is simply a classic game of chess, nothing special.
             </p>
@@ -56,7 +50,7 @@ const Java = function () {
         <div className='row center-block White-box'>
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 align='center'>Duke</h2>
-            <img src={ duke } className='Image-content' />
+            <img src='https://drive.google.com/uc?id=17h1rS1htYcBSlRvFfbdGAgiJYcb17pqt' className='Image-content' alt="Duke Game"/>
             <p>
               This is a game published by Catalyst Game Labs and is similar to
               chess but has varied pieces and turn options.
@@ -65,7 +59,7 @@ const Java = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h2 align='center'>Qwirkle</h2>
-            <img src={ quirkle } className='Image-content' />
+            <img src='https://drive.google.com/uc?id=1so9Po6Q7IyURMawWVLrJ42VWWwsqNuru' className='Image-content' alt="Quirkle Game"/>
             <p>
               Qwirkle is a simple pattern matching game published by MindWare. I
               used this game as a project in one of my classes in high school and

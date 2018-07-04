@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { NavBar, HorizLinks, Cover } from './Components';
-import me from './media/me.jpg';
-import bg from './media/bg.jpg';
-import bg2 from './media/bg2.jpg';
+import { HorizLinks, Cover } from './Components';
 
 const Landing = () => (
   <div>
-    <Cover image={bg} height="40vh">
+    <Cover image='https://drive.google.com/uc?id=1JsrRviTbIxI_pTXoIieXPyfo_c6Hkbyl' height="40vh">
       <div className="col-lg-3 col-xs-12">
-        <img className="center-block Profile-image" src={me}/>
+        <img className="center-block Profile-image" src='https://drive.google.com/uc?id=1sQWw6WtLglu-9b5PQ_DLlSyjxPndZTtn' alt="Me"/>
       </div>
     </Cover>
 
@@ -30,7 +26,8 @@ const Landing = () => (
       </div>
     </div>
 
-    <Cover image={bg2} height="60vh">
+    <Cover image='https://drive.google.com/uc?id=1wOYpaXhWDlB82Drk_5rTeZzb0uNx7ZfM'
+    height="60vh">
       <NavLink to="/AboutMe">
         <HorizLinks name="About Me" />
       </NavLink>

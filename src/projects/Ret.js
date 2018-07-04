@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/UC.jpg";
-import modinverse from "../media/projects/modinverse.png"
-import game from "../media/projects/GameOfCodes.png"
-import cipher from "../media/projects/cipherapplet.png"
 
 const ret = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image='https://drive.google.com/uc?id=1OKM9VtQ3sLNuXw5J6ktIhRJiItIZk_1T' height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -35,7 +30,7 @@ const ret = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Modular Inverse Calculator</h1>
-            <img src={modinverse} className="Image-content"/>
+            <img src='https://drive.google.com/uc?id=1F4QcSTkSDJZUnw7Hc0wQutG8DZTDo0H3' className="Image-content" alt="Mod Inverse Calc"/>
             <p>
               Applet designed to demonstrate how to find a modular inverse of a
               number. This was used by the teachers to help instruct students
@@ -45,7 +40,7 @@ const ret = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Cipher Applet</h1>
-            <img src={cipher} className="Image-content"/>
+            <img src='https://drive.google.com/uc?id=1Z6htpqTV4dD0QouAdoTwgjwFDaHoGQBG' className="Image-content" alt="Cipher Applet"/>
             <p>
               The <a href="https://en.wikipedia.org/wiki/Hill_cipher">Hill Cipher</a> is
               a cipher that was used to encrypt information using matrix math. This
@@ -59,7 +54,7 @@ const ret = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Game of Codes Applet</h1>
-            <img src={game} className="Image-content"/>
+            <img src='https://drive.google.com/uc?id=1TPe4Z4F0gVsbgZPKQ1KnWI6O2Zuzqa2W' className="Image-content" alt="Game of Codes"/>
             <p>
               This applet will generate a peer to peer network that allows
               students to play a game and send encoded messages to each other.

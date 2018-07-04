@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/IMG_3003-EFFECTS.jpg";
 
 const YearOneReview = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image="https://drive.google.com/uc?id=1kfhN7C9W-Fs5J5JGbkQ6W_xLq9q0imYz" height="100%">
 
         <EmptyPadding height='20vh'/>
 

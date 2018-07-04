@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/IMG_1278-EFFECTS.jpg";
 
 const Gateway = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image='https://drive.google.com/uc?id=15ILeHE_J7ktKtofIBRU3Kd6cpdHMzX6w' height="100%">
 
         <EmptyPadding height='20vh'/>
 

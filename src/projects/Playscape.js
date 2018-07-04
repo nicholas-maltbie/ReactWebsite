@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/IMG_0627.PNG";
-import poster from "../media/projects/playscape.png"
 
 const Playscape = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image="https://drive.google.com/uc?id=1RSD-5T6Bwkoy0o79rGopcd4cUzRHX2Oy" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -24,7 +21,7 @@ const Playscape = function () {
               at the IT@UC 2014 conference.
             </p>
           <span title = "click for full pdf">
-            <a href='https://drive.google.com/file/d/0B0gCZqueOMVIWnMzUmtxQXB2dGs'><img src={poster} className='Image-content'/></a>
+            <a href='https://drive.google.com/file/d/0B0gCZqueOMVIWnMzUmtxQXB2dGs'><img src="https://drive.google.com/uc?id=1tV68caX3jUG3dXpUXa2U7VfsC8JKCcBU" className='Image-content' alt="Showcase Poster"/></a>
           </span>
           </div>
         </div>

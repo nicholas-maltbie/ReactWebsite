@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/Margam_Castle.jpg";
 
 const Treachery = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image="https://drive.google.com/uc?id=1l9NH9YLjJYYVtBVVBzA6BURtpfrZpQjL" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -62,14 +60,14 @@ const Treachery = function () {
               in the future.
             </p>
 
-            <img alt="Picture of gameplay"
+            <img alt="Gameplay"
             src="https://lh3.googleusercontent.com/2CA0ZKnhf1GY_p2gXktgwktRcYsxvOJv-gEMNOQrJvqKrspYxEwWJ2hJLNH04YkQiOmKqTpzHxg7pqJfhsZkQ3zyMGHOAcUrrka4hPxCFEH6FkrK5ig81mSQH46Shq1Pt5IO2uvUtxDl3Pp8euliSrun5mVRLb3BpCBS5OrwFohfUDe1ixdzwno0QHY2HjsLJ2NbTmyP1JOVmu2xX0ROUencqP8_9scTxGQjnhUu2cx5_zqrVRZaZ-gGyn3eGKktjuhItiuib8gYGtC7ZD20yWAxVbSZAnQaflI1X5ZvqSGLUtQ4WCy3LbCz7OhgsfvewGY4NCVRD6KNIg5J4-2etxIebRpZvHR9m7KqFb_779iysFoFCU_G_xBKgVmcfxQzoZW1DFJ95VP-Vk38itXyyGt-7ET2eZE_j55hK8cb9HcxjsMR0P4zfzqzkfSEuMewkJst_taoZ-ugsRq7Q_so6eJOgsH0VtxUCZsAFwau1OFqtRvPfUp4-56eDfgZncCjApWkcM_0b1dDjorKHYtYA29_HHk7DwKqoWvfz8yet3ROjFP_LNCPf9B4vmiK51UqqYQZdX7ZjXy67LmUhvtWZgNs9Cfw1o9LeKGBDHsm3wcltx3FCzFF3xK_lYirgbLgPONfGRqvdBYfxG8xLQK4ItHV017tmU6gz3F2PDPquJ8t9Q=w1725-h966-no"
             className="Image-content"/>
             <p>
               Picture of exploring the house with a 'friend'.
             </p>
 
-            <img alt="Picture of gameplay (2)"
+            <img alt="Gameplay (2)"
             src="https://lh3.googleusercontent.com/U_MGBASU8nzi1BPeo-dwe7FfsCXz-1cfpOwS2SGao6eHPSJfwC8L9pwu_-Bfs5kY6o4vp5mIOH2525LQC0aR2yLGS2-OS4-AtgJNTYgn9gH8T2uGI80AS7FkFn9qcv7Bnwuu9y-r8BBRBXmyHAWeBLzOaVqxt5sWPoncGt06-JNJmU7bm08suCY639uc5B_ksfjUvSAMkC0K0VFbYQ7p2zN6CPqsQPS1d-LFuvgKCHChuFYQZjcW7reBOi6dpEj1RDob_eTPEuV0Wv0RRIzkLCw-wmF66RPxK0t0uV9Wy5lHZOgauKSUV_i-Pp1EUEOJax8ukARwgW5ppfEGl_C1dg9p7WWBqnpI5gztKu7TVXcUyYSalKzWWaZMw23KzhZoA_u_-ClP13VjlNOrlFAlknrpYBR0AZRfBdlq9-9-p76buP3cjmoRUJDyfazWbV1GMjtG5bxVOK7ERn5AYTJPDOTpAr57X-7B-cZjIlIO_XUg3qWOg3k74uvy_AfsCsQ4lgGoVXXNWK5EULgY0JjPMZssxa_nZRtH8VpbLR9zcMs9yIh3Sf9p01w-_89mnaa9daBjZamqDi2mWiM_K-2pyYXDyOg6yOruXRdxdaXbBbuexHNGDhowzXq8wSVDR2y_eFGKMFTSELZz4AtkQfrZgDquXhsEVm1qVE8PAp_Q7xSfKQ=w1718-h966-no"
             className="Image-content"/>
             <p align="center">

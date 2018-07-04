@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import { HorizLinks, Cover } from './Components';
+import { Cover } from './Components';
 import { NavLink } from 'react-router-dom';
-import me from './media/me2.jpg';
-import bg from './media/aboutme.jpg';
-import bg2 from './media/IMG_3840.JPG';
-import bg3 from './media/IMG_3931.JPG';
-import bg4 from './media/fountain.jpg';
 import './App.css';
 
 class AboutMe extends Component {
@@ -17,9 +12,9 @@ class AboutMe extends Component {
     }
     return (
       <div>
-        <Cover image={bg} height="40vh">
+        <Cover image='https://drive.google.com/uc?id=1VG6MVc3iP9Yl0k4_SjuxxBd_2Th6z1Ft' height="40vh">
           <div className="col-lg-3 col-md-offset-1 col-md-4 col-sm-4 col-xs-12">
-            <img className="center-block Profile-image" src={me}/>
+            <img className="center-block Profile-image" src='https://drive.google.com/uc?id=1gayt9YVkfIcxjXD4226215u0CuWyVtQn' alt="Me"/>
           </div>
         </Cover>
 
@@ -36,13 +31,13 @@ class AboutMe extends Component {
                 Computer Science at UC and expect to graduate in 2021.
               </p>
               <p>
-                To view my resume, click <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>here</a>.
+                To view my resume, click <a href='https://drive.google.com/file/d/1H2mwpVin68auofspoJHZymCrYbUESYlL/view?usp=sharing'>here</a>.
               </p>
             </div>
           </div>
         </div>
 
-        <Cover image={bg2} height="30vh"/>
+        <Cover image='https://drive.google.com/uc?id=1ZexxyJ6l-n8byC84vj5T_qbqsz0rGuFX' height="30vh"/>
 
         <div className="row">
           <div style={boxstyle} className="col-lg-12">
@@ -81,7 +76,7 @@ class AboutMe extends Component {
           </div>
         </div>
 
-        <Cover image={bg3} height="30vh"/>
+        <Cover image='https://drive.google.com/uc?id=13PHvGdcoZHST4ywDGDcsFP28UhtVtFnU' height="30vh"/>
 
         <div className="row">
           <div style={boxstyle} className="col-lg-12">
@@ -98,7 +93,7 @@ class AboutMe extends Component {
           </div>
         </div>
 
-        <Cover image={bg4} height="30vh"/>
+        <Cover image='https://drive.google.com/uc?id=1ZiqmKRzDm42S_BWKMYlQFYPge8TtPH9j' height="30vh"/>
 
         <div className="row">
           <div style={boxstyle} className="col-lg-12">
@@ -107,7 +102,7 @@ class AboutMe extends Component {
             </h1>
             <div className="text-center col-xs-12 col-lg-3 col-lg-offset-2">
               <span title="My Myers Briggs Personality type"><a href="https://www.16personalities.com/intp-personality">
-              <img src="https://s-media-cache-ak0.pinimg.com/originals/71/26/53/712653dc0993813a427914a4e84c188e.jpg" className='Image-content'/>
+              <img src="https://s-media-cache-ak0.pinimg.com/originals/71/26/53/712653dc0993813a427914a4e84c188e.jpg" className='Image-content' alt="Cute INTP Kitty"/>
               </a></span>
             </div>
             <p className="text-left col-xs-12 col-lg-5 col-lg-offset-1">

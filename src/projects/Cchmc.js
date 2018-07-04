@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/IMG_3251-EFFECTS.jpg";
 
 const Cchmc = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image="https://drive.google.com/uc?id=1w3zx9C185oCTP3VFd4_cGuB0P7YkrwX5" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -32,8 +30,8 @@ const Cchmc = function () {
               interaction sites.
             </p>
 
-            <img alt="Picture of gamplay"
-            src={require("../media/projects/cchmc_polyview.png")}
+            <img alt="Polyview render"
+            src='https://drive.google.com/uc?id=16GLovm6rc8YAT2voG78OwX2IYh8G8QMI'
             className="Image-content"/>
             <p align="center">
               Image of polyview identification of protein protein interaction sites (pink) for test sequence.
@@ -99,7 +97,7 @@ const Cchmc = function () {
 
 
             <img alt="DNN Learning Graphs"
-            src={require("../media/projects/cchmc_DNNgraph.png")}
+            src= 'https://drive.google.com/uc?id=1QsYpVMiMlGA2Ijf364whi0t7FyCmtFWl'
             className="Image-content"/>
             <p>
               Cost (distance from perfect prediction) of LSTM (left) and cost of
@@ -108,7 +106,7 @@ const Cchmc = function () {
               generated using Tensorboard.
             </p>
             <img alt="RNN Learning Graphs"
-            src = {require("../media/projects/cchmc_RNNgraph.png")}
+            src = 'https://drive.google.com/uc?id=1zVPhu13fQAcCQINim3CJOBJ5T7mXwkhp'
             className="Image-content"/>
             <p>
               Statistics of finalized RNN Network as it trained. Orange line is
@@ -120,13 +118,13 @@ const Cchmc = function () {
 
           <div className='text-dump col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6  col-xs-12'>
             <img alt="DNN Layout"
-            src={require("../media/projects/cchmc_DNNLayout.png")}
+            src='https://drive.google.com/uc?id=1OgTVPZty18-XY2ITxL4I4X2BlT0kS55l'
             className="Image-content"/>
             <p align="center">
               Strucutre of DNN
             </p>
             <img alt="RNN Layout"
-            src={require("../media/projects/cchmc_RNNLayout.png")}
+            src= 'https://drive.google.com/uc?id=1Xf_9ea23YEBDxld-93F9awlr5UUClAcW'
             className="Image-content"/>
             <p align="center">
               Strucutre of RNN

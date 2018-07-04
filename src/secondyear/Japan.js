@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { HashLink } from 'react-router-hash-link';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/IMG_7903-EFFECTS.jpg";
 
 import Script from 'react-load-script'
-
 
 class Japan extends Component {
 render() {
@@ -16,7 +13,7 @@ render() {
   }
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image='https://drive.google.com/uc?id=17geb8HzLQzSz3umi90qKCVFSJV-AQped' height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -25,7 +22,7 @@ render() {
             <h1>Japan Trip</h1>
             <h3>(April to May 2018)</h3>
 
-            <img src="https://lh3.googleusercontent.com/1cBRZv-ALqDFnzEIwKTp7HJURrD58VJSMkgj5EwIC6ZE9K-Hqvwimi7OiQZjw1FqnhN7gzD_SjJinDi3W4GrVTwP2_eivCf0gb13CzRy7h_rKXB4EIsQlPPzNIpnUDwbaOL64_O0dDY=w640-h480" className="Image-content"/>
+            <img src="https://lh3.googleusercontent.com/1cBRZv-ALqDFnzEIwKTp7HJURrD58VJSMkgj5EwIC6ZE9K-Hqvwimi7OiQZjw1FqnhN7gzD_SjJinDi3W4GrVTwP2_eivCf0gb13CzRy7h_rKXB4EIsQlPPzNIpnUDwbaOL64_O0dDY=w640-h480" className="Image-content" alt="Group in Nara"/>
             
             <h2>Reflection</h2>
             <p>

@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
-import { Project, Cover, EmptyPadding } from '../Components';
-import { HashLink } from 'react-router-hash-link';
+import React from 'react';
+import { Cover, EmptyPadding } from '../Components';
 import '../App.css';
-import img from "../media/IMG_5481.jpg";
 
 const Knee = function () {
   return (
     <div>
-      <Cover image={img} height="100%">
+      <Cover image="https://drive.google.com/uc?id=1RP7jEk6b1xKPbIQM2ZGphnppmSS3D9rW" height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -117,8 +115,8 @@ const Knee = function () {
               The repo with progress on the project for UC path can be found 
               <a href="https://github.com/nicholas-maltbie/UC-Path-Program">here</a>.
             </p>
-            <img alt="Picture of the application"
-              src={require("../media/projects/pathProgram.png")}
+            <img alt="Application"
+              src="https://drive.google.com/uc?id=1eLkreWZwkhWpMQAFCwPiXZ7qcR8238Cn"
               className="Image-content"/>
           </div>
         </div>

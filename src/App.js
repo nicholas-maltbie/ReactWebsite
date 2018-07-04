@@ -4,7 +4,6 @@ import AboutMe from './AboutMe';
 import Landing from './Landing';
 import Projects from './Projects';
 import Honors from './Honors';
-import { NavLink } from 'react-router-dom';
 import { NavBar, Footer } from './Components';
 import Bubble from './Bubble';
 import './App.css';
