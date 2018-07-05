@@ -5,7 +5,7 @@ import '../App.css';
 const YearOneReview = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?export=view&id=1kfhN7C9W-Fs5J5JGbkQ6W_xLq9q0imYz" height="100%">
+      <Cover image={require("../media/backgrounds/firstyearreview.jpg")} height="100%">
 
         <EmptyPadding height='20vh'/>
 

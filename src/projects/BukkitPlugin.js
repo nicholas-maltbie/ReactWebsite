@@ -5,7 +5,7 @@ import '../App.css';
 const PlayerCount = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?export=view&id=1NWPHzihy4GIm-dEpuVHd85zvUjRKLfaP" height="100%">
+      <Cover image={require("../media/backgrounds/bukkitPlugin.jpg")} height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -15,7 +15,7 @@ const PlayerCount = function () {
 
           <span title = "click for project page">
            <a href='https://dev.bukkit.org/bukkit-plugins/player-count-message/'>
-             <p><img src="https://drive.google.com/uc?export=view&id=1kA_3Lgcm-tlEbRTXs4grcyrUXiom1qCt" className='center-block Image-content' alt="Player Count Message example"/></p>
+             <p><img src="https://lh4.googleusercontent.com/-C8ZI7dQOE44/VLsJY2rj7CI/AAAAAAAAA6Y/UHFX3mzMKQ0/w932-h450-no/aPlayerCountMessageResize.gif" className='center-block Image-content' alt="Player Count Message example"/></p>
            </a>
           </span>
           

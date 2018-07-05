@@ -5,7 +5,7 @@ import '../App.css';
 const ret = function () {
   return (
     <div>
-      <Cover image='https://drive.google.com/uc?export=view&id=1OKM9VtQ3sLNuXw5J6ktIhRJiItIZk_1T' height="100%">
+      <Cover image={require("../media/backgrounds/RET.jpg")} height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -30,7 +30,7 @@ const ret = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Modular Inverse Calculator</h1>
-            <img src='https://drive.google.com/uc?export=view&id=1F4QcSTkSDJZUnw7Hc0wQutG8DZTDo0H3' className="Image-content" alt="Mod Inverse Calc"/>
+            <img src={require("../media/projects/ret-1.jpg")} className="Image-content" alt="Mod Inverse Calc"/>
             <p>
               Applet designed to demonstrate how to find a modular inverse of a
               number. This was used by the teachers to help instruct students
@@ -40,7 +40,7 @@ const ret = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Cipher Applet</h1>
-            <img src='https://drive.google.com/uc?export=view&id=1Z6htpqTV4dD0QouAdoTwgjwFDaHoGQBG' className="Image-content" alt="Cipher Applet"/>
+            <img src={require("../media/projects/ret-2.jpg")} className="Image-content" alt="Cipher Applet"/>
             <p>
               The <a href="https://en.wikipedia.org/wiki/Hill_cipher">Hill Cipher</a> is
               a cipher that was used to encrypt information using matrix math. This
@@ -54,7 +54,7 @@ const ret = function () {
           
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <h1 align='center'>Game of Codes Applet</h1>
-            <img src='https://drive.google.com/uc?export=view&id=1TPe4Z4F0gVsbgZPKQ1KnWI6O2Zuzqa2W' className="Image-content" alt="Game of Codes"/>
+            <img src={require("../media/projects/ret-3.jpg")} className="Image-content" alt="Game of Codes"/>
             <p>
               This applet will generate a peer to peer network that allows
               students to play a game and send encoded messages to each other.

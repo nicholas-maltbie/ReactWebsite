@@ -5,7 +5,7 @@ import '../App.css';
 const Gateway = function () {
   return (
     <div>
-      <Cover image='https://drive.google.com/uc?export=view&id=15ILeHE_J7ktKtofIBRU3Kd6cpdHMzX6w' height="100%">
+      <Cover image={require("../media/backgrounds/gateway.jpg")} height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -16,8 +16,8 @@ const Gateway = function () {
            <p>
              As part of the University Honors Program (UHP) at the University of
              Cincinnati, I took the <a href="https://www.uc.edu/honors/students/firstyear/gateway.html">Gateway to University Honors </a>
-             course for Fall semester 2016. This course is, as stated by the website:
-             "Gateway to University Honors provides students with the opportunity
+             course for Fall semester 2016. This course is, as stated by the website: 
+             "Gateway to University Honors provides students with the opportunity 
              to understand what it means to be a member of the University Honors
              Program and the requirements and benefits of their participation.
              Through a series of reflective assignments and discussions, students

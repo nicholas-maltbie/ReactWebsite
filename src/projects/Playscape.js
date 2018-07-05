@@ -5,7 +5,7 @@ import '../App.css';
 const Playscape = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?export=view&id=1RSD-5T6Bwkoy0o79rGopcd4cUzRHX2Oy" height="100%">
+      <Cover image={require("../media/backgrounds/playscape.jpg")} height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -21,7 +21,7 @@ const Playscape = function () {
               at the IT@UC 2014 conference.
             </p>
           <span title = "click for full pdf">
-            <a href='https://drive.google.com/file/d/0B0gCZqueOMVIWnMzUmtxQXB2dGs'><img src="https://drive.google.com/uc?export=view&id=1tV68caX3jUG3dXpUXa2U7VfsC8JKCcBU" className='Image-content' alt="Showcase Poster"/></a>
+            <a href='https://drive.google.com/file/d/0B0gCZqueOMVIWnMzUmtxQXB2dGs'><img src={require("../media/projects/playscape.jpg")} className='Image-content' alt="Showcase Poster"/></a>
           </span>
           </div>
         </div>

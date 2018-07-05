@@ -34,7 +34,7 @@ const List = function () {
   }
   return (
     <div>
-    <Cover image='https://drive.google.com/uc?export=view&id=1aKqU76aMOqlocJa4U29SVXeaRbfZUJ2z' height="35vh" />
+    <Cover image={require("./media/backgrounds/honors.jpg")} height="35vh" />
 
     <h1 className="text-center center-block col-lg-12">
       Honors
@@ -50,13 +50,13 @@ const List = function () {
     
     <div className="col-lg-12" style={rowstyle}>
       <Project title="Japan Trip" date="(Spring 2018)"
-        link="/UHP/Japan" icon='https://drive.google.com/uc?export=view&id=1H7-B2_M2fPkrDg5snuNw3qr3phEFySRC' iconalt="Japan Icon">
+        link="/UHP/Japan" icon={require('./media/icons/japanIcon.svg')} iconalt="Japan Icon">
         After my coop at Infinera, I traveled to Japan for a study tour with 
         other UC students for two weeks. I had fully recovered from my injury 
         and was ready for a new experience. 
       </Project>
       <Project title="Accessibility Project" date="(Fall/Spring 2017,2018)"
-        link="/UHP/Knee" icon='https://drive.google.com/uc?export=view&id=1vJ_P7yPLpi_T7q54zbgWhSJrnAO7zzfh' iconalt="Stair Icon">
+        link="/UHP/Knee" icon={require('./media/icons/stairIcon.png')} iconalt="Stair Icon">
         In fall of last year, I tore my meniscus doing everyday activities
         and needed to get surgery to repair the injury. This experinece is me 
         reflecting upon the experience and the effect it has had on me. 
@@ -74,13 +74,13 @@ const List = function () {
 
     <div className="col-lg-12" style={rowstyle}>
       <Project title="Treachery" date="(Spring/Summer 2017)"
-        link="/UHP/treachery" icon='https://drive.google.com/uc?export=view&id=1E8bHv4s-mPAwWsaIUvkwq8x7yvUfMWG6' iconalt="Treachery Lamp Icon">
+        link="/UHP/treachery" icon={require('./media/icons/lampIcon.png')} iconalt="Treachery Lamp Icon">
         For my second honors experience, I worked with some of my fellow
         students to create a video game based on the board game Betrayal at
         House on the Hill.
       </Project>
       <Project title="Bearcat Coders" date="(Fall 2016 Spring 2017)"
-        link="/UHP/BearcatCoders" icon='https://drive.google.com/uc?export=view&id=1oBdFSB8Cz23kQ-iEDOIzeta7genChoV9' iconalt="Bearcat Coders Icon">
+        link="/UHP/BearcatCoders" icon={require('./media/icons/bearcatCoders.png')} iconalt="Bearcat Coders Icon">
       For my first Honors Experience, I decided to take a larger involvement
       in the Association for Computing Machinery, Women's Chapter (ACM-W) and
       their program to help teach coding to local high school students at Hughes
@@ -89,7 +89,7 @@ const List = function () {
     </div>
     <div className="col-lg-12" style={rowstyle}>
       <Project title="Gateway to University Honors" date="(Fall 2016)"
-        link="/UHP/intro" icon='https://drive.google.com/uc?export=view&id=1XX-v0Ng7HnHUIsNpJ2kWlrsLSzxBWyZ3' iconalt="UHP Icon">
+        link="/UHP/intro" icon={require('./media/icons/UHP.png')} iconalt="UHP Icon">
         As part of the honors curriculum, I had to take the gateway to
         honors course. This is the introductory course to University Honors
         Program at UC. To read more about my experience, click the link above.

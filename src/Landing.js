@@ -4,9 +4,9 @@ import { HorizLinks, Cover } from './Components';
 
 const Landing = () => (
   <div>
-    <Cover image='https://drive.google.com/uc?export=view&id=1JsrRviTbIxI_pTXoIieXPyfo_c6Hkbyl' height="40vh">
+    <Cover image={require("./media/backgrounds/landing-1.jpg")} height="40vh">
       <div className="col-lg-3 col-xs-12">
-        <img className="center-block Profile-image" src='https://drive.google.com/uc?export=view&id=1sQWw6WtLglu-9b5PQ_DLlSyjxPndZTtn' alt="Me"/>
+        <img className="center-block Profile-image" src={require("./media/me.jpg")} alt="Me"/>
       </div>
     </Cover>
 
@@ -26,7 +26,7 @@ const Landing = () => (
       </div>
     </div>
 
-    <Cover image='https://drive.google.com/uc?export=view&id=1wOYpaXhWDlB82Drk_5rTeZzb0uNx7ZfM'
+    <Cover image={require("./media/backgrounds/landing-2.jpg")}
     height="60vh">
       <NavLink to="/AboutMe">
         <HorizLinks name="About Me" />

@@ -6,7 +6,7 @@ class SecondYearReview extends Component {
 render() {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?export=view&id=1grwHx6GVzg1vXryzBurjixawkpG2LqxL" height="100%">
+      <Cover image={require("../media/backgrounds/secondyear.jpg")} height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -15,7 +15,7 @@ render() {
             <h1>Second Year in Review</h1>
             
             <h2>Overview of the Year</h2>
-            <img src="https://drive.google.com/uc?export=view&id=1EPN1GgxMDe9Suuz-r2X9PODvY_9ebUkw" className="Image-content" alt="Stairs at UC"/>
+            <img src={require("../media/projects/secondyear-1.jpg")} className="Image-content" alt="Stairs at UC"/>
      
             <p>
             My second year as a UC student taught me to better appreciate and 
@@ -33,7 +33,7 @@ render() {
             <h2>Fall Semester</h2>
 
             <p>
-            <img src="https://drive.google.com/uc?export=view&id=16ZcazPYaGxP3Vi3kWgesYoqBBtOPp0Dl" className="Image-content" alt="Me at Libery Center during winter"/>
+            <img src={require("../media/projects/secondyear-2.jpg")} className="Image-content" alt="Me at Libery Center during winter"/>
             <p>
             Visiting Liberty Center on Crutches
             </p>
@@ -64,7 +64,7 @@ render() {
             <h2>California Co-op</h2>
 
             <p>
-            <img src="https://drive.google.com/uc?export=view&id=144C67a7ZQH7XUO6kwjFnluUcXKPltgWM" className="Image-content" alt="Me at Golden Gate Bridge"/>
+            <img src={require("../media/projects/secondyear-3.jpg")} className="Image-content" alt="Me at Golden Gate Bridge"/>
             <p>
             Visiting Golden Gate Bridge in California
             </p>
@@ -93,7 +93,7 @@ render() {
             <h2>Trip to Japan</h2>
             
             <p>
-            <img src="https://drive.google.com/uc?export=view&id=1YqwTNAkHEPa0X44cvwNzmFW-HsLq-07g" className="Image-content" alt="Me in Japan in front of waterfall"/>
+            <img src={require("../media/projects/secondyear-4.jpg")} className="Image-content" alt="Me in Japan in front of waterfall"/>
             <p>
             Visiting Japan
             </p>
@@ -117,7 +117,7 @@ render() {
 
             <h2>Conclusion</h2>
 
-            <img src="https://drive.google.com/uc?export=view&id=1a8C5573zDlr2B3axhGnG3-1kaNo14L_y" className="Image-content" alt="One Lift Is Too Short For Doing Everything"/>
+            <img src={require("../media/projects/secondyear-5.jpg")} className="Image-content" alt="One Lift Is Too Short For Doing Everything"/>
 
             <p>
             This year wasn’t only about academic or professional development 

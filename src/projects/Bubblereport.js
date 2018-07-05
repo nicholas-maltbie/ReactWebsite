@@ -6,7 +6,7 @@ import '../App.css';
 const BubbleRep = function () {
   return (
     <div>
-      <Cover image="https://drive.google.com/uc?export=view&id=1yHQsfSWyFwM2eCwZzgOzXeBilFhZQGpk" height="100%">
+      <Cover image={require("../media/backgrounds/bubbleReport.jpg")} height="100%">
 
         <EmptyPadding height='20vh'/>
 
@@ -76,7 +76,7 @@ const BubbleRep = function () {
             <h2 id="Gameplay">Gameplay / Instructions</h2>
             <p>When starting a game, you will see a view like the image below.</p>
 
-            <img alt="Bubble Start" src='https://drive.google.com/uc?export=view&id=1NbmwsYGdMkQtYq6FtfHX9PHEv_d4L7dy'
+            <img alt="Bubble Start" src={require("../media/projects/bubble-1.jpg")}
               className="Image-content"/>
 
             <p>Below are the instruction for how to play the game.</p>
@@ -84,12 +84,12 @@ const BubbleRep = function () {
              bubbles to the grid. The objective of the game is to stop the balls
              from expanding below the red line.
             </p>
-            <img alt="Instructions One" src='https://drive.google.com/uc?export=view&id=1F4NSug2Yfchu2ImaFNUnahY0YS_Y00te'
+            <img alt="Instructions One" src={require("../media/projects/bubble-2.jpg")}
               className="Image-content"/>
 
             <p>If the grid expands below the red line, you lose. </p>
 
-            <img alt="Instructions Two" src='https://drive.google.com/uc?export=view&id=1Y75p9haQc2AmejrZ041QWu5pAP5fQmbs'
+            <img alt="Instructions Two" src={require("../media/projects/bubble-3.jpg")}
                className="Image-content"/>
 
             <p>
@@ -98,7 +98,7 @@ const BubbleRep = function () {
               release the mouse, the shooter will fire a ball.
             </p>
 
-            <img alt="Instructions Three" src='https://drive.google.com/uc?export=view&id=1PAgVp8PR1z2Mz7Akph1wcqzQ0NTsBcDK'
+            <img alt="Instructions Three" src={require("../media/projects/bubble-4.jpg")}
               className="Image-content"/>
 
             <p>
@@ -107,12 +107,12 @@ const BubbleRep = function () {
               to the queue.
             </p>
 
-            <img alt="Instructions Four" src='https://drive.google.com/uc?export=view&id=1USL6dsNXfYZIGiAHgzK3tM4VD875IYU5'
+            <img alt="Instructions Four" src={require("../media/projects/bubble-5.jpg")}
               className="Image-content"/>
 
             <p>If you shoot a ball at a wall, it will bounce off the walls</p>
 
-            <img alt="Instructions Five" src='https://drive.google.com/uc?export=view&id=1y3-cC4au7V33hoh3aqgpm17os1z3wh8E'
+            <img alt="Instructions Five" src={require("../media/projects/bubble-6.jpg")}
               className="Image-content"/>
 
             <p>
@@ -121,12 +121,12 @@ const BubbleRep = function () {
               larget sets = more points).
             </p>
 
-            <img alt="Instructions Six" src='https://drive.google.com/uc?export=view&id=17XLS3SC1-hkmvgOY7HqGkq8FDPbat1Fw'
+            <img alt="Instructions Six" src={require("../media/projects/bubble-7.jpg")}
               className="Image-content"/>
 
             <p>Bubbles will only pop when a bubble is added to the grid.</p>
 
-            <img alt="Instructions Seven" src='https://drive.google.com/uc?export=view&id=1-SdoBx8pS1y_aB_IPgERag4gYbVOgsa6'
+            <img alt="Instructions Seven" src={require("../media/projects/bubble-8.jpg")}
               className="Image-content"/>
 
             <p>
@@ -134,7 +134,7 @@ const BubbleRep = function () {
               extra points.
             </p>
 
-            <img alt="Instructions Eight" src='https://drive.google.com/uc?export=view&id=13y39TLhDp4K6qagiwuV2jkQD6p9NkOcH'
+            <img alt="Instructions Eight" src={require("../media/projects/bubble-9.jpg")}
               className="Image-content"/>
 
             <p>
@@ -143,26 +143,26 @@ const BubbleRep = function () {
               will lose.
             </p>
 
-            <img alt="Instructions Nine" src='https://drive.google.com/uc?export=view&id=1DIZM-gPMbfW_Sapxmhx8czip7bPtJT1H'
+            <img alt="Instructions Nine" src={require("../media/projects/bubble-10.jpg")}
               className="Image-content"/>
 
             <p>As new rows are added, new colors will be added</p>
 
-            <img alt="Instructions Ten" src='https://drive.google.com/uc?export=view&id=1lPKhKrkZDPp0VgqKMix-ZvyDm9PmYFr7'
+            <img alt="Instructions Ten" src={require("../media/projects/bubble-11.jpg")}
               className="Image-content"/>
 
             <p>When the bubbles pass the red line, you lose.</p>
 
-            <img alt="Instructions Eleven" src='https://drive.google.com/uc?export=view&id=1KQ2cWvgrl2GURbmHwAa9A0oX1dNA_69V'
+            <img alt="Instructions Eleven" src={require("../media/projects/bubble-12.jpg")}
               className="Image-content"/>
 
-            <img alt="Instructions Twelve" src='https://drive.google.com/uc?export=view&id=1DXBSVk28PJYcsUi352EGt4yE-DMeALdn'
+            <img alt="Instructions Twelve" src={require("../media/projects/bubble-1.jpg")}
               className="Image-content"/>
 
             <p>Press the "full" button at the bottom of the screen to make the game
               fullscreen</p>
 
-            <img alt="Instructions Thirteen" src='https://drive.google.com/uc?export=view&id=1gn37jKuGMgsV16Thr-xm2IfQC92FEKTa'
+            <img alt="Instructions Thirteen" src={require("../media/projects/bubble-14.jpg")}
                className="Image-content"/>
 
             <p>That"s the basic rules and controls of the game. Good Luck!</p>
@@ -184,7 +184,7 @@ const BubbleRep = function () {
               element is responsible for drawing itself. This functionality along
               with some other core features are implemented in the bubble.js file.
             </p>
-            <img alt="Draw Loop Diagram" src='https://drive.google.com/uc?export=view&id=1DsG17FDIqTBjNWZj_axvJNsUl2qh0Vek'
+            <img alt="Draw Loop Diagram" src={require("../media/projects/bubble-15.jpg")}
             className="Image-content"/>
 
             <p>
@@ -200,7 +200,7 @@ const BubbleRep = function () {
               they can be indexed.
             </p>
 
-            <img alt="Game Draw Diagram" src='https://drive.google.com/uc?export=view&id=1ABIr86gIW0NsD7U0QUSyL3m3FyunAk0H'
+            <img alt="Game Draw Diagram" src={require("../media/projects/bubble-16.jpg")}
               className="Image-content"/>
 
             <p>
@@ -233,7 +233,7 @@ const BubbleRep = function () {
              between classes.
            </p>
 
-           <img alt="Game Draw Diagram" src='https://drive.google.com/uc?export=view&id=1dqbQyv4HOfWEZBAk8Icykjc20CH-Pk9D'
+           <img alt="Game Draw Diagram" src={require("../media/projects/bubble-17.jpg")}
              className="Image-content"/>
           </div>
           
@@ -256,7 +256,7 @@ const BubbleRep = function () {
              interaction is controlled by either a mouse or by touching the screen.
            </p>
 
-           <img alt="Game Draw Diagram" src='https://drive.google.com/uc?export=view&id=1K5WGdRVa35AP1jvZ4vUX8ZBm5IpfsYeU'
+           <img alt="Game Draw Diagram" src={require("../media/projects/bubble-18.jpg")}
              className="Image-content"/>
 
            <p>
@@ -295,7 +295,7 @@ const BubbleRep = function () {
               function in grid.
             </p>
 
-            <img alt="Collision Detection Diagram" src='https://drive.google.com/uc?export=view&id=1SxQ9TMPWqwXMe-kQ-pqc3M6m730fB05e'
+            <img alt="Collision Detection Diagram" src={require("../media/projects/bubble-19.jpg")}
             className="Image-content"/>
 
             <h4 id="SavingGrid">Saving the Grid in Memory</h4>
@@ -310,7 +310,7 @@ const BubbleRep = function () {
               to use a hash map to save each bubble by its location.
             </p>
 
-            <img alt="Grid Diagram" src='https://drive.google.com/uc?export=view&id=1oChUrJFZ9utsUi2abLUuquvydJf-RUr1' className="Image-content"/>
+            <img alt="Grid Diagram" src={require("../media/projects/bubble-20.jpg")} className="Image-content"/>
 
             <h4 id="Color">Contiguous Color Identification Algorithm</h4>
 
@@ -325,7 +325,7 @@ const BubbleRep = function () {
               in the color_food and flood methods in the grid class.
             </p>
 
-            <img alt="Flood Diagram" src='https://drive.google.com/uc?export=view&id=1UL3EXiz08l6xkT4-8nXHZyOR9DpqPNmi' className="Image-content"/>
+            <img alt="Flood Diagram" src={require("../media/projects/bubble-21.jpg")} className="Image-content"/>
             <p>
               All of these rules, methods and algorithms are implemented in the
               Grid.js file along with many more values. Majority of these extra
