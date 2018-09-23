@@ -102,7 +102,7 @@ class AboutMe extends Component {
             </h1>
             <div className="text-center col-xs-12 col-lg-3 col-lg-offset-2">
               <span title="My Myers Briggs Personality type"><a href="https://www.16personalities.com/intp-personality">
-              <img src="https://s-./media-cache-ak0.pinimg.com/originals/71/26/53/712653dc0993813a427914a4e84c188e.jpg" className='Image-content' alt="Cute INTP Kitty"/>
+              <img src={require("./media/kitten.jpg")} className='Image-content' alt="Cute INTP Kitty"/>
               </a></span>
             </div>
             <p className="text-left col-xs-12 col-lg-5 col-lg-offset-1">

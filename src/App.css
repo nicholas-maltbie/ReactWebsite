@@ -96,9 +96,9 @@ body {
 }
 
 .intro {
-  margin-top: 20px;
-  padding-top: 5vh;
-  margin-bottom: 10vh;
+  margin-top: 2vh;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
   font-size: large;
   padding-left: 2vw;
 }
@@ -146,12 +146,30 @@ p {
   display: inline;
   float: right;
   height: 45px;
-  margin-right: 15px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .footlinks {
   list-style-type: none;
   padding-top: 2vh;
+}
+
+.landingicon {
+  display: inline;
+  float: right;
+  height: 45px;
+  margin-right: 15px;
+}
+
+.landingtable {
+  text-align:center;
+}
+
+.landinglinks {
+  margin-top: 10px;
+  list-style-type: none;
+  display: inline-flex;
 }
 
 .foottext {
