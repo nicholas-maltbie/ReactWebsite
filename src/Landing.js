@@ -17,8 +17,8 @@ const Landing = () => (
         </h1>
         <div className="col-lg-12">
           <p>
-            I am in Computer Science student at the University of
-            Cincinnati with an expected graduation of Spring 2021.
+            I am a Computer Science student at the University of
+            Cincinnati with an expected graduation in Spring 2021.
             Currently, I am in the ACCEND program and plan to
             get a Masters and Bachelors of Science in Computer Science.
           </p>
