@@ -170,6 +170,8 @@ p {
   margin-top: 10px;
   list-style-type: none;
   display: inline-flex;
+  margin: 0 auto;
+  padding: 0
 }
 
 .foottext {

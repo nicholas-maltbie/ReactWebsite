@@ -23,42 +23,42 @@ const Landing = () => (
             get a Masters and Bachelors of Science in Computer Science.
           </p>
         </div>
-        <h3 className="text-center">
-          Contact Me
-        </h3>
-        <div className="landingtable">
-          <ul className="landinglinks">
-            <li>
-              <span title="nick.dmalt@gmail.com">
-                <a href="mailto:nick.dmalt@gmail.com"><img src={require('./media/icons/gmail-icon.png')} className="iconstyle" alt="gmail icon"/></a>
-              </span>
-            </li>
-            <li>
-              <span title="linked in profile">
-                <a href="https://www.linkedin.com/in/nicholas-maltbie-b543a8137/"><img src={require('./media/icons/in-logo.png')} className="iconstyle" alt="linkedin icon"/></a>
-              </span>
-            </li>
-            <li>
-              <span title="My twitter profile">
-                <a href="https://twitter.com/NicholasMaltbie"><img src={require('./media/icons/twitter-icon.png')} className="iconstyle" alt="twitter icon"/></a>
-              </span>
-            </li>
-            <li>
-              <span title="My facebook profile">
-                <a href="https://www.facebook.com/nicholas.maltbie"><img src={require('./media/icons/fb-icon.png')} className="iconstyle" alt="facebook icon"/></a>
-              </span>
-            </li>
-            <li>
-              <span title="My github profile">
-                <a href="https://github.com/nicholas-maltbie"><img src={require('./media/icons/github-icon.png')} className="iconstyle" alt="github icon"/></a>
-              </span>
-            </li>
-          </ul>
-        </div>
-        
       </div>
     </div>
     
+    <h3 className="text-center">
+      Contact Me
+    </h3>
+    <div className="landingtable">
+      <ul className="landinglinks">
+        <li>
+          <span title="nick.dmalt@gmail.com">
+            <a href="mailto:nick.dmalt@gmail.com"><img src={require('./media/icons/gmail-icon.png')} className="iconstyle" alt="gmail icon"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="linked in profile">
+            <a href="https://www.linkedin.com/in/nicholas-maltbie-b543a8137/"><img src={require('./media/icons/in-logo.png')} className="iconstyle" alt="linkedin icon"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="My twitter profile">
+            <a href="https://twitter.com/NicholasMaltbie"><img src={require('./media/icons/twitter-icon.png')} className="iconstyle" alt="twitter icon"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="My facebook profile">
+            <a href="https://www.facebook.com/nicholas.maltbie"><img src={require('./media/icons/fb-icon.png')} className="iconstyle" alt="facebook icon"/></a>
+          </span>
+        </li>
+        <li>
+          <span title="My github profile">
+            <a href="https://github.com/nicholas-maltbie"><img src={require('./media/icons/github-icon.png')} className="iconstyle" alt="github icon"/></a>
+          </span>
+        </li>
+      </ul>
+    </div>
+        
 
     <Cover image={require("./media/backgrounds/landing-2.jpg")}
     height="60vh">
