@@ -16,7 +16,7 @@ const Bark = function () {
           <div className='col-lg-offset-3 col-lg-6 col-xs-12'>
             <p>
               A location based social media app developed for software
-              engineering class summer 2018. This project is hosted on the
+              engineering class during summer 2018. This project is hosted on the
               domain <a href="https://bark.fyi">https://bark.fyi</a>
             </p>
             <p>

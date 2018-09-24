@@ -18,7 +18,9 @@ const List = function () {
         <div className="col-lg-12" style={rowstyle}>
           <Project title="Bark Bark" date="(May-Aug 2018)"
             link="/Projects/bark" icon={require("../media/icons/bark.jpg")}  iconalt="Bark Bark logo">
-            I worked with Dr. Porollo over the summer in 2017 on multiple research projects.
+            A location based social media app developed for software
+            engineering class during summer 2018. This project is hosted on the
+            domain <a href="https://bark.fyi">https://bark.fyi</a>
           </Project>
         </div>
       </div>
