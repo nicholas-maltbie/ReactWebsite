@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import List from './projects/List'
 import Java from './projects/Java'
+import Bark from './projects/Bark'
 import Playscape from './projects/Playscape'
 import PlayerCount from './projects/BukkitPlugin'
 import ret from "./projects/Ret"
@@ -24,6 +25,7 @@ class Projects extends Component {
         <Route path="/Projects/pcm" component = { PlayerCount }/>
         <Route path="/Projects/playscape" component = { Playscape } />
         <Route path="/Projects/java" component = { Java }/>
+        <Route path="/Projects/bark" component = { Bark }/>
       </div>
     );
   }

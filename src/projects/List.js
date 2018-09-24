@@ -13,13 +13,20 @@ const List = function () {
       <h1 className="text-center center-block col-lg-12">
         Projects
       </h1>
-
+      
+      <div className="row">
+        <div className="col-lg-12" style={rowstyle}>
+          <Project title="Bark Bark" date="(May-Aug 2018)"
+            link="/Projects/bark" icon={require("../media/icons/bark.jpg")}  iconalt="Bark Bark logo">
+            I worked with Dr. Porollo over the summer in 2017 on multiple research projects.
+          </Project>
+        </div>
+      </div>
       <div className="row">
         <div className="col-lg-12" style={rowstyle}>
           <Project title="CCHMC Research" date="(May-Aug 2017)"
             link="/Projects/cchmc" icon={require("../media/icons/cchmc.jpg")}  iconalt="CCHMC logo">
-            I worked with Dr. Porollo over the summer in 2017 on multiple of
-            his research projects.
+            I worked with Dr. Porollo over the summer in 2017 on multiple research projects.
           </Project>
           <Project title="Bubble Shooter JS" date="(April 2017)"
             link="/bubble" icon={require("../media/icons/bubble.png")} iconalt="Game picture">
@@ -37,7 +44,7 @@ const List = function () {
             game, Medina. This project is implemented using python and default
             graphics libraries.
           </Project>
-          <Project title="Midi Imprrovisor" date="(Oct 2016)"
+          <Project title="Midi Improvisor" date="(Oct 2016)"
             link="/Projects/midi" icon={require("../media/icons/midi.png")} iconalt="Midi icon">
             As part of the Hackathon at UC in october 2016, I worked with Vuong
             Khuat, Wyatt French to create a program that would take a MIDI file
