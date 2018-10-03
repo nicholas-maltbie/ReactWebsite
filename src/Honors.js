@@ -10,7 +10,7 @@ import Knee from './secondyear/Knee'
 import Japan from './secondyear/Japan'
 import YearTwoReview from './secondyear/SecondYearReview'
 import './App.css';
-import DataList from './DataList'
+import { DataList } from './DataList'
 
 class Honors extends Component {
   render() {

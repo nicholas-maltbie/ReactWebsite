@@ -10,7 +10,7 @@ import Medina from "./projects/Medina"
 import BubbleRep from "./projects/Bubblereport"
 import Cchmc from "./projects/Cchmc"
 import { Cover } from './Components';
-import DataList from './DataList'
+import { DataList } from './DataList'
 import './App.css';
 
 class List extends Component {

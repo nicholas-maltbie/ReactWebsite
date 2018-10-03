@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Project } from './Components';
 import './App.css';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Row, Col} from 'reactstrap';
 
 var Parser = require('html-react-parser')
 var all_data = require('./activity-feed.json')
 
-console.log(all_data.map(proj => proj.title))
 all_data.sort(function(proj1, proj2) {
   var elems = ["startYear", "endYear", "startMonth", "endMonth"]
   for (var idx = 0; idx < elems.length; idx++) {
@@ -15,8 +15,6 @@ all_data.sort(function(proj1, proj2) {
   }
   return 0
 })
-
-console.log(all_data.map(proj => proj.title))
 
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -32,6 +30,70 @@ function getStringDate(sMonth, sYear, eMonth, eYear) {
   return months[sMonth] + " " + sYear
 }
 
+function getFiltered(props) {
+  var needed_tag = props.reqTag
+  var needed_year_start = props.reqStartYear
+  var needed_year_end = props.reqEndtYear
+  var start_month_range = props.startMonthRange
+  var start_year_range  = props.startYearRange
+  var end_month_range   = props.endMonthRange
+  var end_year_range    = props.endYearRange
+  var max_elems = props.numElems
+  var filter_fn = function(elem) {
+    if ((needed_tag && !elem.tags.includes(needed_tag)) || 
+        (needed_year_start && elem.startYear !== needed_year_start) ||
+        (needed_year_end && elem.startYear !== needed_year_end)
+       )
+      return false
+    if (start_month_range && start_year_range && end_month_range && end_year_range) {
+      var startA = new Date(start_year_range, start_month_range - 1)
+      var endA = new Date(end_year_range, end_month_range - 1)
+      
+      var startB = new Date(elem.startYear, elem.startMonth - 1)
+      var endB = new Date(elem.endYear, elem.endMonth - 1)
+      if (!(startA < endB && endA >= startB))
+        return false
+    }
+    return true
+  }
+  var filtered = all_data.filter(filter_fn)
+  if (max_elems && filtered.length > max_elems) 
+    filtered = filtered.slice(0,max_elems)
+  return filtered
+}
+
+class CardList extends Component {
+  constructor() {
+    super()
+    this.state = { data: [] }
+  }
+
+  componentWillMount() {
+    this.setState({data: getFiltered(this.props)})
+  }
+  
+  render() {
+    var projs = this.state.data
+    return (
+      <Row>
+        {projs.map(proj =>
+          <Col sm="3" key={proj.title}>
+          <Card outline color="black">
+            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+            <CardBody>
+              <CardTitle>Card title</CardTitle>
+              <CardSubtitle>Card subtitle</CardSubtitle>
+              <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            </CardBody>
+          </Card>
+          </Col>)
+        }
+      </Row>
+    )
+  }
+  
+}
+
 class DataList extends Component {
   constructor() {
     super()
@@ -39,31 +101,7 @@ class DataList extends Component {
   }
 
   componentWillMount() {
-    var needed_tag = this.props.reqTag
-    var needed_year_start = this.props.reqStartYear
-    var needed_year_end = this.props.reqEndtYear
-    var start_month_range = this.props.startMonthRange
-    var start_year_range  = this.props.startYearRange
-    var end_month_range   = this.props.endMonthRange
-    var end_year_range    = this.props.endYearRange
-    var filter_fn = function(elem) {
-      if ((needed_tag && !elem.tags.includes(needed_tag)) || 
-          (needed_year_start && elem.startYear !== needed_year_start) ||
-          (needed_year_end && elem.startYear !== needed_year_end)
-         )
-        return false
-      if (start_month_range && start_year_range && end_month_range && end_year_range) {
-        var startA = new Date(start_year_range, start_month_range - 1)
-        var endA = new Date(end_year_range, end_month_range - 1)
-        
-        var startB = new Date(elem.startYear, elem.startMonth - 1)
-        var endB = new Date(elem.endYear, elem.endMonth - 1)
-        if (!(startA < endB && endA >= startB))
-          return false
-      }
-      return true
-    }
-    this.setState({data: all_data.filter(filter_fn)})
+    this.setState({data: getFiltered(this.props)})
   }
   
   render() {
@@ -97,5 +135,5 @@ class DataList extends Component {
   }
 }
 
-export default DataList;
+export { DataList, CardList };
 

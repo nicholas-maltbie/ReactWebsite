@@ -1,5 +1,6 @@
 import React from 'react';
 import { HorizLinks, Cover } from './Components';
+import { DataList } from './DataList';
 
 const Landing = () => (
   <div>
@@ -65,9 +66,14 @@ const Landing = () => (
       <HorizLinks name="Projects" link="/#/Projects"/>
     </Cover>
     
-    <h1 className="text-center">
-      Activity Feed
-    </h1>
+    
+    <p>
+      <h1 className="text-center">
+        Activity Feed
+      </h1>
+      
+      <DataList numElems={4}/>
+    </p>
     
   </div>
 );
