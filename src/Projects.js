@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import List from './projects/List'
 import Java from './projects/Java'
 import Bark from './projects/Bark'
 import Playscape from './projects/Playscape'
@@ -10,7 +9,27 @@ import Midi from "./projects/Midi"
 import Medina from "./projects/Medina"
 import BubbleRep from "./projects/Bubblereport"
 import Cchmc from "./projects/Cchmc"
+import { Cover } from './Components';
+import DataList from './DataList'
 import './App.css';
+
+class List extends Component {
+
+  render() {
+    
+    return (
+      <div>
+        <Cover image={require("./media/backgrounds/projects.jpg")} height="35vh" />
+
+        <h1 className="text-center center-block col-lg-12">
+          Projects
+        </h1>
+
+        <DataList reqTag="Project"/>
+      </div>
+    )
+  }
+}
 
 class Projects extends Component {
   render() {
