@@ -1,0 +1,111 @@
+[
+	{
+		"tags": ["Project", "React", "GoogleFirebase", "WebApp", "Class", "GitHub"],
+		"title": "Bark Bark",
+		"startMonth": 5,
+		"startYear": 2018,
+		"endMonth": 8,
+		"endYear": 2018,
+		"link": "/Projects/bark",
+		"icon": "bark.jpg",
+		"iconalt": "Bark Bark logo",
+		"description": "A location based social media app developed for software engineering class during summer 2018. This project is hosted on the domain <a href=\"https://bark.fyi\">https://bark.fyi</a>"
+	},
+	{
+		"tags": ["Project", "Research", "Internship", "Python", "R", "BASH"],
+		"title": "CCHMC Research",
+		"link": "/Projects/cchmc",
+		"startMonth": 5,
+		"endMonth": 8,
+		"startYear": 2017,
+		"endYear" : 2017,
+		"icon": "cchmc.jpg",
+		"iconalt": "CCHMC logo",
+		"description": "I worked with Dr. Porollo over the summer in 2017 on multiple research projects."
+	},
+	{
+		"tags": ["Project", "Game", "WebApp", "JavaScript", "GitHub"],
+		"title": "Bubble Shooter JS",
+		"link": "/bubble",
+		"startMonth": 4,
+		"endMonth": 4,
+		"startYear": 2017,
+		"endYear" : 2017,
+		"icon": "bubble.png",
+		"iconalt": "Game Picture",
+		"description": "For an independent project to learn how to use javascript (JS), I decided to make a bubble shooter game. It is a simple game where a player shoots bubbles in a browser JS game."
+	},
+	{
+		"tags": ["Project", "Game", "Class", "Python", "MachineLearning", "GitHub"],
+		"title": "Medina",
+		"link": "/Projects/medina",
+		"startMonth": 9,
+		"endMonth": 12,
+		"startYear": 2016,
+		"endYear" : 2016,
+		"icon": "Tea_Tile.gif",
+		"iconalt": "Tea tile",
+		"description": "I attempeted to use neural networks to create an AI to play a board game, Medina. This project is implemented using python and default graphics libraries."
+	},
+	{
+		"tags": ["Project", "Hackathon", "RevolutionUC", "Java", "Music", "GitHub"],
+		"title": "Midi Improviser",
+		"link": "/Projects/midi",
+		"startMonth": 10,
+		"endMonth": 10,
+		"startYear": 2016,
+		"endYear" : 2016,
+		"icon": "midi.png",
+		"iconalt": "Midi Icon",
+		"description": "As part of the Hackathon at UC in october 2016, I worked with Vuong Khuat, Wyatt French to create a program that would take a MIDI file and improvise. A MIDI file is a musical file that saves note sounds."
+	},
+	{
+		"tags": ["Project", "Research", "Internship", "Java", "Python"],
+		"title": "RET Project",
+		"link": "/Projects/ret",
+		"startMonth": 5,
+		"endMonth": 8,
+		"startYear": 2016,
+		"endYear" : 2016,
+		"icon": "ret.png",
+		"iconalt": "RET Icon",
+		"description": "Research Experience for Teacher (RET) projects done with Dr. Franco at the University of Cincinnati (UC). I helped develop coursework and perpare local high school teachers to teach cybersecurity the following years."
+	},
+	{
+		"tags": ["Project", "Minecraft", "Java"],
+		"title": "Player Count Message",
+		"link": "/Projects/bukkitplugin",
+		"startMonth": 1,
+		"endMonth": 4,
+		"startYear": 2015,
+		"endYear" : 2016,
+		"icon": "pcm.png",
+		"iconalt": "PCM Icon",
+		"description": "A software modification for minecraft servers to allow players the ability to modify the server's look in the load screen."
+	},
+	{
+		"tags": ["Project", "Minecraft", "Internship", "Java", "Research", "Poster"],
+		"title": "Minecraft Playscape Project",
+		"link": "/Projects/playscape",
+		"startMonth": 5,
+		"endMonth": 8,
+		"startYear": 2014,
+		"endYear" : 2014,
+		"icon": "minecraft.jpg",
+		"iconalt": "Minecraft Icon",
+		"description": "Minecraft Playscape at The University of Cincinnati (UC) Arlitt. I designed software to track kids' actions in the Video Game Minecraft and later interpret the data as part of a research project. This project was later presented at the 2014 IT@UC conference."
+	},
+	{
+		"tags": ["Project", "Java", "GitHub"],
+		"title": "Java Projects",
+		"link": "/Projects/java",
+		"startMonth": 8,
+		"endMonth": 5,
+		"startYear": 2012,
+		"endYear" : 2014,
+		"icon": "java.ico",
+		"iconalt": "Java Icon",
+		"description": "Some projects of games I made using java to familiarize myself with the language."
+	}
+]
+
