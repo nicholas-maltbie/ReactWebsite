@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { HorizLinks, Cover } from './Components';
 
 const Landing = () => (
@@ -60,18 +59,16 @@ const Landing = () => (
     </div>
         
 
-    <Cover image={require("./media/backgrounds/landing-2.jpg")}
-    height="60vh">
-      <NavLink to="/AboutMe">
-        <HorizLinks name="About Me" />
-      </NavLink>
-      <a href='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'>
-        <HorizLinks name="Resume" />
-      </a>
-      <NavLink to="/Projects">
-        <HorizLinks name="Projects" />
-      </NavLink>
+    <Cover image={require("./media/backgrounds/landing-2.jpg")}>
+      <HorizLinks name="About Me" link="/#/AboutMe"/>
+      <HorizLinks name="Resume" link='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'/>
+      <HorizLinks name="Projects" link="/#/Projects"/>
     </Cover>
+    
+    <h1 className="text-center">
+      Activity Feed
+    </h1>
+    
   </div>
 );
 

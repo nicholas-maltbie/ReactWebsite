@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Project, Cover } from './Components';
+import { Cover } from './Components';
 import { NavLink } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Treacery from './firstyear/Treachery'
@@ -30,9 +30,6 @@ class Honors extends Component {
 }
 
 const List = function () {
-  const rowstyle = {
-    padding: '0',
-  }
   return (
     <div>
     <Cover image={require("./media/backgrounds/honors.jpg")} height="35vh" />

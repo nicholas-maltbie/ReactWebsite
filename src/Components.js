@@ -186,16 +186,18 @@ const RightLink = function ({ name, link, fn }) {
   )
 }
 
-const HorizLinks = function ({ name }) {
+const HorizLinks = function ({ name, link }) {
   const divstyle = {
     padding: 0,
     margin: 0,
   }
   return (
     <div className="row" style={divstyle}>
-      <div className="Horiz-link col-xs-12 col-sm-8 col-md-6 col-lg-5">
+      <a href={link}>
+        <div className="Horiz-link col-xs-12 col-sm-8 col-md-6 col-lg-5">
           <h1>{name}</h1>
-      </div>
+        </div>
+      </a>
     </div>
   )
 };

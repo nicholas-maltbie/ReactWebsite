@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Project } from './Components';
 import './App.css';
 
+var Parser = require('html-react-parser')
 var all_data = require('./activity-feed.json')
 
 console.log(all_data.map(proj => proj.title))
@@ -85,7 +86,7 @@ class DataList extends Component {
                 link={proj.link}
                 icon={require("./media/icons/" + proj.icon)}
                 iconalt={proj.iconalt}>
-                {proj.description}
+                {Parser(proj.description)}
               </Project>)
               }
             </div>
