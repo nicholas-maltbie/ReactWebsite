@@ -1,6 +1,66 @@
 [
+  {
+    "tags": ["Honors", "Japan", "Travel"],
+    "title": "Japan Trip",
+    "startMonth": 4,
+    "startYear": 2018,
+    "endMonth": 5,
+    "endYear": 2018,
+    "link": "/UHP/japan",
+    "icon": "japanIcon.svg",
+    "iconalt": "Cherry Blossom",
+    "description": "After my coop at Infinera, I traveled to Japan for a study tour with other UC students for two weeks. I had fully recovered from my injury and was ready for a new experience."
+  },
+  {
+    "tags": ["Honors", "WebApp", "GitHub", "Project", "JavaScript"],
+    "title": "Accessibility Project",
+    "startMonth": 10,
+    "startYear": 2017,
+    "endMonth": 1,
+    "endYear": 2018,
+    "link": "/UHP/knee",
+    "icon": "stairIcon.png",
+    "iconalt": "Stairs",
+    "description": "In fall of last year, I tore my meniscus doing everyday activities and needed to get surgery to repair the injury. This experinece is me reflecting upon the experience and the effect it has had on me."
+  },
+  {
+    "tags": ["Honors", "Volunteer", "ACM-W", "Google IgniteCS"],
+    "title": "Bearcat Coders",
+    "startMonth": 8,
+    "startYear": 2016,
+    "endMonth": 4,
+    "endYear": 2017,
+    "link": "/UHP/bearcatcoders",
+    "icon": "bearcatCoders.png",
+    "iconalt": "Bearcat Coders Icon",
+    "description": "For my first Honors Experience, I decided to take a larger involvement in the Association for Computing Machinery, Women's Chapter (ACM-W) and their program to help teach coding to local high school students at Hughes STEM High School."
+  },
+  {
+    "tags": ["Honors", "Unity3D", "Blender", "Project", "C#"],
+    "title": "Treachery",
+    "startMonth": 2,
+    "startYear": 2017,
+    "endMonth": 8,
+    "endYear": 2017,
+    "link": "/UHP/treachery",
+    "icon": "lampIcon.png",
+    "iconalt": "Lamp",
+    "description": "For my second honors experience, I worked with some of my fellow students to create a video game based on the board game Betrayal at House on the Hill."
+  },
+  {
+    "tags": ["Honors", "Class"],
+    "title": "Gateway to University Honors",
+    "startMonth": 8,
+    "startYear": 2016,
+    "endMonth": 12,
+    "endYear": 2016,
+    "link": "/UHP/intro",
+    "icon": "UHP.png",
+    "iconalt": "UHP Icon",
+    "description": "As part of the honors curriculum, I had to take the gateway to honors course. This is the introductory course to University Honors Program at UC. To read more about my experience, click the link above."
+  },
 	{
-		"tags": ["Project", "React", "GoogleFirebase", "WebApp", "Class", "GitHub"],
+		"tags": ["Project", "React", "GoogleFirebase", "WebApp", "Class", "GitHub", "JavaScript"],
 		"title": "Bark Bark",
 		"startMonth": 5,
 		"startYear": 2018,
