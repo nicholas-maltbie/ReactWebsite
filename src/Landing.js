@@ -64,6 +64,7 @@ const Landing = () => (
       <HorizLinks name="About Me" link="/#/AboutMe"/>
       <HorizLinks name="Resume" link='https://drive.google.com/file/d/0B0gCZqueOMVIV1BMUnRtQXJ1RTQ/view'/>
       <HorizLinks name="Projects" link="/#/Projects"/>
+      <HorizLinks name="Blog" link="/#/Blog"/>
     </Cover>
     
     

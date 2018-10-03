@@ -14,7 +14,6 @@ import { DataList } from './DataList'
 import './App.css';
 
 class List extends Component {
-
   render() {
     
     return (

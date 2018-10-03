@@ -94,6 +94,7 @@ class NavBar extends Component {
               <CenterLink name="UHP" link="/UHP" fn={open => this.setState({ openLeft: !openLeft })}/>
               <CenterLink name="Projects" link="/Projects" fn={open => this.setState({ openLeft: !openLeft })}/>
               <CenterLink name="Bubble" link="/bubble" fn={open => this.setState({ openLeft: !openLeft })}/>
+              <CenterLink name="Blog" link="/Blog" fn={open => this.setState({ openLeft: !openLeft })}/>
             </div>
           </Drawer>}
         {!openLeft &&
@@ -126,6 +127,7 @@ class NavBar extends Component {
                 <h1 className='col-xs-12 col-sm-6 col-md-4 col-lg-3' style={hstyle2}> Nick Maltbie</h1>
               </NavLink>
               <RightLink className="col-lg-2" name="Projects" link="/Projects" />
+              <RightLink className="col-lg-2" name="Blog" link="/Blog" />
               <RightLink className="col-lg-2" name="UHP" link="/UHP" />
               <RightLink className="col-lg-2" name="About Me" link="/AboutMe" />
               <RightLink className="col-lg-2" name="Home" link="/" />

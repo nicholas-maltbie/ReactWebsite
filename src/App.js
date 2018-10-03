@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Honors from './Honors';
 import { NavBar, Footer } from './Components';
 import Bubble from './Bubble';
+import Blog from './Blog';
 import './App.css';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
               <Route path="/Projects" component={ Projects } />
               <Route path="/UHP" component={ Honors } />
               <Route path="/bubble" component={ Bubble } />
+              <Route path="/Blog" component={ Blog } />
             </div>
           </div>
           <Footer className="container-fluid"/>
