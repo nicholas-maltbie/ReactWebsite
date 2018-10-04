@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import { Cover } from './Components';
 import { DataList } from './DataList'
 import './App.css';
+import GHC18 from './blog/GHC18'
 
 class List extends Component {
   render() {
@@ -26,6 +27,7 @@ class Blog extends Component {
     return (
       <div>
         <Route exact path="/Blog" component = { List } />
+        <Route path="/Blog/GHC18" component = { GHC18 } />
       </div>
     );
   }

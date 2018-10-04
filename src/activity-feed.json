@@ -1,5 +1,17 @@
 [
   {
+    "tags": ["Blog", "Travel"],
+    "title": "Grace Hopper Celebration 2018",
+    "startMonth": 9,
+    "startYear": 2018,
+    "endMonth": 9,
+    "endYear": 2018,
+    "link": "/Blog/GHC18",
+    "icon": "ghc18.png",
+    "iconalt": "ghc icon",
+    "description": "I got a scholarship from AnitaB.org to attend the Grace Hopper Celebration 2018 to support women in computing as a male ally."
+  },
+  {
     "tags": ["Honors", "Japan", "Travel", "Blog"],
     "title": "Japan Trip",
     "startMonth": 4,
