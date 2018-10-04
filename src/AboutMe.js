@@ -115,6 +115,8 @@ class AboutMe extends Component {
             </p>
           </div>
         </div>
+
+        <Cover image={require("./media/backgrounds/aboutme-5.jpg")} height="30vh"/>
       </div>
     );
   }
