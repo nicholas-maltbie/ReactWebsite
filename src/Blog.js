@@ -4,6 +4,7 @@ import { Cover } from './Components';
 import { DataList } from './DataList'
 import './App.css';
 import GHC18 from './blog/GHC18'
+import ISCB2018 from './blog/ISCB2018Poster'
 
 class List extends Component {
   render() {
@@ -28,6 +29,7 @@ class Blog extends Component {
       <div>
         <Route exact path="/Blog" component = { List } />
         <Route path="/Blog/GHC18" component = { GHC18 } />
+        <Route path="/Blog/ISCB2018" component = { ISCB2018 } />
       </div>
     );
   }

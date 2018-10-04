@@ -1,5 +1,17 @@
 [
   {
+    "tags": ["Blog", "Research", "Project", "Internship"],
+    "title": "ISCB 2018 Poster",
+    "startMonth": 7,
+    "startYear": 2018,
+    "endMonth": 7,
+    "endYear": 2018,
+    "link": "/Blog/ISCB2018",
+    "icon": "iscb2018.jpg",
+    "iconalt": "iscb icon",
+    "description": "A poster that my co workers while working at Cincinnat Children's Hospital Medical Center presetned at the 2018 Intelligent Systems for Molecular Biology Conference."
+  },
+  {
     "tags": ["Blog", "Travel"],
     "title": "Grace Hopper Celebration 2018",
     "startMonth": 9,
