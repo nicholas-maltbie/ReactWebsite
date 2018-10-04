@@ -76,6 +76,8 @@ const Landing = () => (
       <DataList numElems={4}/>
     </p>
     
+    <Cover image={require("./media/backgrounds/landing-3.jpg")} height="40vh"/>
+    
   </div>
 );
 
