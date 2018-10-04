@@ -9,7 +9,7 @@
     "link": "/Blog/ISCB2018",
     "icon": "iscb2018.jpg",
     "iconalt": "iscb icon",
-    "description": "A poster that my co workers while working at Cincinnat Children's Hospital Medical Center presetned at the 2018 Intelligent Systems for Molecular Biology Conference."
+    "description": "A poster that my co workers while working at Cincinnat Children's Hospital Medical Center presented at the 2018 Intelligent Systems for Molecular Biology Conference."
   },
   {
     "tags": ["Blog", "Travel"],
@@ -45,7 +45,7 @@
     "link": "/UHP/knee",
     "icon": "stairIcon.png",
     "iconalt": "Stairs",
-    "description": "In fall of last year, I tore my meniscus doing everyday activities and needed to get surgery to repair the injury. This experinece is me reflecting upon the experience and the effect it has had on me."
+    "description": "In fall of last year, I tore my meniscus doing everyday activities and needed to get surgery to repair the injury. This experience is me reflecting upon the experience and the effect it has had on me."
   },
   {
     "tags": ["Honors", "Volunteer", "ACM-W", "Google IgniteCS"],
@@ -129,7 +129,7 @@
 		"endYear" : 2016,
 		"icon": "Tea_Tile.gif",
 		"iconalt": "Tea tile",
-		"description": "I attempeted to use neural networks to create an AI to play a board game, Medina. This project is implemented using python and default graphics libraries."
+		"description": "I attempted to use neural networks to create an AI to play a board game, Medina. This project is implemented using python and default graphics libraries."
 	},
 	{
 		"tags": ["Project", "Hackathon", "RevolutionUC", "Java", "Music", "GitHub"],
@@ -192,4 +192,6 @@
 		"description": "Some projects of games I made using java to familiarize myself with the language."
 	}
 ]
+
+
 
