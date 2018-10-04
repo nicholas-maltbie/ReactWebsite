@@ -13,7 +13,7 @@ class List extends Component {
         <Cover image={require("./media/backgrounds/blog.jpg")} height="35vh"/>
 
         <h1 className="text-center center-block col-lg-12">
-          Nick Maltbie's Blog
+          My Blog
         </h1>
         
         <DataList reqTag="Blog"/>
