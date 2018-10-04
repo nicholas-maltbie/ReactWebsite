@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Project } from './Components';
 import './App.css';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Row, Col} from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 var Parser = require('html-react-parser')
 var all_data = require('./activity-feed.json')
@@ -75,18 +76,19 @@ class CardList extends Component {
   render() {
     var projs = this.state.data
     return (
-      <Row>
+      <Row className="cardRow">
         {projs.map(proj =>
-          <Col sm="3" key={proj.title}>
-          <Card outline color="black">
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-            <CardBody>
-              <CardTitle>Card title</CardTitle>
-              <CardSubtitle>Card subtitle</CardSubtitle>
-              <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          <div className="col-lg-3 col-sm-4 col-xs-12" key={proj.title}>
+          <Card body outline color="info">
+            <CardImg top center width="75px" height="75px" src={require("./media/icons/" + proj.icon)} alt={proj.iconalt} />
+            <CardBody outline color="info">
+              <CardTitle><NavLink to={proj.link}> <h3> {proj.title} </h3> </NavLink></CardTitle>
+              <CardSubtitle>{getStringDate(proj.startMonth, proj.startYear,
+                                    proj.endMonth, proj.endYear)}</CardSubtitle>
+              <CardText>{Parser(proj.description.length <= 100 ? proj.description : proj.description.slice(0,100) + "..." )}</CardText>
             </CardBody>
           </Card>
-          </Col>)
+          </div>)
         }
       </Row>
     )

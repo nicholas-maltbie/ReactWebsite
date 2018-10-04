@@ -1,6 +1,6 @@
 import React from 'react';
 import { HorizLinks, Cover } from './Components';
-import { DataList } from './DataList';
+import { CardList } from './DataList';
 
 const Landing = () => (
   <div>
@@ -73,7 +73,7 @@ const Landing = () => (
         Activity Feed
       </h1>
       
-      <DataList numElems={4}/>
+      <CardList numElems={3}/>
     </p>
     
     <Cover image={require("./media/backgrounds/landing-3.jpg")} height="40vh"/>
